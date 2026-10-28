@@ -1,0 +1,14 @@
+[
+ {"no":1,"konu":"Topraklama ölçümü kaç yılda bir yapılır?","kategori":"isg","ilgili":["topraklama-olcumu","elektrik-ic-tesisat-periyodik-kontrolu","kacak-akim-rolesi-olcumu"],"durum":"bekliyor"},
+ {"no":2,"konu":"Periyodik kontrol süreleri tablosu: hangi ekipman ne sıklıkla kontrol edilir?","kategori":"mevzuat","ilgili":["periyodik-muayene","forklift-periyodik-kontrolu","hava-tanki-ve-kompresor-kontrolu"],"durum":"bekliyor"},
+ {"no":3,"konu":"Kalorifer kazanı kontrolü: ısıtma sezonu öncesi kontrol listesi","kategori":"isg","ilgili":["kalorifer-kazani-kontrolu","hidrofor-ve-genlesme-tanki-kontrolu","havalandirma-tesisati-kontrolu"],"durum":"bekliyor"},
+ {"no":4,"konu":"Patlamadan korunma dokümanı hangi işyerlerine zorunlu? Sektör sektör liste","kategori":"mevzuat","ilgili":["patlamadan-korunma-dokumani","anlik-gaz-olcumu","ortam-voc-olcumu"],"durum":"bekliyor"},
+ {"no":5,"konu":"Raf hasarı: yeşil, sarı, kırmızı sınıfı ne anlama gelir?","kategori":"saha","ilgili":["endustriyel-raf-kontrolu","raf-statik-analizi","forklift-periyodik-kontrolu"],"durum":"bekliyor"},
+ {"no":6,"konu":"Kaçak akım rölesi neden sürekli atar?","kategori":"saha","ilgili":["kacak-akim-olcumu","kacak-akim-rolesi-olcumu","yalitim-izolasyon-direnci-olcumu"],"durum":"bekliyor"},
+ {"no":7,"konu":"Pano tek hat şeması nasıl okunur?","kategori":"isg","ilgili":["pano-tek-hat-semasi-projesi","elektrik-panosu-kontrolu","elektrik-ic-tesisat-projesi"],"durum":"bekliyor"},
+ {"no":8,"konu":"Akü şarj odası güvenliği: hidrojen riski ve havalandırma","kategori":"saha","ilgili":["akumulator-olcumu","patlamadan-korunma-dokumani","forklift-periyodik-kontrolu"],"durum":"bekliyor"},
+ {"no":9,"konu":"Gerilim düşümü hesabı: sınırlar ve örnek","kategori":"isg","ilgili":["elektrik-ic-tesisat-projesi","pano-tek-hat-semasi-projesi","enerji-analizi-ve-harmonik-olcumu"],"durum":"bekliyor"},
+ {"no":10,"konu":"Kapalı alana giriş öncesi gaz ölçümü adım adım","kategori":"isg","ilgili":["anlik-gaz-olcumu","ortam-gaz-olcumu","patlamadan-korunma-dokumani"],"durum":"bekliyor"},
+ {"no":11,"konu":"Yıldırım sezonu öncesi paratoner kontrolü","kategori":"isg","ilgili":["yildirimdan-korunma-tesisati-paratoner-olcumu","yildirimdan-korunma-tesisati-projesi","topraklama-olcumu"],"durum":"bekliyor"},
+ {"no":12,"konu":"Yaz öncesi termal konfor: sıcak çalışma ortamlarında ölçüm","kategori":"isg","ilgili":["termal-konfor-olcumu","havalandirma-tesisati-kontrolu","gunduz-aydinlatma-olcumu"],"durum":"bekliyor"}
+]
