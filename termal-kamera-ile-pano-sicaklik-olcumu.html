@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Termal Kamera ile Pano Sıcaklık Ölçümü (Termografi) | Aymati Proje</title>
+<link rel="canonical" href="https://www.aymati.com.tr/termal-kamera-ile-pano-sicaklik-olcumu.html">
+<meta property="og:url" content="https://www.aymati.com.tr/termal-kamera-ile-pano-sicaklik-olcumu.html">
+<meta property="og:image" content="https://www.aymati.com.tr/og-image.png">
+<meta name="theme-color" content="#0d2547">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="favicon.png">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta name="description" content="Termal kamerayla elektrik panoları, trafo, kablo ek yerleri ve kablo tavalarında aşırı ısınma tespiti. Arıza ve yangın riskini önceden gösteren fotoğraflı termografi raporu.">
+<meta property="og:title" content="Termal Kamera ile Pano Sıcaklık Ölçümü (Termografi) | Aymati Proje">
+<meta property="og:description" content="Termal kamerayla elektrik panoları, trafo, kablo ek yerleri ve kablo tavalarında aşırı ısınma tespiti. Arıza ve yangın riskini önceden gösteren fotoğraflı termografi raporu.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<style>
+@font-face{font-family:"Poppins";font-weight:400;font-style:normal;font-display:swap;src:url(fonts/poppins-400.woff) format("woff")}
+@font-face{font-family:"Poppins";font-weight:500;font-style:normal;font-display:swap;src:url(fonts/poppins-500.woff) format("woff")}
+@font-face{font-family:"Poppins";font-weight:600 800;font-style:normal;font-display:swap;src:url(fonts/poppins-700.woff) format("woff")}
+@font-face{font-family:"Lora";font-weight:400 700;font-style:normal;font-display:swap;src:url(fonts/lora-var.woff) format("woff")}
+@font-face{font-family:"Aymati Mono";font-weight:400 600;font-style:normal;font-display:swap;src:url(fonts/dejavu-mono.woff) format("woff")}
+</style>
+<link rel="preload" href="fonts/poppins-700.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/lora-var.woff" as="font" type="font/woff" crossorigin>
+<style>
+/* Layout: navy drafting-office header and hero; white "pafta" sections below; gold title-block details carry the brand */
+:root{
+  --navy:#0d2547; --teal:#1f9e9c; --gold:#a87a3f;
+  --bg:#f5f7fa; --paper:#ffffff; --ink:#14233a; --muted:#56657a; --line:#d9e0ea; --soft:#eef2f7;
+  --ok:#1f8a5b; --bad:#c2410c;
+  --c-el:#2563a8; --c-yg:#c2410c; --c-mk:#1f9e9c; --c-is:#7a5b1f; --c-st:#5b4fa8;
+  --f-display:"Poppins","Helvetica Neue",Arial,sans-serif;
+  --f-serif:"Lora",Georgia,serif;
+  --f-mono:"Aymati Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0a1424; --paper:#101d33; --ink:#e6ecf5; --muted:#9aa9be; --line:#22324d; --soft:#15243c;
+  --teal:#48c9c6; --gold:#d3a467; --ok:#4ec08b; --bad:#f08a5d;
+  --c-el:#7fb0ec; --c-yg:#f08a5d; --c-mk:#48c9c6; --c-is:#d3a467; --c-st:#a99cf0; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0a1424; --paper:#101d33; --ink:#e6ecf5; --muted:#9aa9be; --line:#22324d; --soft:#15243c;
+  --teal:#48c9c6; --gold:#d3a467; --ok:#4ec08b; --bad:#f08a5d;
+  --c-el:#7fb0ec; --c-yg:#f08a5d; --c-mk:#48c9c6; --c-is:#d3a467; --c-st:#a99cf0; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--f-serif)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--navy)}
+.wrap{max-width:1160px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--f-display);line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.6rem,3.2vw,2.3rem);font-weight:800}
+h3{font-size:1.12rem;font-weight:700}
+p{margin:0}
+a{color:var(--teal)}
+.eyebrow{font:500 .75rem/1.5 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+button{font:inherit;cursor:pointer}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:var(--navy);border-bottom:1px solid #1e3d6b}
+header .wrap{display:flex;align-items:center;gap:16px;padding-block:8px}
+header img{height:52px;width:auto;display:block}@media (max-width:700px){header img{height:42px}}
+header nav{margin-left:auto;display:flex;gap:2px;flex-wrap:wrap;justify-content:flex-end}
+header nav a{color:#cfdcee;text-decoration:none;font:600 .86rem var(--f-display);padding:8px 10px;border-radius:6px}
+header nav a:hover{color:#fff;background:#1a3a68}
+header nav a.cta{background:#d3a467;color:#0d2547}
+@media (max-width:1080px){nav a[href$="#hakkimizda"],nav a[href$="#iletisim"]{display:none}}
+
+.hero{background:var(--navy);color:#eaf1fb;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:28px 28px}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;padding-block:60px 48px;align-items:center}
+.hero h1{font-size:clamp(2rem,4.6vw,3.3rem);font-weight:800;color:#fff;margin-top:14px}
+.hero h1 em{font-style:normal;color:#d3a467}
+.hero .lead{margin-top:18px;font-size:1.1rem;max-width:56ch;color:#c4d3e8}
+.acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:700 .95rem var(--f-display);padding:13px 20px;border-radius:8px;border:0;text-decoration:none}
+.btn.gold{background:#d3a467;color:#0d2547}
+.btn.ghost{background:transparent;color:#eaf1fb;border:1px solid #3a5a87}
+.btn.teal{background:var(--teal);color:#fff}
+.sheet{background:#0f2c55;border:1px solid #2d4f80;border-radius:4px;padding:14px;font-family:var(--f-mono);font-size:.72rem;color:#9fb5d3}
+.sheet svg{width:100%;height:auto;display:block}
+.tblock{display:grid;grid-template-columns:1fr 1fr;border:1px solid #3a5a87;margin-top:10px}
+.tblock div{padding:6px 8px;border-right:1px solid #3a5a87;border-bottom:1px solid #3a5a87}
+.tblock div:nth-child(2n){border-right:0}.tblock div:nth-last-child(-n+2){border-bottom:0}
+.tblock span{display:block;color:#d3a467;font-size:.62rem;letter-spacing:.1em}
+.pillars{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#1e3d6b;border-top:1px solid #1e3d6b}
+.pillars a{background:var(--navy);padding:22px 20px;text-decoration:none;color:#c4d3e8;display:grid;gap:4px;align-content:start}
+.pillars a:hover{background:#12325e}
+.pillars b{font:700 1.05rem var(--f-display);color:#fff}
+.pillars small{font:500 .72rem var(--f-mono);color:#d3a467;letter-spacing:.1em}
+@media (max-width:1100px){.pillars{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:760px){.pillars{grid-template-columns:1fr 1fr}}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;padding-block:44px 36px}}
+@media (max-width:520px){.pillars{grid-template-columns:1fr}}
+
+section{padding-block:72px;scroll-margin-top:64px}
+.alt{background:var(--paper);border-block:1px solid var(--line)}
+.head{display:grid;gap:10px;margin-bottom:34px;max-width:720px}
+.head p{color:var(--muted)}
+
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:0;margin:0;counter-reset:s}
+.steps li{list-style:none;border-top:2px solid var(--line);padding-top:14px}
+.steps li::before{counter-increment:s;content:counter(s,decimal-leading-zero);font:700 1.9rem var(--f-display);color:var(--teal);display:block;margin-bottom:6px}
+.steps p{color:var(--muted);font-size:.95rem;margin-top:6px}
+@media (max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px;align-items:start}
+@media (max-width:400px){.pgrid{grid-template-columns:1fr}}
+.pcard{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px;display:grid;gap:12px;min-width:0}
+.alt .pcard,.alt .hcard{background:var(--bg)}
+.disc{font:600 .7rem var(--f-display);letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1px solid currentColor}
+.d-el{color:var(--c-el)}.d-yg{color:var(--c-yg)}.d-mk{color:var(--c-mk)}.d-is{color:var(--c-is)}.d-st{color:var(--c-st)}
+.pcard p{color:var(--muted);font-size:.95rem}
+.meta{display:grid;gap:6px;margin:0;font-size:.85rem;border-top:1px dashed var(--line);padding-top:10px}
+.meta div{display:grid;grid-template-columns:62px 1fr;gap:8px}
+.meta dt{font:600 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--gold);padding-top:2px}
+.meta dd{margin:0}
+.pcard details summary{font:600 .9rem var(--f-display);cursor:pointer;color:var(--teal)}
+.cols{display:grid;grid-template-columns:1fr;gap:12px;margin-top:10px}
+.cols h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:4px}
+.cols ul{margin:0;padding-left:18px;font-size:.88rem;display:grid;gap:3px}
+.plink{color:inherit;text-decoration:none}
+.svlink{color:inherit;text-decoration:none}.svlink:hover{color:var(--teal);text-decoration:underline}.plink:hover{color:var(--teal)}
+.more{font:600 .9rem var(--f-display);color:var(--teal);text-decoration:none}.more:hover{text-decoration:underline}
+.quote{justify-self:start;background:transparent;border:1px solid var(--teal);color:var(--teal);font:700 .88rem var(--f-display);padding:9px 14px;border-radius:7px}
+.quote:hover{background:var(--teal);color:#fff}
+
+.mgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media (max-width:820px){.mgrid{grid-template-columns:1fr}}
+.mgroup{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:22px;min-width:0}
+.mgroup>p{color:var(--muted);font-size:.92rem;margin:6px 0 12px}
+.mlist{list-style:none;padding:0;margin:0}
+.mlist li{display:flex;gap:12px;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line)}
+.mlist li div{display:grid;min-width:0}
+.mlist b{font:600 .96rem var(--f-display)}
+.mlist span{font-size:.86rem;color:var(--muted)}
+.mini{padding:6px 10px;font-size:.8rem;flex:none}
+.pm-block+.pm-block{margin-top:40px}
+.pm-h{display:flex;align-items:baseline;gap:12px;margin-bottom:14px;border-bottom:2px solid var(--line);padding-bottom:8px}
+.pm-t{font:800 1.3rem var(--f-display)}
+.pm-n{font:500 .75rem var(--f-mono);color:var(--gold);letter-spacing:.08em;text-transform:uppercase}
+.mgrid.m3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:1000px){.mgrid.m3{grid-template-columns:1fr 1fr}}
+@media (max-width:820px){.mgrid.m3{grid-template-columns:1fr}}
+.legal{margin-top:24px;font-size:.88rem;color:var(--muted);max-width:80ch}
+
+.hgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media (max-width:900px){.hgrid{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.hgrid{grid-template-columns:1fr}}
+.hcard{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.hcard .ref{margin-top:auto}
+.hcard .quote{align-self:flex-start}
+.hcard.plan{background:var(--navy)!important;border-color:var(--navy);color:#eaf1fb}
+.hcard.plan p{color:#c4d3e8}
+.hcard.plan .quote{border-color:#d3a467;color:#d3a467}
+.hcard.plan .quote:hover{background:#d3a467;color:#0d2547}
+.hcard p{color:var(--muted);font-size:.93rem}
+.hcard .ref{font:400 .75rem var(--f-mono);border-top:1px dashed var(--line);padding-top:8px}
+
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.about p+p{margin-top:14px}
+.about .lead2{font-size:1.1rem}
+.facts{display:grid;gap:0;border:1px solid var(--line);border-radius:10px;background:var(--bg)}
+.facts div{padding:16px 18px;border-bottom:1px solid var(--line)}
+.facts div:last-child{border-bottom:0}
+.facts b{display:block;font:700 1.05rem var(--f-display)}
+.facts span{font-size:.9rem;color:var(--muted)}
+
+.remote{display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px dashed var(--line);border-radius:10px;padding:20px 22px;margin-top:40px}
+.alt .mgroup{background:var(--bg)}
+.plancta{border-style:solid;background:var(--paper)}
+.plancta h3{font-size:1.05rem}
+.remote p{color:var(--muted);max-width:70ch;font-size:.95rem;margin-top:4px}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tabs button{border:1px solid var(--line);background:var(--paper);color:var(--ink);font:600 .85rem var(--f-display);padding:8px 14px;border-radius:999px}
+.tabs button[aria-pressed="true"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:860px){.posts{grid-template-columns:1fr}}
+.post{border-top:3px solid var(--gold);padding-top:14px;display:grid;gap:8px;align-content:start}
+.post time{font:500 .75rem var(--f-mono);color:var(--muted)}
+.post p{color:var(--muted);font-size:.94rem}
+.tag{font:600 .7rem var(--f-display);text-transform:uppercase;letter-spacing:.1em}
+.t-mevzuat{color:var(--c-el)}.t-isg{color:var(--c-mk)}.t-saha{color:var(--c-yg)}
+
+details.f{border-bottom:1px solid var(--line)}
+#rehber details{border-bottom:1px solid var(--line);padding:16px 0}
+#rehber summary{font:700 1.02rem var(--f-display);cursor:pointer}
+#rehber details p{margin-top:10px;color:var(--muted);max-width:75ch}
+.glist{margin:10px 0 0;padding-left:20px;color:var(--muted);max-width:78ch;display:grid;gap:6px}
+.glist b{color:var(--ink);font-weight:600}
+
+.req{display:grid;grid-template-columns:1.25fr .75fr;gap:28px;align-items:start}
+@media (max-width:900px){.req{grid-template-columns:1fr}}
+form,.side{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:24px;min-width:0}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.row{grid-template-columns:1fr}}
+.fld{display:grid;gap:6px;margin-bottom:14px;min-width:0}
+label,legend{font:600 .85rem var(--f-display)}
+input,select,textarea{font:inherit;font-size:.95rem;padding:10px 12px;border:1px solid var(--line);border-radius:7px;background:var(--bg);color:var(--ink);width:100%}
+fieldset{border:0;padding:0;margin:0 0 14px}
+legend{margin-bottom:8px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-size:.75rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips label{font:500 .82rem var(--f-display);border:1px solid var(--line);border-radius:999px;padding:6px 11px;cursor:pointer;display:flex;gap:6px;align-items:center;background:var(--bg)}
+.chips input{width:auto;margin:0}
+.chips label:has(input:checked){border-color:var(--teal);background:color-mix(in srgb,var(--teal) 14%,var(--paper))}
+.cond{background:color-mix(in srgb,var(--teal) 8%,var(--paper));border:1px solid var(--teal);border-radius:8px;padding:12px 14px;max-width:420px}
+.cond small{font-size:.8rem;color:var(--muted)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:5px;margin-bottom:20px}
+.seg button{border:0;background:transparent;color:var(--muted);border-radius:7px;padding:10px 12px;text-align:left;font:700 .95rem var(--f-display);display:grid;gap:2px}
+.seg button small{font:400 .78rem var(--f-serif);color:var(--muted)}
+.seg button[aria-selected="true"]{background:var(--paper);color:var(--ink);box-shadow:0 1px 3px #0d254722}
+.seg button[aria-selected="true"] small{color:var(--teal)}
+@media (max-width:520px){.seg{grid-template-columns:1fr}}
+.hint{color:var(--muted);font-size:.9rem;margin-bottom:14px}
+.qlist{display:grid;border:1px solid var(--line);border-radius:8px;background:var(--bg)}
+.qrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:7px 12px;border-top:1px solid var(--line)}
+.qrow:first-child{border-top:0}
+.qrow:has(input:checked){background:color-mix(in srgb,var(--teal) 9%,var(--paper))}
+.qchk{display:flex;gap:9px;align-items:center;font:500 .88rem var(--f-display);cursor:pointer;min-width:0}
+.qchk input{width:auto;margin:0;flex:none}
+.qin{display:flex;align-items:center;gap:8px;flex:none}
+.qin input{width:84px;padding:6px 8px;font-size:.88rem}
+.qin input:disabled{opacity:.45}
+.qin small{width:96px;font:500 .72rem var(--f-mono);color:var(--muted)}
+@media (max-width:520px){.qrow{flex-wrap:wrap}.qin{margin-left:26px}}
+.ctabox{display:grid;gap:12px;align-content:start}
+.ctabox p:not(.eyebrow){color:var(--muted);max-width:60ch}
+.btn.outline{background:transparent;color:var(--teal);border:1px solid var(--teal)}
+.term-wrap{position:relative;display:inline}
+.term{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:help;text-decoration:underline dotted;text-underline-offset:3px;text-decoration-thickness:1.5px;text-decoration-color:var(--gold)}
+.term:hover,.term[aria-expanded="true"]{color:var(--gold)}
+.hero .term:hover,.hero .term[aria-expanded="true"],.dhero .term:hover,.dhero .term[aria-expanded="true"]{color:#d3a467}
+.tip{position:absolute;z-index:30;top:calc(100% + 8px);left:0;width:min(330px,calc(100vw - 32px));background:var(--paper);color:var(--ink);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:8px;padding:12px 14px;font:400 .88rem/1.55 var(--f-serif);box-shadow:0 8px 24px #0d254733;text-align:left;text-transform:none;letter-spacing:0}
+.tip b{font-family:var(--f-display)}
+.rafband{background:var(--paper);border-block:1px solid var(--line)}
+.rafgrid{display:grid;grid-template-columns:1.25fr .75fr;gap:44px;align-items:center}
+@media (max-width:860px){.rafgrid{grid-template-columns:1fr}}
+.rafcopy{display:grid;gap:14px;min-width:0}
+.rafcopy>p:not(.eyebrow){color:var(--muted);max-width:62ch}
+.rafpoints{list-style:none;margin:4px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 18px;font-size:.93rem}
+@media (max-width:560px){.rafpoints{grid-template-columns:1fr}}
+.rafpoints li{padding-left:18px;position:relative;color:var(--muted)}
+.rafpoints li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:8px;background:var(--teal);border-radius:2px}
+.rafpoints b{color:var(--ink);font-weight:600}
+.raflabel{background:#fff6d6;color:#14233a;border:2px solid #14233a;border-radius:6px;padding:14px;font-family:var(--f-mono);max-width:360px;justify-self:center;width:100%}
+.rl-h{display:flex;justify-content:space-between;gap:8px;font-size:.66rem;font-weight:500;letter-spacing:.08em;border-bottom:2px solid #14233a;padding-bottom:8px;margin-bottom:10px;flex-wrap:wrap}
+.raflabel svg{width:100%;height:auto;display:block;color:#14233a}
+.raflabel dl{margin:10px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.raflabel dt{font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;opacity:.7}
+.raflabel dd{margin:0;font-weight:500;font-size:.85rem}
+.rl-f{margin-top:8px;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;opacity:.55;text-align:right}
+.pkdband{background:var(--bg)}
+.pkdband .rafgrid{grid-template-columns:.75fr 1.25fr}
+@media (max-width:860px){.pkdband .rafgrid{grid-template-columns:1fr}.pkdvis{order:2}}
+.pkdvis{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;max-width:420px;width:100%;justify-self:center}
+.exsign{width:120px;height:auto}
+.zones{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.zones li{display:grid;padding:8px 10px;border-radius:6px;border-left:4px solid}
+.zones b{font:700 .85rem var(--f-display)}
+.zones span{font:500 .72rem var(--f-mono);color:var(--muted)}
+.zones .z0{border-color:#c2410c;background:color-mix(in srgb,#c2410c 10%,var(--paper))}
+.zones .z1{border-color:#e08a1e;background:color-mix(in srgb,#e08a1e 10%,var(--paper))}
+.zones .z2{border-color:#f6c343;background:color-mix(in srgb,#f6c343 12%,var(--paper))}
+@media (max-width:400px){.pkdvis{grid-template-columns:1fr}.exsign{width:90px}}
+.kvkk{display:flex;gap:10px;align-items:flex-start;font:400 .85rem var(--f-serif);color:var(--muted);margin-bottom:16px}
+.kvkk input{width:auto;margin-top:4px}
+.err{color:var(--bad);font:600 .85rem var(--f-display);margin-bottom:12px}
+#summary{white-space:pre-wrap;font:400 .8rem/1.5 var(--f-mono);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:12px;max-height:300px;overflow:auto;margin-top:14px}
+.side h3{margin-bottom:12px}
+.side dl{margin:0;display:grid;gap:14px}
+.side dt{font:600 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--gold)}
+.side dd{margin:2px 0 0;word-break:break-word}
+.copy{margin-left:6px;font:600 .75rem var(--f-display);border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:6px;padding:3px 8px}
+
+footer{background:var(--navy);color:#9fb5d3;font-size:.9rem}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:28px;padding-block:44px}
+footer h4{font:700 .9rem var(--f-display);color:#fff;margin:0 0 10px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:6px}
+footer a{color:#c4d3e8;text-decoration:none}
+footer a:hover{color:#fff}
+footer img{height:56px;width:auto;display:block}
+@media (max-width:820px){footer .wrap{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){footer .wrap{grid-template-columns:1fr}}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:8px;font:600 .9rem var(--f-display);z-index:20}
+
+/* referanslar */
+.refs{background:var(--paper);border-bottom:1px solid var(--line)}
+.refs .wrap{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center;padding-block:26px}
+.refs .eyebrow{white-space:nowrap}
+.logos{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.logo-slot{aspect-ratio:3/1.3;border:1px dashed var(--line);border-radius:8px;display:grid;place-items:center;font:500 .68rem var(--f-mono);letter-spacing:.1em;color:var(--muted);background:var(--bg)}
+.logo-slot img{max-height:70%;max-width:80%;object-fit:contain;filter:grayscale(1);opacity:.75}
+@media (max-width:900px){.refs .wrap{grid-template-columns:1fr;gap:14px}.logos{grid-template-columns:repeat(3,1fr)}}
+/* galeri */
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:220px;gap:14px}
+.gal figure{margin:0;position:relative;border-radius:10px;overflow:hidden;background:var(--soft);border:1px solid var(--line)}
+.gal figure:first-child{grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;display:block}
+.gal .ph{position:absolute;inset:0;display:grid;place-items:center;font:500 .72rem var(--f-mono);letter-spacing:.12em;color:var(--muted);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:22px 22px;opacity:.9}
+.gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 12px;background:linear-gradient(transparent,#0d2547e6);color:#eaf1fb;font:600 .88rem var(--f-display)}
+.gal figcaption small{display:block;font:500 .68rem var(--f-mono);color:#d3a467;letter-spacing:.1em;margin-bottom:2px}
+@media (max-width:820px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.gal figure:first-child{grid-column:span 2;grid-row:span 1}}
+/* ekip */
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin-top:8px}
+.member{background:var(--bg);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:grid}
+.member .photo{aspect-ratio:4/3;background:var(--soft);display:grid;place-items:center;font:800 2.2rem var(--f-display);color:var(--muted)}
+.member .photo img{width:100%;height:100%;object-fit:cover}
+.member div.info{padding:16px 18px;display:grid;gap:4px}
+.member b{font:700 1.02rem var(--f-display)}
+.member span{font-size:.9rem;color:var(--muted)}
+.member .reg{font:500 .72rem var(--f-mono);color:var(--gold);letter-spacing:.06em;border-top:1px dashed var(--line);padding-top:8px;margin-top:6px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Termal Kamera ile Pano Sıcaklık Ölçümü", "serviceType": "Termal Kamera ile Pano Sıcaklık Ölçümü", "url": "https://www.aymati.com.tr/termal-kamera-ile-pano-sicaklik-olcumu.html", "description": "Termal kamerayla elektrik panoları, trafo, kablo ek yerleri ve kablo tavalarında aşırı ısınma tespiti. Arıza ve yangın riskini önceden gösteren fotoğraflı termografi raporu.", "provider": {"@type": "ProfessionalService", "name": "Aymati Proje", "url": "https://www.aymati.com.tr/"}, "areaServed": {"@type": "Country", "name": "Türkiye"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://www.aymati.com.tr/"}, {"@type": "ListItem", "position": 2, "name": "Periyodik Muayene", "item": "https://www.aymati.com.tr/periyodik-muayene.html"}, {"@type": "ListItem", "position": 3, "name": "Termal Kamera ile Pano Sıcaklık Ölçümü", "item": "https://www.aymati.com.tr/termal-kamera-ile-pano-sicaklik-olcumu.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Termal kamera ölçümü için enerji kesilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Isınmalar ancak yük altında görüldüğü için ölçüm tesis çalışırken yapılır."}}, {"@type": "Question", "name": "Termografi ne sıklıkla yapılmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Önleyici bakım için yılda en az bir kez, yoğun yüklü tesislerde daha sık yapılması önerilir."}}, {"@type": "Question", "name": "Sıcak nokta bulunduğunda ne yapılmalı?", "acceptedAnswer": {"@type": "Answer", "text": "Raporda önem derecesine göre bağlantı sıkma, klemens değişimi veya yük dağılımı gibi önlemler önerilir. Düzeltme sonrası tekrar ölçüm yapılabilir."}}, {"@type": "Question", "name": "Teklif için hangi bilgiler gerekiyor?", "acceptedAnswer": {"@type": "Answer", "text": "Ölçülecek pano sayısı ve trafo olup olmadığı yeterlidir."}}]}</script>
+<style>
+/* ortak: üst şerit, menü, sayfa başlığı */
+.topbar{background:#081a33;color:#9fb5d3;font:500 .78rem var(--f-display)}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:6px;flex-wrap:wrap}
+.topbar a{color:#c4d3e8;text-decoration:none}.topbar a:hover{color:#fff}
+.tb-l{display:flex;gap:8px;align-items:center}
+.tb-nav{display:flex;gap:16px}
+.tb-nav a[aria-current]{color:#d3a467}
+@media (max-width:700px){.topbar{display:none}}
+header nav a[aria-current]{color:#fff;box-shadow:inset 0 -2px 0 #d3a467;border-radius:0}
+.menu-btn{display:none;margin-left:auto;background:transparent;border:1px solid #3a5a87;color:#eaf1fb;border-radius:7px;padding:8px 12px;font:700 .86rem var(--f-display);align-items:center;gap:8px}
+.menu-btn svg{width:18px;height:18px}
+.mpanel{background:var(--navy);border-top:1px solid #1e3d6b;max-height:calc(100vh - 70px);overflow:auto}
+.mpanel .wrap{display:grid;grid-template-columns:1fr 1fr;gap:4px 24px;padding-block:14px 20px}
+.mpanel h4{font:600 .7rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:#d3a467;margin:8px 0 4px}
+.mpanel a{display:block;color:#eaf1fb;text-decoration:none;font:600 .95rem var(--f-display);padding:9px 0;border-bottom:1px solid #1e3d6b}
+.mpanel a[aria-current]{color:#d3a467}
+@media (max-width:560px){.mpanel .wrap{grid-template-columns:1fr}}
+@media (max-width:1140px){header nav#mainnav a:not(.cta){display:none}.menu-btn{display:inline-flex;margin-left:12px}header nav#mainnav{margin-left:auto}}
+@media (max-width:420px){header nav#mainnav .cta{padding:8px 10px;font-size:.8rem}}
+.dhero{background:var(--navy);color:#eaf1fb;position:relative;overflow:hidden}
+.dhero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:28px 28px}
+.dhero .wrap{position:relative;padding-block:40px 36px;display:grid;gap:12px}
+.dhero h1{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:800;color:#fff}
+.dhero .lead{color:#c4d3e8;max-width:66ch;font-size:1.05rem}
+.crumbs{display:block;margin:0}
+.crumbs a{color:inherit;text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.page-cta{background:var(--navy);color:#eaf1fb}
+.page-cta .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-block:36px}
+.page-cta h2{color:#fff;font-size:1.5rem}
+.page-cta p{color:#c4d3e8;margin-top:6px;max-width:60ch}
+/* ana sayfa vitrin */
+.tz-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:980px){.tz-grid{grid-template-columns:1fr}}
+.tz{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.tz h3{font-size:1.25rem}
+.tz h3 a{color:inherit;text-decoration:none}.tz h3 a:hover{color:var(--teal)}
+.tz .cnt{font:500 .72rem var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.tz p{color:var(--muted);font-size:.93rem}
+.tz h4{font:600 .7rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.tz ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.tz li a{display:inline-block;font:600 .8rem var(--f-display);color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 10px;background:var(--bg)}
+.tz li a:hover{border-color:var(--teal);color:var(--teal)}
+.tz .more{margin-top:auto}
+.about-tz{display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center}
+@media (max-width:860px){.about-tz{grid-template-columns:1fr}}
+.about-tz .txt{display:grid;gap:12px}
+.about-tz .txt p{color:var(--muted)}
+.post h3 a{color:inherit;text-decoration:none}
+</style><style>
+.dhero{background:var(--navy);color:#eaf1fb;position:relative;overflow:hidden}
+.dhero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:28px 28px}
+.dhero .wrap{position:relative;padding-block:44px 40px;display:grid;gap:14px}
+.dhero h1{font-size:clamp(1.9rem,4.2vw,2.9rem);font-weight:800;color:#fff}
+.dhero .lead{color:#c4d3e8;max-width:62ch;font-size:1.05rem}
+.dhero .eyebrow a{color:inherit;text-decoration:none}.dhero .eyebrow a:hover{text-decoration:underline}
+.dstats{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.dstats span{font:500 .75rem var(--f-mono);letter-spacing:.06em;border:1px solid #3a5a87;border-radius:999px;padding:6px 12px;color:#c4d3e8}
+.dstats b{color:#d3a467;font-weight:500}
+.dlayout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:36px;align-items:start;padding-block:48px 72px}
+@media (max-width:900px){.dlayout{grid-template-columns:1fr}}
+.grp{padding-block:0;scroll-margin-top:72px}
+.grp+.grp{margin-top:36px}
+.grp-h{display:flex;gap:16px;align-items:flex-start;margin-bottom:14px}
+.gno{font:700 1.6rem var(--f-display);color:var(--teal);line-height:1;min-width:2.2ch;font-variant-numeric:tabular-nums}
+.grp-h h2{font-size:1.3rem}
+.grp-h p{color:var(--muted);font-size:.93rem;margin-top:4px}
+.items{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+@media (max-width:640px){.items{grid-template-columns:1fr}}
+.items li{background:var(--paper);padding:14px 16px;display:grid;gap:4px;align-content:start}
+.items li:last-child:nth-child(odd){grid-column:1/-1}
+.it-h{display:flex;gap:8px;align-items:baseline;justify-content:space-between;flex-wrap:wrap}
+.items h3{font:600 .95rem var(--f-display)}
+.items p{color:var(--muted);font-size:.88rem}
+.tag-opt{font:500 .66rem var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--gold);border:1px solid currentColor;border-radius:999px;padding:2px 7px;white-space:nowrap}
+.dside{position:sticky;top:calc(80px + env(safe-area-inset-top,0px));display:grid;gap:16px}
+@media (max-width:900px){.dside{position:static}}
+.dcard{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:12px}
+.dcard dl{margin:0;display:grid;gap:12px}
+.dcard dt{font:600 .72rem var(--f-mono);text-transform:uppercase;letter-spacing:.08em;color:var(--gold)}
+.dcard dd{margin:2px 0 0;font-size:.93rem}
+.dcard ul{margin:0;padding-left:18px;font-size:.88rem;color:var(--muted);display:grid;gap:3px}
+.dcard .btn{justify-content:center}
+.note{font-size:.85rem;color:var(--muted)}
+.toc,.crumbs{display:block;margin-left:0}
+.crumbs a{color:inherit;text-decoration:none;padding:0;font:inherit;background:none!important;border-radius:0}.crumbs a:hover{text-decoration:underline}
+.toc{border:1px solid var(--line);border-radius:10px;background:var(--paper);padding:16px 18px;margin-bottom:36px}
+.toc ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.toc a{display:inline-block;font:600 .82rem var(--f-display);color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:5px 11px;background:var(--bg)}
+.toc a:hover{border-color:var(--teal);color:var(--teal)}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}
+.faq summary{font:700 1rem var(--f-display);cursor:pointer}
+.faq details p{margin-top:8px;color:var(--muted);max-width:72ch}
+.dcard .h3{font-size:1.12rem}
+.rel{list-style:none!important;padding:0!important}
+.rel a{color:var(--teal);text-decoration:none;font:600 .88rem var(--f-display)}.rel a:hover{text-decoration:underline}
+.prose{display:grid;gap:14px;max-width:72ch}
+.prose p{color:var(--ink)}
+.relgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:640px){.relgrid{grid-template-columns:1fr}}
+.relgrid a{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;text-decoration:none;color:var(--ink);font:600 .93rem var(--f-display)}
+.relgrid a:hover{border-color:var(--teal);color:var(--teal)}
+.period{background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:14px 16px;max-width:72ch}
+.outl{margin:0;padding-left:20px;display:grid;gap:6px;max-width:72ch}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><span class="tb-l"><a href="mailto:info@aymati.com.tr">info@aymati.com.tr</a></span><nav class="tb-nav" aria-label="Kurumsal"><a href="hakkimizda.html">Hakkımızda</a><a href="hizmet-bolgeleri.html">Hizmet Bölgeleri</a><a href="blog.html">Blog</a><a href="sss.html">Sık Sorulanlar</a><a href="iletisim.html">İletişim</a></nav></div></div>
+<header>
+  <div class="wrap">
+    <a href="./" aria-label="Aymati Proje ana sayfa"><img src="logo.svg" width="380" height="120" alt="Aymati Proje"></a>
+    <nav aria-label="Ana menü" id="mainnav">
+      <a href="projelendirme.html">Projelendirme</a>
+      <a href="raf-statik-analizi.html">Raf Statik Analizi</a>
+      <a href="patlamadan-korunma-dokumani.html">Patlamadan Korunma Dokümanı (PKD)</a>
+      <a href="periyodik-muayene.html" aria-current="true">Periyodik Muayene</a>
+      <a href="is-hijyeni-olcumleri.html">İş Hijyeni</a>
+      <a href="teklif.html" class="cta">Teklif Alın</a>
+    </nav>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="mpanel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Menü</button>
+  </div>
+  <div class="mpanel" id="mpanel" hidden><div class="wrap"><div><h4>Hizmetler</h4><a href="projelendirme.html">Projelendirme</a><a href="raf-statik-analizi.html">Raf Statik Analizi</a><a href="patlamadan-korunma-dokumani.html">Patlamadan Korunma Dokümanı (PKD)</a><a href="periyodik-muayene.html" aria-current="true">Periyodik Muayene</a><a href="is-hijyeni-olcumleri.html">İş Hijyeni</a></div><div><h4>Kurumsal</h4><a href="hakkimizda.html">Hakkımızda</a><a href="hizmet-bolgeleri.html">Hizmet Bölgeleri</a><a href="blog.html">Blog</a><a href="sss.html">Sık Sorulanlar</a><a href="iletisim.html">İletişim</a><a href="teklif.html">Teklif Alın</a></div></div></div>
+</header>
+<main id="top">
+<section class="dhero" style="padding-block:0">
+  <div class="wrap">
+    <nav class="crumbs eyebrow" aria-label="Sayfa yolu"><a href="./">Ana sayfa</a> / <a href="periyodik-muayene.html">Periyodik Muayene</a> / Termal Kamera ile Pano Sıcaklık Ölçümü</nav>
+    <h1>Termal Kamera ile Pano Sıcaklık Ölçümü (Termografi)</h1>
+    <p class="lead">Gözle görülmeyen gevşek bağlantıları ve aşırı yüklenmiş hatları, yangına dönüşmeden önce termal kamerayla buluyoruz.</p>
+    <div class="dstats"><span>Periyodik muayene · Elektrik grubu</span><span>Rapor: <b>Termal ve normal fotoğraflı termografi raporu</b></span></div>
+  </div>
+</section>
+<div class="wrap dlayout">
+  <div>
+    <nav class="toc" aria-label="Sayfa içeriği"><p class="eyebrow">Bu sayfada</p><ul><li><a href="#nedir">Termal Kamera ile Pano Sıcaklık Ölçümü nedir?</a></li><li><a href="#ne-zaman">Ne zaman gerekir?</a></li><li><a href="#kapsam">Kapsam</a></li><li><a href="#rapor">Teslim</a></li><li><a href="#sss">Sık sorulanlar</a></li></ul></nav>
+    <section class="grp grp-intro" id="nedir" aria-labelledby="h-ne"><div class="grp-h"><span class="gno">01</span><div><h2 id="h-ne">Termal Kamera ile Pano Sıcaklık Ölçümü nedir?</h2></div></div><div class="prose"><p>Termal kamera ile pano sıcaklık ölçümü (termografi), çalışan elektrik tesisatının yüzey sıcaklıklarını görüntüleyerek normalden sıcak noktaları tespit eden yöntemdir. Gevşek bir bağlantı, oksitlenmiş bir klemens veya aşırı yüklenmiş bir hat önce ısınır; bu ısınma gözle görülmez ama termal kamerada açıkça görünür. Elektrik kaynaklı yangınların önemli bir bölümü bu sıcak noktalarda başlar.</p><p>Ölçümü panolar yük altındayken, enerji kesmeden yapıyoruz. Her sıcak noktayı termal ve normal fotoğrafıyla, sıcaklık farkıyla ve önem derecesiyle raporluyoruz; bakım ekibiniz doğrudan sorunlu bağlantıya gidebilir.</p></div></section>
+    <section class="grp" id="ne-zaman" aria-labelledby="h-nz"><div class="grp-h"><span class="gno">02</span><div><h2 id="h-nz">Termal Kamera ile Pano Sıcaklık Ölçümü ne zaman gerekir?</h2><p>İşletmelerin bu hizmete en çok ihtiyaç duyduğu durumlar:</p></div></div><ul class="glist"><li>Yılda bir önleyici bakım kontrolü olarak</li><li>Panolarda koku, ses veya renk değişimi varsa</li><li>Sigorta şirketi termografi raporu istiyorsa</li><li>Yük artışı veya yeni makine eklemesinden sonra</li></ul></section>
+    <section class="grp" id="kapsam" aria-labelledby="h-ka"><div class="grp-h"><span class="gno">05</span><div><h2 id="h-ka">Termal Kamera ile Pano Sıcaklık Ölçümü kapsamında neler yapıyoruz?</h2></div></div><ul class="items"><li><div class="it-h"><h3>Panolar</h3></div><p>Ana ve tali panolarda bara, şalter ve klemens sıcaklıkları.</p></li><li><div class="it-h"><h3>Trafo ve kompanzasyon</h3></div><p>Trafo bağlantıları ve kondansatör kademeleri.</p></li><li><div class="it-h"><h3>Kablo ve tavalar</h3></div><p>Kablo ek yerleri ve yoğun kablo tavaları.</p></li><li><div class="it-h"><h3>Makine ve motorlar</h3></div><p>Motor bağlantı kutuları ve sürücüler.</p></li><li><div class="it-h"><h3>Önem derecelendirme</h3></div><p>Sıcaklık farkına göre acil, öncelikli ve izlenecek noktalar.</p></li></ul></section>
+    <section class="grp" id="rapor" aria-labelledby="h-ra"><div class="grp-h"><span class="gno">✓</span><div><h2 id="h-ra">Size ne teslim ediyoruz?</h2></div></div><ul class="outl"><li>Termal ve normal fotoğraflı termografi raporu</li><li>Sıcak nokta listesi ve önem dereceleri</li><li>Düzeltme önerileri</li></ul></section>
+    
+    <section class="grp faq" id="sss" aria-labelledby="h-sss"><div class="grp-h"><span class="gno">?</span><div><h2 id="h-sss">Termal Kamera ile Pano Sıcaklık Ölçümü hakkında sık sorulanlar</h2></div></div><details><summary>Termal kamera ölçümü için enerji kesilir mi?</summary><p>Hayır. Isınmalar ancak yük altında görüldüğü için ölçüm tesis çalışırken yapılır.</p></details><details><summary>Termografi ne sıklıkla yapılmalı?</summary><p>Önleyici bakım için yılda en az bir kez, yoğun yüklü tesislerde daha sık yapılması önerilir.</p></details><details><summary>Sıcak nokta bulunduğunda ne yapılmalı?</summary><p>Raporda önem derecesine göre bağlantı sıkma, klemens değişimi veya yük dağılımı gibi önlemler önerilir. Düzeltme sonrası tekrar ölçüm yapılabilir.</p></details><details><summary>Teklif için hangi bilgiler gerekiyor?</summary><p>Ölçülecek pano sayısı ve trafo olup olmadığı yeterlidir.</p></details></section>
+    <section class="grp" id="ilgili" aria-labelledby="h-il"><div class="grp-h"><span class="gno">+</span><div><h2 id="h-il">İlgili hizmetler</h2></div></div><div class="relgrid"><a href="elektrik-panosu-kontrolu.html">Elektrik Panosu Kontrolü<span aria-hidden="true">→</span></a><a href="kompanzasyon-sistemi-ve-panosu-kontrolu.html">Kompanzasyon Sistemi ve Panosu Kontrolü<span aria-hidden="true">→</span></a><a href="transformator-periyodik-olcumu.html">Transformatör Periyodik Ölçümü<span aria-hidden="true">→</span></a><a href="ark-flas-analizi.html">Ark Flaş Analizi<span aria-hidden="true">→</span></a></div></section>
+  </div>
+  <aside class="dside">
+    <div class="dcard">
+      <h2 class="h3">Hizmet özeti</h2>
+      <dl>
+        <div><dt>Hizmet</dt><dd>Mühendislerimiz yerinde ölçer, test eder ve raporlar</dd></div>
+        <div><dt>Teslim</dt><dd>Termal ve normal fotoğraflı termografi raporu</dd></div>
+        <div><dt>Teklif için</dt><dd>Ölçülecek pano sayısı ve trafo olup olmadığı yeterlidir.</dd></div>
+      </dl>
+      <button type="button" class="btn teal quote" data-svc="Termal Kamera ile Pano Sıcaklık Ölçümü">Teklif alın</button>
+    </div>
+    <div class="dcard"><h2 class="h3">Mevzuat ve standartlar</h2><ul><li>TS EN 13187 / termografi uygulama esasları</li><li>Elektrik İç Tesisleri Yönetmeliği</li></ul></div>
+    <div class="dcard"><h2 class="h3">Periyodik Muayene</h2><ul class="rel"><li><a href="periyodik-muayene.html">Tüm periyodik muayene hizmetleri</a></li><li><a href="teklif.html">Teklif formu</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+  </aside>
+</div>
+</main>
+<footer>
+  <div class="wrap">
+    <div><img src="logo.svg" width="380" height="120" alt="Aymati Proje"><p style="margin-top:12px;max-width:36ch">Projelendirme, periyodik muayene ve iş hijyeni ölçümleri.</p><p style="margin-top:12px">info@aymati.com.tr</p><p style="margin-top:12px;font-size:.8rem;line-height:1.5">AYMATİ PROJE MÜHENDİSLİK HİZMETLERİ İÇ VE DIŞ TİCARET LİMİTED ŞİRKETİ<br>Merkez Mah. Çukurçeşme Cad. No: 9-17 İç Kapı No: 7, Gaziosmanpaşa / İstanbul<br>Gaziosmanpaşa V.D. · VKN 1231204010</p></div>
+    <div><h4>Projelendirme</h4><ul>
+      <li><a href="elektrik-ic-tesisat-projesi.html">Elektrik İç Tesisat Projesi</a></li>
+      <li><a href="pano-tek-hat-semasi-projesi.html">Pano Tek Hat Şeması</a></li>
+      <li><a href="yangin-algilama-ve-ihbar-sistemleri-projesi.html">Yangın Algılama ve İhbar Sistemleri</a></li>
+      <li><a href="sulu-sondurme-yangin-tesisat-projesi.html">Sprinkler Projesi</a></li>
+      <li><a href="yildirimdan-korunma-tesisati-projesi.html">Yıldırımdan Korunma Tesisatı</a></li>
+      <li><a href="raf-statik-analizi.html">Raf Statik Analizi</a></li>
+      <li><a href="patlamadan-korunma-dokumani.html">Patlamadan Korunma Dokümanı (PKD)</a></li></ul></div>
+    <div><h4>Muayene ve ölçüm</h4><ul>
+      <li><a href="topraklama-olcumu.html">Topraklama Ölçümü</a></li>
+      <li><a href="yildirimdan-korunma-tesisati-paratoner-olcumu.html">Paratoner Ölçümü</a></li>
+      <li><a href="katodik-koruma-olcumu.html">Katodik Koruma Ölçümü</a></li>
+      <li><a href="pat-testi-tasinabilir-elektrikli-cihaz-kontrolu.html">PAT Testi</a></li>
+      <li><a href="forklift-periyodik-kontrolu.html">Forklift Periyodik Kontrolü</a></li>
+      <li><a href="hava-tanki-ve-kompresor-kontrolu.html">Basınçlı Kap Kontrolü</a></li>
+      <li><a href="kisisel-gurultu-olcumu.html">Gürültü Ölçümü</a></li>
+      <li><a href="kisisel-toz-olcumu.html">Toz Ölçümü</a></li>
+      <li><a href="kisisel-voc-olcumu.html">VOC ve Titreşim Ölçümü</a></li></ul></div>
+    <div><h4>Kurumsal</h4><ul>
+      <li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="blog.html">Blog ve duyurular</a></li>
+      <li><a href="sss.html">Sık sorulan sorular</a></li><li><a href="iletisim.html">İletişim</a></li><li><a href="teklif.html">Teklif alın</a></li>
+      <li><a href="hizmet-bolgeleri.html">Hizmet bölgeleri</a></li><li><a href="kvkk.html">KVKK aydınlatma metni</a></li><li>© Aymati Proje Mühendislik Ltd. Şti.</li></ul></div>
+  </div>
+</footer>
+<div class="toast" id="toast" hidden></div>
+<script>
+/* Form gönderimi: Web3Forms (web3forms.com) veya Formspree adresi girin.
+   Boş bırakılırsa talep, ziyaretçinin e-posta programında hazır mesaj olarak açılır. */
+const FORM_ENDPOINT=''; // ör. 'https://api.web3forms.com/submit'
+const FORM_KEY='';      // Web3Forms erişim anahtarı (Formspree için boş kalır)
+const MAIL_TO='info@aymati.com.tr';
+function mailFallback(b){location.href='mailto:'+MAIL_TO+'?subject='+encodeURIComponent('Teklif talebi')+'&body='+encodeURIComponent(b)}
+const $=id=>document.getElementById(id);
+const v=id=>$(id).value.trim();
+function toast(m){const t=$('toast');t.textContent=m;t.hidden=false;clearTimeout(t._t);t._t=setTimeout(()=>t.hidden=true,2600)}
+
+/* hizmet kartlarındaki "Teklif" düğmeleri: teklif sayfasını açar */
+document.querySelectorAll('.quote[data-svc]').forEach(b=>b.addEventListener('click',()=>{
+  const name=b.dataset.svc;
+  try{sessionStorage.setItem('hizmet',name)}catch(e){}
+  location.href='teklif.html?hizmet='+encodeURIComponent(name);
+}));
+
+/* blog filtreleri */
+document.querySelectorAll('.tabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  document.querySelectorAll('#posts .post').forEach(p=>p.hidden=!(b.dataset.f==='all'||p.dataset.cat===b.dataset.f));
+}));
+document.querySelectorAll('.copy').forEach(b=>b.addEventListener('click',()=>{
+  const t=$(b.dataset.c).textContent;
+  navigator.clipboard.writeText(t).then(()=>toast('Kopyalandı'),()=>{const r=document.createRange();r.selectNodeContents($(b.dataset.c));const s=getSelection();s.removeAllRanges();s.addRange(r)});
+}));
+
+if($('f')){
+/* teklif türü sekmeleri */
+let mode='proje';
+function setMode(m){
+  mode=m;
+  ['proje','muayene'].forEach(k=>{$('t-'+k).setAttribute('aria-selected',k===m);$('pane-'+k).hidden=k!==m});
+  $('err').hidden=true;
+}
+$('t-proje').addEventListener('click',()=>setMode('proje'));
+$('t-muayene').addEventListener('click',()=>setMode('muayene'));
+
+/* havalandırma ünite sayısı */
+const hv=[...document.querySelectorAll('input[name=psvc]')].find(c=>c.value==='Havalandırma Tesisat Projesi'),uw=$('unite-wrap');
+function syncUnite(){uw.hidden=!hv.checked}
+hv.addEventListener('change',syncUnite);
+
+/* muayene satırları: işaretlenince adet alanı açılır */
+function syncRow(c){const q=$(c.dataset.q);q.disabled=!c.checked;if(!c.checked)q.value=''}
+document.querySelectorAll('input[name=msvc]').forEach(c=>c.addEventListener('change',()=>{syncRow(c);if(c.checked)$(c.dataset.q).focus()}));
+
+/* gönderim */
+$('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  const miss=[];let lines=[];
+  if(!v('ilce'))miss.push('il / ilçe');
+  if(mode==='proje'){
+    const svc=[...document.querySelectorAll('input[name=psvc]:checked')].map(x=>x.value);
+    if(!v('m2'))miss.push('metrekare');
+    if(!svc.length)miss.push('en az bir proje');
+    if(hv.checked&&!v('unite'))miss.push('havalandırma ünite sayısı');
+    lines=[`Alan: ${v('m2')} m² · Kat: ${v('kat')||'-'}`];
+    if(hv.checked)lines.push('Havalandırma ünite sayısı: '+v('unite'));
+    lines.push('Projeler:','- '+svc.join('\n- '));
+  }else{
+    const sel=[...document.querySelectorAll('input[name=msvc]:checked')];
+    if(!sel.length)miss.push('en az bir muayene veya ölçüm');
+    const noQty=sel.filter(c=>!$(c.dataset.q).value);
+    if(noQty.length)miss.push('adet ('+noQty.map(c=>c.value).join(', ')+')');
+    lines=['Muayene ve ölçümler:',...sel.map(c=>`- ${c.value}: ${$(c.dataset.q).value} ${c.closest('.qrow').querySelector('small').textContent}`)];
+  }
+  if(!v('ad'))miss.push('ad soyad');
+  if(!v('tel'))miss.push('telefon');
+  const err=$('err');
+  if(miss.length){err.textContent='Eksik bilgi: '+miss.join(', ');err.hidden=false;return}
+  if(!$('kv').checked){err.textContent='Devam etmek için KVKK onay kutusunu işaretleyin.';err.hidden=false;return}
+  err.hidden=true;
+  const body=`TEKLİF TALEBİ · ${mode==='proje'?'PROJE':'MUAYENE VE ÖLÇÜM'}
+Konum: ${v('ilce')}
+Yapı tipi: ${v('yapi')||'-'}
+${lines.join('\n')}
+Ad soyad: ${v('ad')} · Firma: ${v('firma')||'-'}
+Telefon: ${v('tel')} · E-posta: ${v('mail')||'-'}`;
+  $('summary').textContent=body;$('summary').hidden=false;
+  const btn=document.querySelector('#f button[type=submit]');
+  if(FORM_ENDPOINT){
+    btn.disabled=true;btn.textContent='Gönderiliyor…';
+    const fd=new FormData();
+    if(FORM_KEY)fd.append('access_key',FORM_KEY);
+    fd.append('subject',(mode==='proje'?'Proje':'Muayene/ölçüm')+' teklif talebi: '+v('ilce'));fd.append('from_name',v('ad'));
+    if(v('mail'))fd.append('replyto',v('mail'));
+    fd.append('message',body);
+    fetch(FORM_ENDPOINT,{method:'POST',body:fd,headers:{Accept:'application/json'}})
+      .then(r=>{if(!r.ok)throw 0;toast('Talebiniz bize ulaştı, teşekkürler');$('f').reset();syncUnite();document.querySelectorAll('input[name=msvc]').forEach(syncRow)})
+      .catch(()=>{toast('Gönderilemedi, e-posta ile iletiyoruz');mailFallback(body)})
+      .finally(()=>{btn.disabled=false;btn.textContent='Teklif iste'});
+  } else mailFallback(body);
+});
+
+/* sayfa açılışında seçili hizmet / teklif türü */
+(function(){
+  const q=new URLSearchParams(location.search);
+  let name=q.get('hizmet');
+  try{if(!name)name=sessionStorage.getItem('hizmet');sessionStorage.removeItem('hizmet')}catch(e){}
+  if(q.get('tur')==='muayene'||location.hash==='#muayene')setMode('muayene');
+  if(!name)return;
+  const p=[...document.querySelectorAll('input[name=psvc]')].find(c=>c.value===name);
+  const m=[...document.querySelectorAll('input[name=msvc]')].find(c=>c.value===name);
+  if(p){setMode('proje');p.checked=true;syncUnite()}
+  if(m){setMode('muayene');m.checked=true;syncRow(m)}
+  if(p||m)toast(name+' seçildi');
+})();
+}
+
+/* terim açıklamaları (rölöve vb.) */
+document.querySelectorAll('.term').forEach(b=>{
+  const tip=document.getElementById(b.getAttribute('aria-controls'));
+  b.addEventListener('click',e=>{
+    e.stopPropagation();
+    const open=b.getAttribute('aria-expanded')!=='true';
+    document.querySelectorAll('.term[aria-expanded="true"]').forEach(x=>{x.setAttribute('aria-expanded','false');document.getElementById(x.getAttribute('aria-controls')).hidden=true});
+    if(!open)return;
+    b.setAttribute('aria-expanded','true');tip.hidden=false;tip.style.left='0px';
+    const r=tip.getBoundingClientRect(),max=document.documentElement.clientWidth-16;
+    if(r.right>max)tip.style.left=(max-r.right)+'px';
+    if(r.left+(max-r.right)<16)tip.style.left=(16-r.left)+'px';
+  });
+  tip.addEventListener('click',e=>e.stopPropagation());
+});
+document.addEventListener('click',()=>document.querySelectorAll('.term[aria-expanded="true"]').forEach(x=>x.click()));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.term[aria-expanded="true"]').forEach(x=>{x.click();x.focus()})});
+
+/* mobil menü */
+(function(){const b=document.querySelector('.menu-btn'),p=document.getElementById('mpanel');if(!b||!p)return;
+b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')!=='true';b.setAttribute('aria-expanded',o);p.hidden=!o});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!p.hidden){p.hidden=true;b.setAttribute('aria-expanded','false');b.focus()}});})();
+</script>
+</body>
+</html>
