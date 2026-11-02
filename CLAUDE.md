@@ -6,7 +6,7 @@ Aymati Proje Mühendislik'in statik web sitesi. Derleme adımı yok; `site/` kla
 
 - Site Türkçedir. Metinler sade, net ve teknik olarak doğru olmalı; uydurma mevzuat maddesi, sınır değer veya rakam yazma. Emin olmadığın bilgiyi yazma ya da genel ifade et.
 - Sitede yıl vurgusu yapılmaz: görünür metinde "2026" gibi yıl yazma (Google verisindeki `datePublished` hariç).
-- Fiyat yazılmaz.
+- Fiyat yazılmaz. Tek istisna: site sahibinin talebiyle eklenen Faraday kafesi hesaplama aracındaki (faraday-kafesi-hesaplama.html) USD ön bütçe; birim fiyatlar sayfadaki FK_FIYAT bloğundadır.
 - Elektrik grubu projeleri "EMO kayıtlı S.M.M. elektrik mühendisi", mekanik grubu projeler ve statik analizler "MMO kayıtlı makina mühendisi" tarafından imzalanır.
 - Hizmet adları baş harfleri büyük yazılır (ör. "Topraklama Ölçümü").
 - `main` dalına doğrudan yazma. Her değişiklik ayrı bir dalda hazırlanır ve pull request olarak açılır; site sahibi onaylayınca birleştirilir.
