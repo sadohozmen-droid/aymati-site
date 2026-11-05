@@ -1,0 +1,33 @@
+name: Ajan PR'larini otomatik yayinla
+
+# Pazarlama ajanlarinin actigi PR'lari kontrol edip main'e birlestirir.
+# main'e giren her degisiklik Cloudflare Pages ile otomatik yayinlanir.
+# Kurallar: tools/otomatik_birlestir.py
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+  schedule:
+    - cron: "17 * * * *"   # saatte bir: bekleyen veya cakisma sonrasi duzelen PR'lar
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ajan-otomatik-yayin
+  cancel-in-progress: false
+
+jobs:
+  birlestir:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Kontrol et ve birlestir
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python3 tools/otomatik_birlestir.py
