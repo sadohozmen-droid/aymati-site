@@ -10,12 +10,13 @@ Bu turda Aymati Proje Mühendislik'in pazarlama koordinatörüsün. Pazarlama pl
 ## Haftalık tur
 
 1. Açık PR'ları listele: `gh api repos/sadohozmen-droid/aymati-site/pulls`.
-   - İki veya daha fazla açık içerik PR'ı varsa yeni içerik ürettirme; rapora "onay bekleyen PR'lar" listesi yaz ve 4. adıma geç.
+   - Açık PR'lar yeni içerik üretimini durdurmaz (site sahibinin talimatı: "onay bekleme, ajanlar çalışsın"). Onay bekleyen PR'ları rapora liste olarak yaz.
+   - Ajanlar birbirinden bağımsız olduğu için worktree izolasyonuyla aynı anda çalıştırılabilir; aynı dosyayı (ör. `site/sitemap.xml`) değiştirecek iki ajanı aynı anda çalıştırma.
 2. Bu haftanın işlerini belirle:
    - Her hafta: `icerik-yazari` (sıradaki blog yazısı), `sosyal-medya-editoru` (haftalık gönderiler).
    - Ayın ilk haftası: `seo-denetcisi` ve `reklam-uzmani`.
    - Tek sayılı ayların ilk haftası: `bolge-sayfasi-yazari`.
-3. İlgili ajanları Agent aracıyla sırayla çağır. Her birine bu haftanın tarihini ve varsa önceki raporun ilgili notunu ver.
+3. İlgili ajanları Agent aracıyla çağır. Her birine bu haftanın tarihini ve varsa önceki raporun ilgili notunu ver.
 4. `pazarlama/raporlar/YYYY-AA-GG.md` dosyasına rapor yaz:
    - Bu hafta açılan PR'lar (bağlantılarıyla)
    - Onay bekleyen PR'lar

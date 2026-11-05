@@ -11,7 +11,7 @@ Aymati Proje Mühendislik'in statik web sitesi. Derleme adımı yok; `site/` kla
 - Hizmet adları baş harfleri büyük yazılır (ör. "Topraklama Ölçümü").
 - `main` dalına doğrudan yazma. Her değişiklik ayrı bir dalda hazırlanır ve pull request olarak açılır; site sahibi onaylayınca birleştirilir.
 
-## Yeni blog yazısı (iki haftada bir)
+## Yeni blog yazısı (haftada bir)
 
 1. `tools/takvim.json` içinde `"durum": "bekliyor"` olan ilk konuyu seç.
 2. Yazıyı yaz: 700-1000 kelime; `<p>`, `<h2>`, `<h3>`, `<ul>`, `<ol>`, `<b>` kullan. Mevcut `site/blog-*.html` yazılarının tonuna uy: kısa paragraflar, işletme sahibine ve İSG uzmanına hitap eden pratik bilgi, sonda Aymati Proje'nin bu konudaki hizmetine bir cümlelik atıf. İlgili hizmet sayfalarına metin içinde `<a href="...html">` ile bağlantı ver. Bilgileri resmî kaynaklardan (Resmî Gazete, ÇSGB, TSE, EMO, MMO) doğrula.
@@ -19,6 +19,6 @@ Aymati Proje Mühendislik'in statik web sitesi. Derleme adımı yok; `site/` kla
 4. `python3 tools/new_post.py tools/yazilar/<slug>.json` çalıştır.
 5. Takvimde konunun durumunu `"taslak"` yap ve PR bağlantısını `"pr"` alanına yaz.
 6. `blog/<slug>` dalına commit et, push et ve `gh api repos/sadohozmen-droid/aymati-site/pulls -f title=... -f head=blog/<slug> -f base=main -f body=...` ile pull request aç. PR açıklamasında yazının özetini ve sayfa adını ver. (GraphQL çalışmaz; yalnızca REST.)
-7. Önceki taslak PR'lar hâlâ açıksa yeni yazı yazma; bunun yerine açık PR'ları hatırlatan kısa bir not bırak.
+7. Önceki taslak PR'lar açık olsa da yeni yazı yazılır (site sahibinin talimatı). Takvimde "taslak" durumundaki konuları atla, "bekliyor" olan ilk konuyu seç; PR açıklamasında onay bekleyen önceki blog PR'larını listele.
 
 Takvimdeki konular bittiğinde, hizmet sayfalarıyla ilişkili ve işletmelerin Google'da sorduğu sorulardan yeni konular öner ve takvime ekle.
