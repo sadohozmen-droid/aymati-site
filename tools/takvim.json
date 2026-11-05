@@ -20,7 +20,8 @@
    "forklift-periyodik-kontrolu",
    "hava-tanki-ve-kompresor-kontrolu"
   ],
-  "durum": "bekliyor"
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/22"
  },
  {
   "no": 3,
