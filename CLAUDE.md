@@ -9,7 +9,7 @@ Aymati Proje Mühendislik'in statik web sitesi. Derleme adımı yok; `site/` kla
 - Fiyat yazılmaz. Tek istisna: site sahibinin talebiyle eklenen Faraday kafesi hesaplama aracındaki (faraday-kafesi-hesaplama.html) USD ön bütçe; birim fiyatlar sayfadaki FK_FIYAT bloğundadır.
 - Elektrik grubu projeleri "EMO kayıtlı S.M.M. elektrik mühendisi", mekanik grubu projeler ve statik analizler "MMO kayıtlı makina mühendisi" tarafından imzalanır.
 - Hizmet adları baş harfleri büyük yazılır (ör. "Topraklama Ölçümü").
-- `main` dalına doğrudan yazma. Her değişiklik ayrı bir dalda hazırlanır ve pull request olarak açılır; site sahibi onaylayınca birleştirilir.
+- `main` dalına doğrudan yazma. Her değişiklik ayrı bir dalda hazırlanır ve pull request olarak açılır. Site sahibi genel izin verdi (5 Kasım): PR, kurallara uygunluğu ve kırık bağlantı olmadığı kontrol edildikten sonra REST API ile (squash) birleştirilebilir; site sahibine onay için soru sorulmaz, yapılan iş sonradan özetlenir. Hesap açma, şifre/ödeme bilgisi girme, reklam harcaması başlatma ve sosyal medyada paylaşım yine site sahibine aittir.
 
 ## Yeni blog yazısı (iki haftada bir)
 
@@ -19,6 +19,6 @@ Aymati Proje Mühendislik'in statik web sitesi. Derleme adımı yok; `site/` kla
 4. `python3 tools/new_post.py tools/yazilar/<slug>.json` çalıştır.
 5. Takvimde konunun durumunu `"taslak"` yap ve PR bağlantısını `"pr"` alanına yaz.
 6. `blog/<slug>` dalına commit et, push et ve `gh api repos/sadohozmen-droid/aymati-site/pulls -f title=... -f head=blog/<slug> -f base=main -f body=...` ile pull request aç. PR açıklamasında yazının özetini ve sayfa adını ver. (GraphQL çalışmaz; yalnızca REST.)
-7. Önceki taslak PR'lar hâlâ açıksa yeni yazı yazma; bunun yerine açık PR'ları hatırlatan kısa bir not bırak.
+7. PR'ı kontrol edip birleştir; takvimde durumu `"yayında"` yap. Önceki bir blog PR'ı açık ve birleştirilemiyorsa (çakışma vb.) önce onu çöz.
 
 Takvimdeki konular bittiğinde, hizmet sayfalarıyla ilişkili ve işletmelerin Google'da sorduğu sorulardan yeni konular öner ve takvime ekle.
