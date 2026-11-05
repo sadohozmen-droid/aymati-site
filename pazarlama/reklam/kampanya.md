@@ -2,7 +2,15 @@
 
 Bu dosya reklam uzmanı ajanı tarafından her ay güncellenir. Ajanın hesaba erişimi yoktur; aşağıdaki yapı Google Ads Editor'e veya Google Ads arayüzüne elle girilmek üzere hazırlanmıştır. Bu dosya `site/` dışında olduğu için yayına girmez.
 
-## Bu ay değişenler (Kasım 2026)
+## Bu ay değişenler (Kasım 2026, 2. güncelleme — 5 Kasım)
+
+- **Topraklama başlığı teyit edildi.** Site sahibi, topraklama ölçüm raporlarını EMO kayıtlı mühendisin imzaladığını teyit etti; 2.6 Topraklama Ölçümü grubundaki "EMO Kayıtlı Mühendis Raporu" başlığı olduğu gibi kullanılabilir (dosyada ayrıca bir teyit notu bulunmuyordu; değişiklik gerekmedi).
+- **Yeni bölüm 5 — 2. aşama reklam grupları** (dönüşüm ölçümü kurulduktan sonra açılacak): 2.9 Vinç Statik Analizi, 2.10 Monoray / Vinç Yolu Statik Analizi, 2.11 Kaldırma Aparatı Statik Hesabı, 2.12 Fuar Standı Statik Analizi, 2.13 Sahne / Truss / Tribün Statik Analizi, 2.14 Tabela / Pilon Statik Hesabı. Her birinde 10–12 anahtar kelime, 15 başlık, 4 açıklama ve gruba özel negatifler var.
+- **Yeni bölüm 6 — Bölge varyantları:** İkitelli OSB / Başakşehir, Hadımköy / Arnavutköy, Esenyurt / Beylikdüzü, Tuzla OSB için 5'er başlık ve 2'şer açıklama; mevcut gruplara ikinci RSA olarak eklenir. Hangi grubun bölge reklamının hangi sayfaya gideceği yönlendirme tablosunda.
+- Tüm yeni başlık/açıklama karakter sayıları Python `len()` ile sayıldı (başlık ≤30, açıklama ≤90, görünen yol ≤15).
+- Arama terimleri raporu (`sonuclar-2026-11.csv`) henüz yok; negatif/yeni anahtar kelime analizi yapılmadı. Bütçe rakamı yoktur.
+
+### İlk sürüm (Kasım 2026)
 
 - **İlk sürüm.** Daha önce kampanya ve arama terimleri raporu (`sonuclar-YYYY-AA.csv`) yok; bu nedenle negatif/yeni anahtar kelime analizi yapılmadı.
 - 8 reklam grubu: istenen 6 hizmete ek olarak sitede bulunan statik analiz hizmet sayfalarından **Platform / Asma Kat Statik Analizi** ve **İskele Statik Analizi** ayrı grup yapıldı (her grup tek bir hizmet sayfasına gider).
@@ -564,6 +572,428 @@ Google Ads > Anahtar kelimeler > Arama terimleri raporunu (son 30 gün) CSV olar
 - Tıklama alıp dönüşüm getirmeyen ve alakasız terimler negatif listesine önerilir.
 - Dönüşüm getiren terimler ilgili gruba yeni anahtar kelime olarak eklenir.
 - Değişiklikler bu dosyanın en üstündeki "Bu ay değişenler" bölümüne yazılır.
+
+## 5. 2. aşama (dönüşüm ölçümü kurulduktan sonra açılacak)
+
+Bu gruplar ilk sürümde dışarıda bırakılan statik analiz sayfaları içindir. **Dönüşüm ölçümü (Google etiketi + form / telefon / WhatsApp olayları) sitede çalışır hale gelmeden açılmamalıdır**; arama hacimleri düşük ve dağınık olduğundan hangi grubun teklif getirdiği ancak dönüşüm verisiyle görülebilir. Açıldıklarında aynı kampanyaya (aynı ayarlar, aynı negatif liste) eklenir; her grup tek bir hizmet sayfasına gider. Tüm sayfaların `site/` içinde bulunduğu kontrol edildi. Raporlar sitede belirtildiği gibi MMO kayıtlı makina mühendisi imzalıdır.
+
+Not: Fuar standı ve sahne/truss/tribün aramaları İstanbul dışından (stand ve organizasyon firmaları) da gelebilir; konum hedefi değiştirilmedi, arama terimleri ve konum raporuna göre değerlendirilecek.
+
+| # | Reklam grubu | Nihai URL | Görünen yol | Anahtar kelime |
+| --- | --- | --- | --- | --- |
+| 2.9 | Vinç Statik Analizi | https://www.aymati.com.tr/vinc-statik-analizi.html | /Vinc-Statik/Zemin-Hesabi | 11 |
+| 2.10 | Monoray / Vinç Yolu Statik Analizi | https://www.aymati.com.tr/monoray-vinc-yolu-statik-analizi.html | /Monoray/Vinc-Yolu | 10 |
+| 2.11 | Kaldırma Aparatı Statik Hesabı | https://www.aymati.com.tr/kaldirma-aparati-statik-hesabi.html | /Kaldirma-Aparat/Statik-Hesap | 11 |
+| 2.12 | Fuar Standı Statik Analizi | https://www.aymati.com.tr/fuar-standi-statik-analizi.html | /Fuar-Standi/Statik-Rapor | 10 |
+| 2.13 | Sahne / Truss / Tribün Statik Analizi | https://www.aymati.com.tr/sahne-truss-tribun-statik-analizi.html | /Sahne-Truss/Tribun | 12 |
+| 2.14 | Tabela / Pilon Statik Hesabı | https://www.aymati.com.tr/tabela-pilon-statik-hesabi.html | /Tabela-Pilon/Statik-Hesap | 11 |
+
+### 2.9 Vinç Statik Analizi
+
+- **Nihai URL:** https://www.aymati.com.tr/vinc-statik-analizi.html
+- **Görünen yol:** www.aymati.com.tr/Vinc-Statik/Zemin-Hesabi (11 / 12 karakter, sınır 15)
+
+**Anahtar kelimeler (11)**
+
+| Anahtar kelime | Eşleme |
+| --- | --- |
+| `[vinç statik analizi]` | Tam |
+| `[vinç statik hesabı]` | Tam |
+| `[kule vinç temel hesabı]` | Tam |
+| `[kule vinç temeli statik]` | Tam |
+| `[mobil vinç ayak yükü]` | Tam |
+| `[vinç ayak yükü hesabı]` | Tam |
+| `[vinç zemin hesabı]` | Tam |
+| `"vinç statik rapor"` | Sıralı |
+| `"kule vinç temel hesabı"` | Sıralı |
+| `"vinç ayak basıncı"` | Sıralı |
+| `"vinç zemin basıncı hesabı"` | Sıralı |
+
+**Başlıklar (15, sınır 30)**
+
+| # | Başlık | Kr. |
+| --- | --- | --- |
+| 1 | Vinç Statik Analizi | 19 |
+| 2 | Kule Vinç Temel Hesabı | 22 |
+| 3 | Mobil Vinç Ayak Yükü Hesabı | 27 |
+| 4 | MMO Kayıtlı Mühendis İmzalı | 27 |
+| 5 | Vinç Zemin Basıncı Hesabı | 25 |
+| 6 | Ankraj ve Temel Kontrolü | 24 |
+| 7 | Kurulum Öncesi Statik Rapor | 27 |
+| 8 | Döşeme Üzerine Vinç Kontrolü | 28 |
+| 9 | Üretici Yük Tablolarıyla | 24 |
+| 10 | Şantiye İçin Statik Rapor | 25 |
+| 11 | Altlık Plakası Ölçüsü Hesabı | 28 |
+| 12 | Vinç Hesabı İçin Teklif Alın | 28 |
+| 13 | Batı Yakası OSB'lerine Hizmet | 29 |
+| 14 | Aymati Proje Mühendislik | 24 |
+| 15 | Arayın veya WhatsApp Yazın | 26 |
+
+**Açıklamalar (4, sınır 90)**
+
+| # | Açıklama | Kr. |
+| --- | --- | --- |
+| 1 | Kule vinç temeli, ankraj, mobil vinç ayak yükü ve zemin basıncını hesaplıyoruz. | 79 |
+| 2 | Vinç kurulmadan önce MMO kayıtlı makina mühendisi imzalı statik hesap raporu hazırlanır. | 88 |
+| 3 | Döşeme, rampa veya bodrum üzerine kurulacak vinçte yapının taşıma kapasitesi kontrolü. | 86 |
+| 4 | Vinç modeli, kaldırma planı ve zemin bilgisini gönderin, kapsamı belirleyip dönüş yapalım. | 90 |
+
+### 2.10 Monoray / Vinç Yolu Statik Analizi
+
+- **Nihai URL:** https://www.aymati.com.tr/monoray-vinc-yolu-statik-analizi.html
+- **Görünen yol:** www.aymati.com.tr/Monoray/Vinc-Yolu (7 / 9 karakter, sınır 15)
+
+**Anahtar kelimeler (10)**
+
+| Anahtar kelime | Eşleme |
+| --- | --- |
+| `[monoray statik hesabı]` | Tam |
+| `[monoray statik analizi]` | Tam |
+| `[vinç yolu statik hesabı]` | Tam |
+| `[vinç yolu kirişi hesabı]` | Tam |
+| `[vinç yolu statik analizi]` | Tam |
+| `[köprülü vinç yolu hesabı]` | Tam |
+| `[monoray hesabı]` | Tam |
+| `"monoray statik"` | Sıralı |
+| `"vinç yolu kirişi" hesap` | Sıralı |
+| `"caraskal rayı hesabı"` | Sıralı |
+
+**Başlıklar (15, sınır 30)**
+
+| # | Başlık | Kr. |
+| --- | --- | --- |
+| 1 | Monoray Statik Analizi | 22 |
+| 2 | Vinç Yolu Kirişi Hesabı | 23 |
+| 3 | MMO Kayıtlı Mühendis İmzalı | 27 |
+| 4 | Yerinde Ölçüm ile Statik Hesap | 30 |
+| 5 | Köprülü Vinç Yolu Kontrolü | 26 |
+| 6 | Monoray Rayı Statik Raporu | 26 |
+| 7 | Sehim ve Bağlantı Kontrolü | 26 |
+| 8 | Kapasite Artırımı Hesabı | 24 |
+| 9 | Konsol Vinç Taşıyıcı Hesabı | 27 |
+| 10 | Fabrika ve Atölyeler İçin | 25 |
+| 11 | Tekerlek ve Fren Yükleriyle | 27 |
+| 12 | Statik Rapor İçin Teklif Alın | 29 |
+| 13 | Batı Yakası OSB'lerine Hizmet | 29 |
+| 14 | Aymati Proje Mühendislik | 24 |
+| 15 | Arayın veya WhatsApp Yazın | 26 |
+
+**Açıklamalar (4, sınır 90)**
+
+| # | Açıklama | Kr. |
+| --- | --- | --- |
+| 1 | Monoray rayı, vinç yolu kirişi ve konsol vinç taşıyıcısını sahada ölçüp hesaplıyoruz. | 85 |
+| 2 | Tekerlek yükleri, fren kuvvetleri, sehim ve ray bağlantıları raporda kontrol edilir. | 84 |
+| 3 | Raporlar MMO kayıtlı makina mühendisi tarafından hazırlanır ve imzalanır. | 73 |
+| 4 | Yeni vinç veya kapasite artırımı planlıyorsanız mevcut yapıyı birlikte değerlendirelim. | 87 |
+
+### 2.11 Kaldırma Aparatı Statik Hesabı
+
+- **Nihai URL:** https://www.aymati.com.tr/kaldirma-aparati-statik-hesabi.html
+- **Görünen yol:** www.aymati.com.tr/Kaldirma-Aparat/Statik-Hesap (15 / 12 karakter, sınır 15)
+
+**Anahtar kelimeler (11)**
+
+| Anahtar kelime | Eşleme |
+| --- | --- |
+| `[kaldırma aparatı statik hesabı]` | Tam |
+| `[travers statik hesabı]` | Tam |
+| `[kaldırma kirişi hesabı]` | Tam |
+| `[kaldırma kulağı hesabı]` | Tam |
+| `[kaldırma aparatı hesabı]` | Tam |
+| `[spreader beam hesabı]` | Tam |
+| `[travers hesabı]` | Tam |
+| `"kaldırma aparatı" statik` | Sıralı |
+| `"travers" statik rapor` | Sıralı |
+| `"kaldırma kulağı" hesap` | Sıralı |
+| `"wll hesabı"` | Sıralı |
+
+**Başlıklar (15, sınır 30)**
+
+| # | Başlık | Kr. |
+| --- | --- | --- |
+| 1 | Kaldırma Aparatı Statik Hesabı | 30 |
+| 2 | Travers ve Kaldırma Kirişi | 26 |
+| 3 | Kaldırma Kulağı Hesabı | 22 |
+| 4 | MMO Kayıtlı Mühendis İmzalı | 27 |
+| 5 | Çalışma Yük Sınırı (WLL) | 24 |
+| 6 | Atölye İmalatı Aparatlara | 25 |
+| 7 | Etiket Bilgisi Raporda | 22 |
+| 8 | Kaynak ve Pim Kontrolü | 22 |
+| 9 | Yerinde Ölçüm ile Hesap | 23 |
+| 10 | Periyodik Kontrol Eksiğine | 26 |
+| 11 | Güçlendirme Önerisi Dahil | 25 |
+| 12 | Aparat İçin Teklif Alın | 23 |
+| 13 | Batı Yakası OSB'lerine Hizmet | 29 |
+| 14 | Aymati Proje Mühendislik | 24 |
+| 15 | Arayın veya WhatsApp Yazın | 26 |
+
+**Açıklamalar (4, sınır 90)**
+
+| # | Açıklama | Kr. |
+| --- | --- | --- |
+| 1 | Travers, kaldırma kirişi, kaldırma kulağı ve özel aparatların taşıma kapasitesi hesabı. | 87 |
+| 2 | Aparatın üzerine yazılacak çalışma yük sınırı (WLL) ve etiket bilgileri raporda yer alır. | 89 |
+| 3 | Gövde, kaynak, pim ve delik bölgeleri kontrol edilir; MMO kayıtlı mühendis imzalı rapor. | 88 |
+| 4 | Aparatı sahada ölçüyor veya imalat çiziminden hesaplıyoruz. Formu doldurun, dönüş yapalım. | 90 |
+
+### 2.12 Fuar Standı Statik Analizi
+
+- **Nihai URL:** https://www.aymati.com.tr/fuar-standi-statik-analizi.html
+- **Görünen yol:** www.aymati.com.tr/Fuar-Standi/Statik-Rapor (11 / 12 karakter, sınır 15)
+
+**Anahtar kelimeler (10)**
+
+| Anahtar kelime | Eşleme |
+| --- | --- |
+| `[fuar standı statik analizi]` | Tam |
+| `[fuar standı statik rapor]` | Tam |
+| `[fuar standı statik hesabı]` | Tam |
+| `[çift katlı stand statik]` | Tam |
+| `[çift katlı fuar standı statik]` | Tam |
+| `[stand statik raporu]` | Tam |
+| `[fuar standı statik proje]` | Tam |
+| `"fuar standı statik"` | Sıralı |
+| `"çift katlı stand" statik` | Sıralı |
+| `"stand statik hesap"` | Sıralı |
+
+**Başlıklar (15, sınır 30)**
+
+| # | Başlık | Kr. |
+| --- | --- | --- |
+| 1 | Fuar Standı Statik Analizi | 26 |
+| 2 | Çift Katlı Stand Statik Rapor | 29 |
+| 3 | MMO Kayıtlı Mühendis İmzalı | 27 |
+| 4 | Teknik Ofise Sunulacak Rapor | 28 |
+| 5 | Kurulumdan Önce Statik Rapor | 28 |
+| 6 | Yüksek Stand Statik Hesabı | 26 |
+| 7 | Asma Kat ve Merdiven Kontrolü | 29 |
+| 8 | Korkuluk Yeterlilik Hesabı | 26 |
+| 9 | Çelik ve Alüminyum Stand | 24 |
+| 10 | Stand Firmalarına Hizmet | 24 |
+| 11 | Fuar Şartnamesine Uygun Rapor | 29 |
+| 12 | Stand Projeniz İçin Teklif | 26 |
+| 13 | İstanbul Fuarları İçin | 22 |
+| 14 | Aymati Proje Mühendislik | 24 |
+| 15 | Arayın veya WhatsApp Yazın | 26 |
+
+**Açıklamalar (4, sınır 90)**
+
+| # | Açıklama | Kr. |
+| --- | --- | --- |
+| 1 | Fuar merkezi çift katlı veya yüksek standınız için statik rapor mu istedi? Hesaplıyoruz. | 88 |
+| 2 | Kolon, kiriş, ikinci kat döşemesi, merdiven ve korkuluklar ziyaretçi yüküne göre kontrol. | 89 |
+| 3 | Teknik ofise sunulacak rapor MMO kayıtlı makina mühendisi tarafından imzalanır. | 79 |
+| 4 | Stand planı, kesit ve malzeme bilgisini gönderin; fuar takvimine göre planlayalım. | 82 |
+
+### 2.13 Sahne / Truss / Tribün Statik Analizi
+
+- **Nihai URL:** https://www.aymati.com.tr/sahne-truss-tribun-statik-analizi.html
+- **Görünen yol:** www.aymati.com.tr/Sahne-Truss/Tribun (11 / 6 karakter, sınır 15)
+
+**Anahtar kelimeler (12)**
+
+| Anahtar kelime | Eşleme |
+| --- | --- |
+| `[sahne statik analizi]` | Tam |
+| `[sahne statik raporu]` | Tam |
+| `[truss statik hesabı]` | Tam |
+| `[truss statik rapor]` | Tam |
+| `[tribün statik analizi]` | Tam |
+| `[geçici tribün statik]` | Tam |
+| `[led ekran kulesi statik]` | Tam |
+| `[konser sahnesi statik]` | Tam |
+| `"sahne statik"` | Sıralı |
+| `"truss statik"` | Sıralı |
+| `"tribün statik"` | Sıralı |
+| `"etkinlik statik rapor"` | Sıralı |
+
+**Başlıklar (15, sınır 30)**
+
+| # | Başlık | Kr. |
+| --- | --- | --- |
+| 1 | Sahne ve Truss Statik Analizi | 29 |
+| 2 | Geçici Tribün Statik Raporu | 27 |
+| 3 | MMO Kayıtlı Mühendis İmzalı | 27 |
+| 4 | Truss Çatı Statik Hesabı | 24 |
+| 5 | LED Ekran Kulesi Hesabı | 23 |
+| 6 | Rüzgâr ve Asma Yük Kontrolü | 27 |
+| 7 | Etkinlik Öncesi Statik Rapor | 28 |
+| 8 | Seyirci Yükü Hesabı | 19 |
+| 9 | Balast İhtiyacı Hesaplanır | 26 |
+| 10 | Belediye ve Sigorta İçin | 24 |
+| 11 | Organizasyon Firmalarına | 24 |
+| 12 | Etkinliğiniz İçin Teklif Alın | 29 |
+| 13 | İstanbul Etkinlikleri İçin | 26 |
+| 14 | Aymati Proje Mühendislik | 24 |
+| 15 | Arayın veya WhatsApp Yazın | 26 |
+
+**Açıklamalar (4, sınır 90)**
+
+| # | Açıklama | Kr. |
+| --- | --- | --- |
+| 1 | Konser sahnesi, truss çatı, LED ekran kulesi ve geçici tribünler için statik analiz. | 84 |
+| 2 | Ses, ışık ve ekran gibi asılan yükler, rüzgâr ve seyirci yükü hesaba katılır. | 77 |
+| 3 | Truss, kule, ayak ve balast ihtiyacı hesaplanır; MMO kayıtlı mühendis imzalı rapor. | 83 |
+| 4 | Etkinlik tarihini ve ekipman listesini gönderin, kapsamı belirleyip size dönüş yapalım. | 87 |
+
+### 2.14 Tabela / Pilon Statik Hesabı
+
+- **Nihai URL:** https://www.aymati.com.tr/tabela-pilon-statik-hesabi.html
+- **Görünen yol:** www.aymati.com.tr/Tabela-Pilon/Statik-Hesap (12 / 12 karakter, sınır 15)
+
+**Anahtar kelimeler (11)**
+
+| Anahtar kelime | Eşleme |
+| --- | --- |
+| `[tabela statik hesabı]` | Tam |
+| `[tabela statik raporu]` | Tam |
+| `[pilon statik hesabı]` | Tam |
+| `[totem statik hesabı]` | Tam |
+| `[reklam panosu statik hesabı]` | Tam |
+| `[çatı tabelası statik rapor]` | Tam |
+| `[tabela statik proje]` | Tam |
+| `"tabela statik"` | Sıralı |
+| `"pilon statik"` | Sıralı |
+| `"totem statik"` | Sıralı |
+| `"belediye tabela" statik rapor` | Sıralı |
+
+**Başlıklar (15, sınır 30)**
+
+| # | Başlık | Kr. |
+| --- | --- | --- |
+| 1 | Tabela Statik Hesabı | 20 |
+| 2 | Pilon ve Totem Statik Hesabı | 28 |
+| 3 | MMO Kayıtlı Mühendis İmzalı | 27 |
+| 4 | Belediye İçin Statik Rapor | 26 |
+| 5 | Çatı Tabelası Statik Rapor | 26 |
+| 6 | Rüzgâr Yükü Hesabı | 18 |
+| 7 | Ankraj ve Temel Kontrolü | 24 |
+| 8 | Reklam Panosu Statik Hesap | 26 |
+| 9 | Cephe Tabelası Hesabı | 21 |
+| 10 | Tabela Firmalarına Hizmet | 25 |
+| 11 | Taşıyıcı Konstrüksiyon | 22 |
+| 12 | Tabelanız İçin Teklif Alın | 26 |
+| 13 | İstanbul Geneline Hizmet | 24 |
+| 14 | Aymati Proje Mühendislik | 24 |
+| 15 | Arayın veya WhatsApp Yazın | 26 |
+
+**Açıklamalar (4, sınır 90)**
+
+| # | Açıklama | Kr. |
+| --- | --- | --- |
+| 1 | Çatı tabelası, cephe tabelası, reklam panosu ve pilon için statik hesap raporu. | 79 |
+| 2 | Rüzgâr yükü, taşıyıcı profiller, bağlantılar, ankraj cıvataları ve temel hesaplanır. | 84 |
+| 3 | Belediye başvurusu için MMO kayıtlı makina mühendisi imzalı statik rapor hazırlanır. | 84 |
+| 4 | Tabela ölçüsü, yüksekliği ve konumunu gönderin; kapsamı belirleyip dönüş yapalım. | 81 |
+
+### 2. aşama grup düzeyi negatifler
+
+Bu gruplarda hizmet yerine ekipman kiralama / imalat arayan aramalar beklenir. Ortak listeye değil, yalnız ilgili gruba sıralı eşleme ile eklenir:
+
+| Grup | Negatif kelimeler |
+| --- | --- |
+| 2.9 Vinç Statik Analizi | `"kiralama"`, `"kiralık"`, `"operatör"`, `"operatörlü"`, `"satılık"`, `"ikinci el"` |
+| 2.10 Monoray / Vinç Yolu | `"satılık"`, `"ikinci el"`, `"imalatı"`, `"montajı"` |
+| 2.11 Kaldırma Aparatı | `"satılık"`, `"satış"`, `"sapan"`, `"zincir"`, `"halat"` |
+| 2.12 Fuar Standı | `"tasarım"`, `"stand yapımı"`, `"kiralama"`, `"stand firmaları"` |
+| 2.13 Sahne / Truss / Tribün | `"kiralama"`, `"kiralık"`, `"satılık"`, `"ses sistemi"` |
+| 2.14 Tabela / Pilon | `"tabela yapımı"`, `"tabela modelleri"`, `"tabelacı"`, `"led tabela"` |
+
+Not: "tasarım", "stand yapımı", "tabela yapımı" gibi aramalar stand/tabela firmalarından da gelebilir (bu firmalar statik rapor müşterisidir). Bu negatifler arama terimleri raporunda dönüşüm getiren terimler görülürse kaldırılır.
+
+## 6. Bölge varyantları
+
+Bölge adını içeren başlıklar, mevcut gruplara **ikinci bir duyarlı arama reklamı (RSA)** olarak eklenir. Google'da nihai URL başlık bazında değil reklam bazında seçildiği için bölge başlıkları ana reklama karıştırılmaz: bölge reklamı ya ilgili bölge sayfasına ya da grubun hizmet sayfasına gider (aşağıdaki tablo). Bölge reklamında 15 başlığı tamamlamak için bu 5 bölge başlığına grubun kendi başlıklarından 10 tanesi eklenir; 4 açıklamanın 2'si aşağıdaki bölge açıklamaları, 2'si grubun açıklamalarıdır.
+
+Kampanyanın konumu İstanbul'un tamamı olduğu için bölge başlıkları o bölgede olmayan kullanıcılara da gösterilebilir. Bunu sınırlamak için bölge başlıklarından biri 1. konuma sabitlenmez; bunun yerine gruba aşağıdaki bölge anahtar kelimeleri (sıralı eşleme) eklenir ve bölge reklamının performansı ana reklamla karşılaştırılır. Bir ay sonra bölge reklamı daha düşük tıklama oranı veya dönüşüm getiriyorsa duraklatılır.
+
+### Yönlendirme tablosu
+
+| Bölge | Eklendiği reklam grupları | Bölge reklamının nihai URL'si | Not |
+| --- | --- | --- | --- |
+| İkitelli OSB / Başakşehir | 2.1 Elektrik Projesi / Rölöve, 2.6 Topraklama Ölçümü, 2.8 İş Hijyeni Ölçümleri | https://www.aymati.com.tr/bolge-ikitelli-osb-basaksehir.html | Bölge sayfası elektrik projesi, topraklama ve iş hijyeni hizmetlerine bağlantı veriyor |
+| Hadımköy / Arnavutköy | 2.2 Raf Statik Analizi, 2.3 Platform / Asma Kat Statik Analizi, 2.7 Forklift Periyodik Kontrolü | https://www.aymati.com.tr/bolge-hadimkoy-arnavutkoy.html | Bölge sayfası raf statik, raf kontrolü ve forklift kontrolüne bağlantı veriyor. Platform / asma kat grubu için nihai URL hizmet sayfası (`platform-statik-analizi.html`) kalsın |
+| Esenyurt / Beylikdüzü | 2.1 Elektrik Projesi / Rölöve, 2.6 Topraklama Ölçümü | https://www.aymati.com.tr/bolge-esenyurt-beylikduzu.html | Bölge sayfası elektrik projesine bağlantı veriyor. Topraklama grubu için nihai URL hizmet sayfası (`topraklama-olcumu.html`) kalsın |
+| Tuzla OSB | 2.5 Patlamadan Korunma Dokümanı, 2.8 İş Hijyeni Ölçümleri | https://www.aymati.com.tr/bolge-tuzla-osb-tuzla.html | Bölge sayfası PKD ve iş hijyeni (VOC) konularını anlatıyor |
+
+Kural: Bölge sayfası grubun hizmetini anlatıyor ve hizmet sayfasına bağlantı veriyorsa bölge sayfası kullanılır; anlatmıyorsa bölge reklamı grubun hizmet sayfasına gider. Bölge sayfalarına giden reklamlarda dönüşüm oranı hizmet sayfasından belirgin biçimde düşükse nihai URL hizmet sayfasına çevrilir.
+
+### İkitelli OSB / Başakşehir
+
+- **Nihai URL:** https://www.aymati.com.tr/bolge-ikitelli-osb-basaksehir.html
+- **Gruplar:** 2.1 Elektrik Projesi / Rölöve, 2.6 Topraklama Ölçümü, 2.8 İş Hijyeni Ölçümleri
+- **Bölge anahtar kelimeleri (sıralı eşleme, ilgili gruba):** `"ikitelli" elektrik projesi`, `"ikitelli" topraklama ölçümü`, `"başakşehir" elektrik projesi`, `"ikitelli osb" iş hijyeni`
+
+| # | Bölge başlığı | Kr. |
+| --- | --- | --- |
+| 1 | İkitelli OSB Elektrik Projesi | 29 |
+| 2 | İkitelli OSB'de Yerinde Rölöve | 30 |
+| 3 | İkitelli Topraklama Ölçümü | 26 |
+| 4 | Başakşehir Elektrik Projesi | 27 |
+| 5 | İkitelli OSB İş Hijyeni Ölçümü | 30 |
+
+| # | Bölge açıklaması | Kr. |
+| --- | --- | --- |
+| 1 | İkitelli OSB ve Başakşehir'deki atölye ve fabrikalarda yerinde rölöve ve elektrik projesi. | 90 |
+| 2 | İkitelli OSB'de EMO kayıtlı mühendis imzalı topraklama ölçümü ve iş hijyeni ölçümleri. | 86 |
+
+### Hadımköy / Arnavutköy
+
+- **Nihai URL:** https://www.aymati.com.tr/bolge-hadimkoy-arnavutkoy.html
+- **Gruplar:** 2.2 Raf Statik Analizi, 2.3 Platform / Asma Kat Statik Analizi, 2.7 Forklift Periyodik Kontrolü
+- **Bölge anahtar kelimeleri (sıralı eşleme, ilgili gruba):** `"hadımköy" raf statik`, `"arnavutköy" raf statik`, `"hadımköy" forklift kontrolü`, `"hadımköy" asma kat statik`
+
+| # | Bölge başlığı | Kr. |
+| --- | --- | --- |
+| 1 | Hadımköy Raf Statik Analizi | 27 |
+| 2 | Arnavutköy Raf Statik Analizi | 29 |
+| 3 | Hadımköy Forklift Kontrolü | 26 |
+| 4 | Hadımköy Depolarına Hizmet | 26 |
+| 5 | Hadımköy Asma Kat Statik | 24 |
+
+| # | Bölge açıklaması | Kr. |
+| --- | --- | --- |
+| 1 | Hadımköy ve Arnavutköy depolarında raf statik analizi; MMO kayıtlı mühendis imzalı. | 83 |
+| 2 | Hadımköy'deki depo ve tesislerde forklift periyodik kontrolü ve asma kat statik analizi. | 88 |
+
+### Esenyurt / Beylikdüzü
+
+- **Nihai URL:** https://www.aymati.com.tr/bolge-esenyurt-beylikduzu.html
+- **Gruplar:** 2.1 Elektrik Projesi / Rölöve, 2.6 Topraklama Ölçümü
+- **Bölge anahtar kelimeleri (sıralı eşleme, ilgili gruba):** `"esenyurt" elektrik projesi`, `"beylikdüzü" elektrik projesi`, `"beylikdüzü osb" topraklama`, `"esenyurt" topraklama ölçümü`
+
+| # | Bölge başlığı | Kr. |
+| --- | --- | --- |
+| 1 | Esenyurt Elektrik Projesi | 25 |
+| 2 | Beylikdüzü Elektrik Projesi | 27 |
+| 3 | Beylikdüzü OSB'ye Hizmet | 24 |
+| 4 | Esenyurt Topraklama Ölçümü | 26 |
+| 5 | Beylikdüzü Topraklama Ölçümü | 28 |
+
+| # | Bölge açıklaması | Kr. |
+| --- | --- | --- |
+| 1 | Esenyurt ve Beylikdüzü'ndeki fabrika ve depolarda yerinde rölöve ile elektrik projesi. | 86 |
+| 2 | Beylikdüzü OSB ve Esenyurt'ta topraklama ölçümü; EMO kayıtlı mühendis imzalı rapor. | 83 |
+
+### Tuzla OSB
+
+- **Nihai URL:** https://www.aymati.com.tr/bolge-tuzla-osb-tuzla.html
+- **Gruplar:** 2.5 Patlamadan Korunma Dokümanı, 2.8 İş Hijyeni Ölçümleri
+- **Bölge anahtar kelimeleri (sıralı eşleme, ilgili gruba):** `"tuzla" patlamadan korunma dokümanı`, `"tuzla" iş hijyeni ölçümü`, `"tuzla osb" pkd`, `"tuzla" voc ölçümü`
+
+| # | Bölge başlığı | Kr. |
+| --- | --- | --- |
+| 1 | Tuzla OSB Patlamadan Korunma | 28 |
+| 2 | Tuzla'da PKD Hazırlanır | 23 |
+| 3 | Tuzla OSB İş Hijyeni Ölçümü | 27 |
+| 4 | Tuzla Kimya Tesislerine PKD | 27 |
+| 5 | Tuzla'da VOC ve Gaz Ölçümü | 26 |
+
+| # | Bölge açıklaması | Kr. |
+| --- | --- | --- |
+| 1 | Tuzla OSB'deki kimya, boya ve solvent tesisleri için patlamadan korunma dokümanı. | 81 |
+| 2 | Tuzla'daki tesislerde kişisel ve ortam VOC, toz ve gürültü ölçümleri yerinde yapılır. | 85 |
 
 ## Reklam metni kuralları (kontrol listesi)
 
