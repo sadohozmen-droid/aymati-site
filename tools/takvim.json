@@ -1,5 +1,5 @@
 [
- {"no":1,"konu":"Topraklama ölçümü kaç yılda bir yapılır?","kategori":"isg","ilgili":["topraklama-olcumu","elektrik-ic-tesisat-periyodik-kontrolu","kacak-akim-rolesi-olcumu"],"durum":"bekliyor"},
+ {"no":1,"konu":"Topraklama ölçümü kaç yılda bir yapılır?","kategori":"isg","ilgili":["topraklama-olcumu","elektrik-ic-tesisat-periyodik-kontrolu","kacak-akim-rolesi-olcumu"],"durum":"taslak","pr":"https://github.com/sadohozmen-droid/aymati-site/pull/3"},
  {"no":2,"konu":"Periyodik kontrol süreleri tablosu: hangi ekipman ne sıklıkla kontrol edilir?","kategori":"mevzuat","ilgili":["periyodik-muayene","forklift-periyodik-kontrolu","hava-tanki-ve-kompresor-kontrolu"],"durum":"bekliyor"},
  {"no":3,"konu":"Kalorifer kazanı kontrolü: ısıtma sezonu öncesi kontrol listesi","kategori":"isg","ilgili":["kalorifer-kazani-kontrolu","hidrofor-ve-genlesme-tanki-kontrolu","havalandirma-tesisati-kontrolu"],"durum":"bekliyor"},
  {"no":4,"konu":"Patlamadan korunma dokümanı hangi işyerlerine zorunlu? Sektör sektör liste","kategori":"mevzuat","ilgili":["patlamadan-korunma-dokumani","anlik-gaz-olcumu","ortam-voc-olcumu"],"durum":"bekliyor"},
