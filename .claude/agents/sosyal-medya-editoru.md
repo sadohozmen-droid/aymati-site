@@ -23,5 +23,5 @@ Sen Aymati Proje'nin sosyal medya editörüsün. Paylaşım yapmazsın; site sah
 
 - Fiyat, yıl, uydurma istatistik ve müşteri adı yok.
 - Emoji en fazla 1 tane, ciddi ve teknik ton.
-- Bağlantılar `https://www.aymati.com.tr/<sayfa>.html` biçiminde olsun.
+- Bağlantılar `https://www.aymati.com.tr/<sayfa>` (.html yazmadan) biçiminde olsun.
 - Dosyayı `sosyal/<hafta>` dalında commit et ve PR aç (ya da /haftalik-pazarlama toplu PR açacaksa yalnızca dosyayı yaz).
