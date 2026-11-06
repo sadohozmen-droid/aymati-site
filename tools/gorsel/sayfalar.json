@@ -1,0 +1,701 @@
+{
+ "acil-aydinlatma-kontrolu": {
+  "title": "Acil Aydınlatma ve Yönlendirme Armatürleri Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Acil Aydınlatma ve Yönlendirme Armatürleri Kontrolü: aydınlatma ve lüksmetre çizimi",
+  "motif": "isik",
+  "args": []
+ },
+ "acil-durum-tahliye-plani-projesi": {
+  "title": "Acil Durum Tahliye Planı Çizimi",
+  "eyebrow": "Projelendirme",
+  "alt": "Acil Durum Tahliye Planı Çizimi: kat planı üzerinde kaçış yolları çizimi",
+  "motif": "tahliye",
+  "args": []
+ },
+ "agir-metal-olcumu": {
+  "title": "Ağır Metal Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Ağır Metal Ölçümü: ağır metal maruziyeti örneklemesi çizimi",
+  "motif": "agirmetal",
+  "args": []
+ },
+ "akumulator-olcumu": {
+  "title": "Akümülatör Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Akümülatör Periyodik Kontrolü: akü grubu çizimi",
+  "motif": "aku",
+  "args": []
+ },
+ "anlik-gaz-olcumu": {
+  "title": "Anlık Gaz Ölçümü Kapalı Alan Girişi",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Anlık Gaz Ölçümü Kapalı Alan Girişi: gaz dedektörü çizimi",
+  "motif": "gaz",
+  "args": [
+   "LEL"
+  ]
+ },
+ "ark-flas-analizi": {
+  "title": "Ark Flaş Analizi ve Ark Parlaması Risk Değerlendirmesi",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Ark Flaş Analizi ve Ark Parlaması Risk Değerlendirmesi: ark flaş riski çizimi",
+  "motif": "ark",
+  "args": []
+ },
+ "blog-acil-durum-tahliye-plani-hangi-standarda-gore-hazirlanir": {
+  "title": "Acil durum tahliye planı hangi standarda göre hazırlanır?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Acil durum tahliye planı hangi standarda göre hazırlanır?: kat planı üzerinde kaçış yolları çizimi",
+  "motif": "tahliye",
+  "args": []
+ },
+ "blog-forklift-periyodik-kontrolunde-en-cok-cikan-eksikler": {
+  "title": "Forklift periyodik kontrolünde en çok çıkan eksikler",
+  "eyebrow": "Blog · Blog",
+  "alt": "Forklift periyodik kontrolünde en çok çıkan eksikler: forklift ve kaldırma kapasitesi çizimi",
+  "motif": "forklift",
+  "args": []
+ },
+ "blog-fuar-standi-statik-rapor-ne-zaman-zorunlu": {
+  "title": "Fuar Standı İçin Statik Rapor Ne Zaman Zorunlu?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Fuar Standı İçin Statik Rapor Ne Zaman Zorunlu?: çift katlı fuar standı taşıyıcı sistemi çizimi",
+  "motif": "stand",
+  "args": []
+ },
+ "blog-pano-onunde-istif-en-sik-uygunsuzluk": {
+  "title": "Pano önünde istif: en sık gördüğümüz uygunsuzluk",
+  "eyebrow": "Blog · Blog",
+  "alt": "Pano önünde istif: en sık gördüğümüz uygunsuzluk: elektrik panosu ve tek hat şeması çizimi",
+  "motif": "pano",
+  "args": []
+ },
+ "blog-periyodik-kontrol-sureleri-hangi-ekipman-ne-siklikla": {
+  "title": "Periyodik Kontrol Süreleri: Hangi Ekipman Ne Sıklıkla Kontrol Edilir?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Periyodik Kontrol Süreleri: Hangi Ekipman Ne Sıklıkla Kontrol Edilir?: periyodik kontrol listesi çizimi",
+  "motif": "kontrol",
+  "args": []
+ },
+ "blog-periyodik-kontrolu-kimler-yapabilir": {
+  "title": "İş ekipmanlarının periyodik kontrolünü kimler yapabilir?",
+  "eyebrow": "Blog · Blog",
+  "alt": "İş ekipmanlarının periyodik kontrolünü kimler yapabilir?: periyodik kontrol listesi çizimi",
+  "motif": "kontrol",
+  "args": []
+ },
+ "blog-raf-etiketi-olmayan-depolar": {
+  "title": "Raf etiketi olmayan depolar",
+  "eyebrow": "Blog · Blog",
+  "alt": "Raf etiketi olmayan depolar: palet rafı ve göz yük kapasitesi çizimi",
+  "motif": "raf",
+  "args": []
+ },
+ "blog-statik-analiz-raporu-nedir-kimler-ister": {
+  "title": "Statik Analiz Raporu Nedir, Kimler İster, Kim Hazırlar?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Statik Analiz Raporu Nedir, Kimler İster, Kim Hazırlar?: yayılı yük ve moment diyagramı çizimi",
+  "motif": "kiris",
+  "args": []
+ },
+ "blog-topraklama-olcumu-kac-yilda-bir-yapilir": {
+  "title": "Topraklama Ölçümü Kaç Yılda Bir Yapılır?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Topraklama Ölçümü Kaç Yılda Bir Yapılır?: topraklama elektrodu ve ölçüm cihazı çizimi",
+  "motif": "topraklama",
+  "args": []
+ },
+ "blog-topraklama-raporunda-nelere-bakmalisiniz": {
+  "title": "Topraklama raporunda nelere bakmalısınız?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Topraklama raporunda nelere bakmalısınız?: topraklama elektrodu ve ölçüm cihazı çizimi",
+  "motif": "topraklama",
+  "args": []
+ },
+ "blog-vinc-ayak-yuku-ve-zemin-hesabi": {
+  "title": "Vinç Kurulumunda Ayak Yükü ve Zemin Hesabı Neden İstenir?",
+  "eyebrow": "Blog · Blog",
+  "alt": "Vinç Kurulumunda Ayak Yükü ve Zemin Hesabı Neden İstenir?: kule vinç ve temel yükleri çizimi",
+  "motif": "kulevinc",
+  "args": []
+ },
+ "blog": {
+  "title": "Blog ve Duyurular",
+  "eyebrow": "Aymati Proje",
+  "alt": "Blog ve Duyurular: mühendislik proje paftası çizimi",
+  "motif": "cizim",
+  "args": []
+ },
+ "bolge-dudullu-osb-umraniye": {
+  "title": "Dudullu OSB ve Ümraniye: Periyodik Kontrol",
+  "eyebrow": "Hizmet bölgesi",
+  "alt": "Dudullu OSB ve Ümraniye: Periyodik Kontrol: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "Dudullu OSB"
+  ]
+ },
+ "bolge-esenyurt-beylikduzu": {
+  "title": "Esenyurt ve Beylikdüzü: Periyodik Kontrol, Proje ve Ölçüm Hizmetleri",
+  "eyebrow": "Hizmet bölgesi",
+  "alt": "Esenyurt ve Beylikdüzü: Periyodik Kontrol, Proje ve Ölçüm Hizmetleri: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "Esenyurt"
+  ]
+ },
+ "bolge-gaziosmanpasa-bayrampasa-sultangazi": {
+  "title": "Gaziosmanpaşa, Bayrampaşa Periyodik Kontrol",
+  "eyebrow": "Hizmet bölgesi",
+  "alt": "Gaziosmanpaşa, Bayrampaşa Periyodik Kontrol: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "Gaziosmanpaşa"
+  ]
+ },
+ "bolge-hadimkoy-arnavutkoy": {
+  "title": "Hadımköy ve Arnavutköy: Periyodik Kontrol, Proje ve Ölçüm Hizmetleri",
+  "eyebrow": "Hizmet bölgesi",
+  "alt": "Hadımköy ve Arnavutköy: Periyodik Kontrol, Proje ve Ölçüm Hizmetleri: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "Hadımköy"
+  ]
+ },
+ "bolge-ikitelli-osb-basaksehir": {
+  "title": "İkitelli OSB, Başakşehir Periyodik Kontrol",
+  "eyebrow": "Hizmet bölgesi",
+  "alt": "İkitelli OSB, Başakşehir Periyodik Kontrol: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "İkitelli OSB"
+  ]
+ },
+ "bolge-tuzla-osb-tuzla": {
+  "title": "Tuzla OSB ve Tuzla: PKD, VOC Ölçümü, Vinç",
+  "eyebrow": "Hizmet bölgesi",
+  "alt": "Tuzla OSB ve Tuzla: PKD, VOC Ölçümü, Vinç: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "Tuzla OSB"
+  ]
+ },
+ "buhar-kazani-periyodik-kontrolu": {
+  "title": "Buhar Kazanı Periyodik Kontrolü ve Emniyet Testleri",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Buhar Kazanı Periyodik Kontrolü ve Emniyet Testleri: basınçlı kap, manometre ve emniyet ventili çizimi",
+  "motif": "kazan",
+  "args": []
+ },
+ "caraskal-ve-palanga-kontrolu": {
+  "title": "Caraskal ve Palanga Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Caraskal ve Palanga Periyodik Kontrolü: zincirli caraskal çizimi",
+  "motif": "caraskal",
+  "args": []
+ },
+ "elektrik-ic-tesisat-periyodik-kontrolu": {
+  "title": "Elektrik İç Tesisat Periyodik Kontrolü ve Raporu",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Elektrik İç Tesisat Periyodik Kontrolü ve Raporu: elektriksel ölçüm cihazı ve problar çizimi",
+  "motif": "olcum",
+  "args": [
+   "Ω"
+  ]
+ },
+ "elektrik-ic-tesisat-projesi": {
+  "title": "Elektrik İç Tesisat Projesi",
+  "eyebrow": "Projelendirme",
+  "alt": "Elektrik İç Tesisat Projesi: elektrik panosu ve tek hat şeması çizimi",
+  "motif": "pano",
+  "args": []
+ },
+ "elektrik-panosu-kontrolu": {
+  "title": "Elektrik Panosu Kontrolü ve Pano Güvenlik Denetimi",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Elektrik Panosu Kontrolü ve Pano Güvenlik Denetimi: elektrik panosu ve tek hat şeması çizimi",
+  "motif": "pano",
+  "args": []
+ },
+ "endustriyel-raf-kontrolu": {
+  "title": "Endüstriyel Raf Periyodik Kontrolü (TS EN 15635)",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Endüstriyel Raf Periyodik Kontrolü (TS EN 15635): palet rafı ve göz yük kapasitesi çizimi",
+  "motif": "raf",
+  "args": []
+ },
+ "enerji-analizi-ve-harmonik-olcumu": {
+  "title": "Enerji Analizi ve Harmonik Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Enerji Analizi ve Harmonik Ölçümü: harmonik ve güç kalitesi analizi çizimi",
+  "motif": "enerji",
+  "args": []
+ },
+ "faraday-kafesi-hesaplama": {
+  "title": "Faraday Kafesi Hesaplama",
+  "eyebrow": "Yıldırımdan Korunma Tesisatı Projesi",
+  "alt": "Faraday Kafesi Hesaplama: çatıda Faraday kafesi ve iniş iletkenleri çizimi",
+  "motif": "paratoner",
+  "args": []
+ },
+ "forklift-periyodik-kontrolu": {
+  "title": "Forklift Periyodik Kontrolü ve Muayene Raporu",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Forklift Periyodik Kontrolü ve Muayene Raporu: forklift ve kaldırma kapasitesi çizimi",
+  "motif": "forklift",
+  "args": []
+ },
+ "fuar-standi-statik-analizi": {
+  "title": "Fuar Standı ve Çift Katlı Stand Statik Analizi",
+  "eyebrow": "Statik Analiz",
+  "alt": "Fuar Standı ve Çift Katlı Stand Statik Analizi: çift katlı fuar standı taşıyıcı sistemi çizimi",
+  "motif": "stand",
+  "args": []
+ },
+ "gunduz-aydinlatma-olcumu": {
+  "title": "Aydınlatma Ölçümü (Lüks Ölçümü) TS EN 12464-1",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Aydınlatma Ölçümü (Lüks Ölçümü) TS EN 12464-1: aydınlatma ve lüksmetre çizimi",
+  "motif": "isik",
+  "args": []
+ },
+ "hakkimizda": {
+  "title": "Hakkımızda",
+  "eyebrow": "Aymati Proje",
+  "alt": "Hakkımızda: mühendislik proje paftası çizimi",
+  "motif": "cizim",
+  "args": []
+ },
+ "hava-tanki-ve-kompresor-kontrolu": {
+  "title": "Hava Tankı ve Kompresör Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Hava Tankı ve Kompresör Periyodik Kontrolü: basınçlı kap, manometre ve emniyet ventili çizimi",
+  "motif": "kazan",
+  "args": []
+ },
+ "havalandirma-tesisat-projesi": {
+  "title": "Havalandırma Tesisat Projesi ve Hava Debisi Hesabı",
+  "eyebrow": "Projelendirme",
+  "alt": "Havalandırma Tesisat Projesi ve Hava Debisi Hesabı: havalandırma kanalı ve fan çizimi",
+  "motif": "fan",
+  "args": []
+ },
+ "havalandirma-tesisati-kontrolu": {
+  "title": "Havalandırma Tesisatı Kontrolü ve Hava Debisi Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Havalandırma Tesisatı Kontrolü ve Hava Debisi Ölçümü: havalandırma kanalı ve fan çizimi",
+  "motif": "fan",
+  "args": []
+ },
+ "hidrofor-ve-genlesme-tanki-kontrolu": {
+  "title": "Hidrofor ve Kapalı Genleşme Tankı Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Hidrofor ve Kapalı Genleşme Tankı Periyodik Kontrolü: basınçlı kap, manometre ve emniyet ventili çizimi",
+  "motif": "kazan",
+  "args": [
+   true
+  ]
+ },
+ "hizmet-bolgeleri": {
+  "title": "Hizmet Bölgelerimiz",
+  "eyebrow": "Aymati Proje",
+  "alt": "Hizmet Bölgelerimiz: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "İstanbul"
+  ]
+ },
+ "iletisim": {
+  "title": "İletişim",
+  "eyebrow": "Aymati Proje",
+  "alt": "İletişim: hizmet bölgesi haritası çizimi",
+  "motif": "harita",
+  "args": [
+   "Aymati"
+  ]
+ },
+ "index": {
+  "title": "Projelendirme, Statik Analiz, PKD ve Periyodik Muayene",
+  "eyebrow": "Aymati Proje Mühendislik",
+  "alt": "Projelendirme, Statik Analiz, PKD ve Periyodik Muayene: mühendislik proje paftası çizimi",
+  "motif": "cizim",
+  "args": []
+ },
+ "is-hijyeni-olcumleri": {
+  "title": "İş Hijyeni Ölçümleri",
+  "eyebrow": "Aymati Proje",
+  "alt": "İş Hijyeni Ölçümleri: toz örnekleme pompası çizimi",
+  "motif": "toz",
+  "args": []
+ },
+ "is-iskelesi-kontrolu": {
+  "title": "İş İskelesi ve Cephe İskelesi Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "İş İskelesi ve Cephe İskelesi Kontrolü: cephe iskelesi, platformlar ve ankraj çizimi",
+  "motif": "iskele",
+  "args": []
+ },
+ "iskele-kurulum-projesi": {
+  "title": "İskele Kurulum Projesi: Yerleşim, Ankraj ve Kurma-Sökme Planı",
+  "eyebrow": "Statik Analiz",
+  "alt": "İskele Kurulum Projesi: Yerleşim, Ankraj ve Kurma-Sökme Planı: cephe iskelesi, platformlar ve ankraj çizimi",
+  "motif": "iskele",
+  "args": []
+ },
+ "iskele-statik-analizi": {
+  "title": "İskele Statik Hesabı ve İskele Statik Raporu",
+  "eyebrow": "Statik Analiz",
+  "alt": "İskele Statik Hesabı ve İskele Statik Raporu: cephe iskelesi, platformlar ve ankraj çizimi",
+  "motif": "iskele",
+  "args": []
+ },
+ "istif-makinesi-kontrolu": {
+  "title": "İstif Makinesi ve Akülü Transpalet Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "İstif Makinesi ve Akülü Transpalet Periyodik Kontrolü: forklift ve kaldırma kapasitesi çizimi",
+  "motif": "forklift",
+  "args": []
+ },
+ "jenerator-periyodik-kontrolu": {
+  "title": "Jeneratör Periyodik Kontrolü ve Raporu",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Jeneratör Periyodik Kontrolü ve Raporu: jeneratör çizimi",
+  "motif": "jenerator",
+  "args": []
+ },
+ "kacak-akim-olcumu": {
+  "title": "Kaçak Akım Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Kaçak Akım Ölçümü: elektriksel ölçüm cihazı ve problar çizimi",
+  "motif": "olcum",
+  "args": [
+   "mA"
+  ]
+ },
+ "kacak-akim-rolesi-olcumu": {
+  "title": "Kaçak Akım Rölesi Testi ve Ölçümü (RCD Testi)",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Kaçak Akım Rölesi Testi ve Ölçümü (RCD Testi): elektriksel ölçüm cihazı ve problar çizimi",
+  "motif": "olcum",
+  "args": [
+   "RCD"
+  ]
+ },
+ "kaldirma-aparati-statik-hesabi": {
+  "title": "Kaldırma Aparatı ve Travers Statik Hesabı",
+  "eyebrow": "Statik Analiz",
+  "alt": "Kaldırma Aparatı ve Travers Statik Hesabı: travers ile yük kaldırma çizimi",
+  "motif": "travers",
+  "args": []
+ },
+ "kaldirma-aparatlari-kontrolu": {
+  "title": "Kaldırma Aparatları Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Kaldırma Aparatları Kontrolü: zincir ve sapan ile kaldırma çizimi",
+  "motif": "zincir",
+  "args": []
+ },
+ "kalorifer-kazani-kontrolu": {
+  "title": "Kalorifer Kazanı (Isıtma Kazanı) Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Kalorifer Kazanı (Isıtma Kazanı) Periyodik Kontrolü: basınçlı kap, manometre ve emniyet ventili çizimi",
+  "motif": "kazan",
+  "args": []
+ },
+ "katodik-koruma-olcumu": {
+  "title": "Katodik Koruma Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Katodik Koruma Ölçümü: boru hattı katodik koruma ölçümü çizimi",
+  "motif": "katodik",
+  "args": []
+ },
+ "kisisel-gurultu-olcumu": {
+  "title": "Kişisel Gürültü Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Kişisel Gürültü Ölçümü: gürültü dozimetresi ve kulaklık çizimi",
+  "motif": "gurultu",
+  "args": []
+ },
+ "kisisel-toz-olcumu": {
+  "title": "Kişisel Toz Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Kişisel Toz Ölçümü: toz örnekleme pompası çizimi",
+  "motif": "toz",
+  "args": []
+ },
+ "kisisel-voc-olcumu": {
+  "title": "Kişisel VOC Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Kişisel VOC Ölçümü: uçucu organik bileşik örneklemesi çizimi",
+  "motif": "voc",
+  "args": []
+ },
+ "kompanzasyon-sistemi-ve-panosu-kontrolu": {
+  "title": "Kompanzasyon Panosu Kontrolü ve Reaktif Ceza Analizi",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Kompanzasyon Panosu Kontrolü ve Reaktif Ceza Analizi: kompanzasyon kondansatörleri çizimi",
+  "motif": "kompanzasyon",
+  "args": []
+ },
+ "manyetik-alan-olcumu": {
+  "title": "Manyetik Alan Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Manyetik Alan Ölçümü: manyetik alan çizgileri çizimi",
+  "motif": "manyetik",
+  "args": []
+ },
+ "monoray-vinc-yolu-statik-analizi": {
+  "title": "Monoray ve Vinç Yolu Kirişi Statik Analizi",
+  "eyebrow": "Statik Analiz",
+  "alt": "Monoray ve Vinç Yolu Kirişi Statik Analizi: monoray rayı ve caraskal çizimi",
+  "motif": "monoray",
+  "args": []
+ },
+ "ortam-gaz-olcumu": {
+  "title": "Ortam Gaz Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Ortam Gaz Ölçümü: gaz dedektörü çizimi",
+  "motif": "gaz",
+  "args": [
+   "ppm"
+  ]
+ },
+ "ortam-gurultu-olcumu": {
+  "title": "Ortam Gürültü Ölçümü ve Gürültü Haritası",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Ortam Gürültü Ölçümü ve Gürültü Haritası: gürültü dozimetresi ve kulaklık çizimi",
+  "motif": "gurultu",
+  "args": []
+ },
+ "ortam-toz-olcumu": {
+  "title": "Ortam Toz Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Ortam Toz Ölçümü: toz örnekleme pompası çizimi",
+  "motif": "toz",
+  "args": []
+ },
+ "ortam-voc-olcumu": {
+  "title": "Ortam VOC Ölçümü",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Ortam VOC Ölçümü: uçucu organik bileşik örneklemesi çizimi",
+  "motif": "voc",
+  "args": []
+ },
+ "otomatik-gazli-yangin-sondurme-fm-200-projesi": {
+  "title": "FM-200 Gazlı Yangın Söndürme Projesi ve Gaz Hesabı",
+  "eyebrow": "Projelendirme",
+  "alt": "FM-200 Gazlı Yangın Söndürme Projesi ve Gaz Hesabı: yangın dedektörleri ve sprinkler hattı çizimi",
+  "motif": "yangin",
+  "args": []
+ },
+ "pano-tek-hat-semasi-projesi": {
+  "title": "Pano Tek Hat Şeması Çizimi ve Projesi",
+  "eyebrow": "Projelendirme",
+  "alt": "Pano Tek Hat Şeması Çizimi ve Projesi: elektrik panosu ve tek hat şeması çizimi",
+  "motif": "pano",
+  "args": []
+ },
+ "pat-testi-tasinabilir-elektrikli-cihaz-kontrolu": {
+  "title": "PAT Testi: El Aletleri ve Taşınabilir Elektrikli Cihaz Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "PAT Testi: El Aletleri ve Taşınabilir Elektrikli Cihaz Kontrolü: elektriksel ölçüm cihazı ve problar çizimi",
+  "motif": "olcum",
+  "args": [
+   "PAT"
+  ]
+ },
+ "patlamadan-korunma-dokumani": {
+  "title": "Patlamadan Korunma Dokümanı (PKD) Hazırlama",
+  "eyebrow": "Aymati Proje",
+  "alt": "Patlamadan Korunma Dokümanı (PKD) Hazırlama: tehlikeli bölge sınıflandırması ve Ex işareti çizimi",
+  "motif": "atex",
+  "args": []
+ },
+ "periyodik-muayene": {
+  "title": "Periyodik Kontrol ve Ölçüm Hizmetleri",
+  "eyebrow": "Aymati Proje",
+  "alt": "Periyodik Kontrol ve Ölçüm Hizmetleri: periyodik kontrol listesi çizimi",
+  "motif": "kontrol",
+  "args": []
+ },
+ "personel-yukseltici-platform-kontrolu": {
+  "title": "Personel Yükseltici Platform Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Personel Yükseltici Platform Kontrolü: makaslı personel yükseltici platform çizimi",
+  "motif": "makasli",
+  "args": []
+ },
+ "platform-statik-analizi": {
+  "title": "Çelik Platform ve Asma Kat Statik Analizi",
+  "eyebrow": "Statik Analiz",
+  "alt": "Çelik Platform ve Asma Kat Statik Analizi: çelik platform, merdiven ve döşeme yükü çizimi",
+  "motif": "platform",
+  "args": []
+ },
+ "projelendirme": {
+  "title": "Projelendirme Hizmetleri",
+  "eyebrow": "Aymati Proje",
+  "alt": "Projelendirme Hizmetleri: mühendislik proje paftası çizimi",
+  "motif": "cizim",
+  "args": []
+ },
+ "raf-statik-analizi": {
+  "title": "Raf Statik Hesabı ve Raf Statik Analiz Raporu",
+  "eyebrow": "Statik Analiz",
+  "alt": "Raf Statik Hesabı ve Raf Statik Analiz Raporu: palet rafı ve göz yük kapasitesi çizimi",
+  "motif": "raf",
+  "args": []
+ },
+ "sahne-truss-tribun-statik-analizi": {
+  "title": "Sahne, Truss ve Tribün Statik Analizi",
+  "eyebrow": "Statik Analiz",
+  "alt": "Sahne, Truss ve Tribün Statik Analizi: sahne truss sistemi ve asma yükler çizimi",
+  "motif": "sahne",
+  "args": []
+ },
+ "sss": {
+  "title": "Sık Sorulan Teknik Sorular",
+  "eyebrow": "Aymati Proje",
+  "alt": "Sık Sorulan Teknik Sorular: sık sorulan sorular çizimi",
+  "motif": "soru",
+  "args": []
+ },
+ "statik-analiz": {
+  "title": "Statik Analiz ve Statik Hesap Raporu",
+  "eyebrow": "Aymati Proje",
+  "alt": "Statik Analiz ve Statik Hesap Raporu: yayılı yük ve moment diyagramı çizimi",
+  "motif": "kiris",
+  "args": []
+ },
+ "sulu-sondurme-yangin-tesisat-projesi": {
+  "title": "Sprinkler ve Yangın Dolabı Projesi",
+  "eyebrow": "Projelendirme",
+  "alt": "Sprinkler ve Yangın Dolabı Projesi: yangın dedektörleri ve sprinkler hattı çizimi",
+  "motif": "yangin",
+  "args": []
+ },
+ "tabela-pilon-statik-hesabi": {
+  "title": "Tabela, Reklam Panosu ve Pilon (Totem) Statik Hesabı",
+  "eyebrow": "Statik Analiz",
+  "alt": "Tabela, Reklam Panosu ve Pilon (Totem) Statik Hesabı: pilon tabela ve rüzgâr yükü çizimi",
+  "motif": "tabela",
+  "args": []
+ },
+ "teklif": {
+  "title": "Projeniz ve Ölçümünüz İçin Teklif Alın",
+  "eyebrow": "Aymati Proje Mühendislik",
+  "alt": "Projeniz ve Ölçümünüz İçin Teklif Alın: mühendislik proje paftası çizimi",
+  "motif": "cizim",
+  "args": []
+ },
+ "termal-kamera-ile-pano-sicaklik-olcumu": {
+  "title": "Termal Kamera ile Pano Sıcaklık Ölçümü (Termografi)",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Termal Kamera ile Pano Sıcaklık Ölçümü (Termografi): termal kamera ile pano sıcaklık ölçümü çizimi",
+  "motif": "termal",
+  "args": []
+ },
+ "termal-konfor-olcumu": {
+  "title": "Termal Konfor Ölçümü TS EN ISO 7730",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Termal Konfor Ölçümü TS EN ISO 7730: sıcaklık, nem ve hava hızı ölçümü çizimi",
+  "motif": "termalkonfor",
+  "args": []
+ },
+ "titresim-olcumu": {
+  "title": "Titreşim Ölçümü: El-Kol ve Tüm Vücut Titreşimi Maruziyeti",
+  "eyebrow": "İş Hijyeni Ölçümleri",
+  "alt": "Titreşim Ölçümü: El-Kol ve Tüm Vücut Titreşimi Maruziyeti: titreşim ölçümü çizimi",
+  "motif": "titresim",
+  "args": []
+ },
+ "toprak-ozgul-direnci-olcumu": {
+  "title": "Toprak Özgül Direnci Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Toprak Özgül Direnci Ölçümü: topraklama elektrodu ve ölçüm cihazı çizimi",
+  "motif": "topraklama",
+  "args": []
+ },
+ "topraklama-olcumu": {
+  "title": "Topraklama Ölçümü ve Topraklama Raporu",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Topraklama Ölçümü ve Topraklama Raporu: topraklama elektrodu ve ölçüm cihazı çizimi",
+  "motif": "topraklama",
+  "args": []
+ },
+ "transformator-periyodik-olcumu": {
+  "title": "Trafo Periyodik Kontrolü ve Transformatör Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Trafo Periyodik Kontrolü ve Transformatör Ölçümü: güç transformatörü çizimi",
+  "motif": "trafo",
+  "args": []
+ },
+ "vinc-periyodik-kontrolu": {
+  "title": "Vinç Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Vinç Periyodik Kontrolü: köprülü vinç çizimi",
+  "motif": "kopruvinc",
+  "args": []
+ },
+ "vinc-statik-analizi": {
+  "title": "Vinç Statik Analizi: Kule Vinç Temeli ve Mobil Vinç Ayak Yükü",
+  "eyebrow": "Statik Analiz",
+  "alt": "Vinç Statik Analizi: Kule Vinç Temeli ve Mobil Vinç Ayak Yükü: kule vinç ve temel yükleri çizimi",
+  "motif": "kulevinc",
+  "args": []
+ },
+ "yalitim-izolasyon-direnci-olcumu": {
+  "title": "İzolasyon Direnci Ölçümü (Megger Testi)",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "İzolasyon Direnci Ölçümü (Megger Testi): elektriksel ölçüm cihazı ve problar çizimi",
+  "motif": "olcum",
+  "args": [
+   "MΩ"
+  ]
+ },
+ "yangin-algilama-ve-ihbar-sistemi-kontrolu": {
+  "title": "Yangın Algılama ve İhbar Sistemi Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Yangın Algılama ve İhbar Sistemi Periyodik Kontrolü: yangın dedektörleri ve sprinkler hattı çizimi",
+  "motif": "yangin",
+  "args": []
+ },
+ "yangin-algilama-ve-ihbar-sistemleri-projesi": {
+  "title": "Yangın Algılama ve İhbar Sistemleri Projesi",
+  "eyebrow": "Projelendirme",
+  "alt": "Yangın Algılama ve İhbar Sistemleri Projesi: yangın dedektörleri ve sprinkler hattı çizimi",
+  "motif": "yangin",
+  "args": []
+ },
+ "yangin-sondurme-tesisati-kontrolu": {
+  "title": "Yangın Söndürme Tesisatı Periyodik Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Yangın Söndürme Tesisatı Periyodik Kontrolü: yangın dedektörleri ve sprinkler hattı çizimi",
+  "motif": "yangin",
+  "args": []
+ },
+ "yildirimdan-korunma-tesisati-paratoner-olcumu": {
+  "title": "Paratoner Ölçümü ve Yıldırımdan Korunma Tesisatı Kontrolü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Paratoner Ölçümü ve Yıldırımdan Korunma Tesisatı Kontrolü: çatıda Faraday kafesi ve iniş iletkenleri çizimi",
+  "motif": "paratoner",
+  "args": []
+ },
+ "yildirimdan-korunma-tesisati-projesi": {
+  "title": "Yıldırımdan Korunma Tesisatı (Paratoner) Projesi ve Risk Analizi",
+  "eyebrow": "Projelendirme",
+  "alt": "Yıldırımdan Korunma Tesisatı (Paratoner) Projesi ve Risk Analizi: çatıda Faraday kafesi ve iniş iletkenleri çizimi",
+  "motif": "paratoner",
+  "args": []
+ },
+ "zemin-yalitkanlik-direnci-olcumu": {
+  "title": "Zemin Yalıtkanlık Direnci ve Yalıtkan Paspas Ölçümü",
+  "eyebrow": "Periyodik Muayene",
+  "alt": "Zemin Yalıtkanlık Direnci ve Yalıtkan Paspas Ölçümü: elektriksel ölçüm cihazı ve problar çizimi",
+  "motif": "olcum",
+  "args": [
+   "MΩ"
+  ]
+ }
+}

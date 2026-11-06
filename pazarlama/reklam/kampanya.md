@@ -210,7 +210,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.1 Statik Analiz Raporu (genel)
 
-- **Nihai URL:** https://www.aymati.com.tr/statik-analiz.html
+- **Nihai URL:** https://www.aymati.com.tr/statik-analiz
 - **Görünen yol:** www.aymati.com.tr/Statik-Analiz/Rapor (13 / 5 karakter, sınır 15)
 - **Not:** Genel aramalar. Yapı türü belli olan aramalar alt gruplara gitsin diye bu gruptaki sıralı anahtar kelimeler alt grupların terimlerini içermez.
 
@@ -267,7 +267,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.2 Raf Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/raf-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/raf-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Raf-Statik/Analiz (10 / 6 karakter, sınır 15)
 
 **Anahtar kelimeler (18)**
@@ -326,7 +326,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.3 Platform / Asma Kat Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/platform-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/platform-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Platform-Statik/Asma-Kat (15 / 8 karakter, sınır 15)
 
 **Anahtar kelimeler (14)**
@@ -381,7 +381,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.4 İskele Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/iskele-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/iskele-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Iskele-Statik/Rapor (13 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (11)**
@@ -433,7 +433,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.5 Fuar Standı Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/fuar-standi-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/fuar-standi-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Fuar-Standi/Statik (11 / 6 karakter, sınır 15)
 - **Not:** Site sahibinin isteğiyle ayrı grup. Bazı fuar şartnameleri çift katlı stand için inşaat mühendisi (SİM) onayı ister; reklamda "fuar onayı", "onaylı rapor" gibi ifade yoktur. 3. açıklama bu konuyu teklif aşamasına bırakır (sayfadaki SSS ile aynı).
 
@@ -492,7 +492,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.6 Vinç Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/vinc-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/vinc-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Vinc-Statik/Temel (11 / 5 karakter, sınır 15)
 - **Not:** Site sahibinin isteğiyle Kaldırma Aparatı grubundan ayrı tutuldu.
 
@@ -551,7 +551,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.7 Kaldırma Aparatı Statik Hesabı
 
-- **Nihai URL:** https://www.aymati.com.tr/kaldirma-aparati-statik-hesabi.html
+- **Nihai URL:** https://www.aymati.com.tr/kaldirma-aparati-statik-hesabi
 - **Görünen yol:** www.aymati.com.tr/Kaldirma-Aparat/WLL (15 / 3 karakter, sınır 15)
 - **Not:** Site sahibinin isteğiyle Vinç grubundan ayrı tutuldu. "Travers" demiryolu traversiyle karışır; grup negatifleri bunun için.
 
@@ -609,7 +609,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.8 Monoray / Vinç Yolu Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/monoray-vinc-yolu-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/monoray-vinc-yolu-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Monoray/Vinc-Yolu (7 / 9 karakter, sınır 15)
 
 **Anahtar kelimeler (18)**
@@ -668,7 +668,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.9 Sahne / Truss / Tribün Statik Analizi
 
-- **Nihai URL:** https://www.aymati.com.tr/sahne-truss-tribun-statik-analizi.html
+- **Nihai URL:** https://www.aymati.com.tr/sahne-truss-tribun-statik-analizi
 - **Görünen yol:** www.aymati.com.tr/Sahne-Truss/Statik (11 / 6 karakter, sınır 15)
 
 **Anahtar kelimeler (19)**
@@ -728,7 +728,7 @@ Bütçe payı **%40**. Tüm metinlerde imza ifadesi "MMO kayıtlı makina mühen
 
 ### 4.10 Tabela / Pilon Statik Hesabı
 
-- **Nihai URL:** https://www.aymati.com.tr/tabela-pilon-statik-hesabi.html
+- **Nihai URL:** https://www.aymati.com.tr/tabela-pilon-statik-hesabi
 - **Görünen yol:** www.aymati.com.tr/Tabela-Pilon/Statik (12 / 6 karakter, sınır 15)
 
 **Anahtar kelimeler (17)**
@@ -790,7 +790,7 @@ Bütçe payı **%20**. Üç grup da `patlamadan-korunma-dokumani.html` sayfasın
 
 ### 5.1 PKD Genel
 
-- **Nihai URL:** https://www.aymati.com.tr/patlamadan-korunma-dokumani.html
+- **Nihai URL:** https://www.aymati.com.tr/patlamadan-korunma-dokumani
 - **Görünen yol:** www.aymati.com.tr/PKD/Hazirlama (3 / 9 karakter, sınır 15)
 
 **Anahtar kelimeler (17)**
@@ -846,7 +846,7 @@ Bütçe payı **%20**. Üç grup da `patlamadan-korunma-dokumani.html` sayfasın
 
 ### 5.2 ATEX / Tehlikeli Bölge Sınıflandırması
 
-- **Nihai URL:** https://www.aymati.com.tr/patlamadan-korunma-dokumani.html
+- **Nihai URL:** https://www.aymati.com.tr/patlamadan-korunma-dokumani
 - **Görünen yol:** www.aymati.com.tr/ATEX/Zone (4 / 4 karakter, sınır 15)
 - **Not:** ATEX ürün aramaları (Ex motor, armatür, sertifikalı ekipman) kampanya negatifleriyle dışarıda bırakılır.
 
@@ -901,7 +901,7 @@ Bütçe payı **%20**. Üç grup da `patlamadan-korunma-dokumani.html` sayfasın
 
 ### 5.3 Toz Patlaması ve Sektörel PKD
 
-- **Nihai URL:** https://www.aymati.com.tr/patlamadan-korunma-dokumani.html
+- **Nihai URL:** https://www.aymati.com.tr/patlamadan-korunma-dokumani
 - **Görünen yol:** www.aymati.com.tr/PKD/Toz-Patlamasi (3 / 13 karakter, sınır 15)
 - **Not:** Hacmi düşük; sektör aramalarında reklam metnini sektöre yaklaştırmak için ayrı tutuldu. 4 hafta sonunda gösterim yoksa PKD Genel ile birleştirilebilir.
 
@@ -963,7 +963,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.1 Elektrik Projesi / Rölöve
 
-- **Nihai URL:** https://www.aymati.com.tr/elektrik-ic-tesisat-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/elektrik-ic-tesisat-projesi
 - **Görünen yol:** www.aymati.com.tr/Elektrik-Proje/Rolove (14 / 6 karakter, sınır 15)
 
 **Anahtar kelimeler (20)**
@@ -1024,7 +1024,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.2 Elektrik Projesi Eksik (Periyodik Kontrol)
 
-- **Nihai URL:** https://www.aymati.com.tr/elektrik-ic-tesisat-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/elektrik-ic-tesisat-projesi
 - **Görünen yol:** www.aymati.com.tr/Elektrik-Proje/Eksik (14 / 5 karakter, sınır 15)
 - **Not:** Aynı sayfaya giden ikinci grup: "periyodik kontrolde proje eksik" niyetine özel reklam metni. Hacmi düşükse 4. haftada Elektrik Projesi / Rölöve grubuyla birleştirilebilir.
 
@@ -1079,7 +1079,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.3 Pano Tek Hat Şeması
 
-- **Nihai URL:** https://www.aymati.com.tr/pano-tek-hat-semasi-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/pano-tek-hat-semasi-projesi
 - **Görünen yol:** www.aymati.com.tr/Tek-Hat/Pano (7 / 4 karakter, sınır 15)
 
 **Anahtar kelimeler (14)**
@@ -1134,7 +1134,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.4 Yangın Algılama ve İhbar Projesi
 
-- **Nihai URL:** https://www.aymati.com.tr/yangin-algilama-ve-ihbar-sistemleri-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/yangin-algilama-ve-ihbar-sistemleri-projesi
 - **Görünen yol:** www.aymati.com.tr/Yangin-Algilama/Proje (15 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (14)**
@@ -1189,7 +1189,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.5 Yıldırımdan Korunma / Paratoner / Faraday
 
-- **Nihai URL:** https://www.aymati.com.tr/yildirimdan-korunma-tesisati-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/yildirimdan-korunma-tesisati-projesi
 - **Görünen yol:** www.aymati.com.tr/Paratoner/Proje (9 / 5 karakter, sınır 15)
 - **Not:** "Faraday kafesi projesi" aramaları bu grupta kalır; hesap/hesaplama/maliyet aramaları PR #6 ile yayına giren hesaplama aracına giden ayrı gruptadır.
 
@@ -1245,7 +1245,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.6 Faraday Kafesi Hesaplama
 
-- **Nihai URL:** https://www.aymati.com.tr/faraday-kafesi-hesaplama.html
+- **Nihai URL:** https://www.aymati.com.tr/faraday-kafesi-hesaplama
 - **Görünen yol:** www.aymati.com.tr/Faraday-Kafesi/Hesaplama (14 / 9 karakter, sınır 15)
 - **Not:** Hesaplama aracı sayfası (PR #6 ile yayında). Sayfada dolar bazında ön bütçe gösterilir; reklam metninde fiyat, tutar veya para birimi yazılmaz. Grupta mühendis odası iddiası yok (araç sayfası imzalı belge sunmaz).
 
@@ -1299,7 +1299,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.7 Sulu Söndürme / Sprinkler Projesi
 
-- **Nihai URL:** https://www.aymati.com.tr/sulu-sondurme-yangin-tesisat-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/sulu-sondurme-yangin-tesisat-projesi
 - **Görünen yol:** www.aymati.com.tr/Sprinkler/Proje (9 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (16)**
@@ -1356,7 +1356,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.8 Acil Durum Tahliye Planı
 
-- **Nihai URL:** https://www.aymati.com.tr/acil-durum-tahliye-plani-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/acil-durum-tahliye-plani-projesi
 - **Görünen yol:** www.aymati.com.tr/Tahliye-Plani/Cizim (13 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (15)**
@@ -1412,7 +1412,7 @@ Bütçe payı **%30**. İmza ifadeleri sayfalarla uyumlu: elektrik grubu (elektr
 
 ### 6.9 Havalandırma Tesisat Projesi
 
-- **Nihai URL:** https://www.aymati.com.tr/havalandirma-tesisat-projesi.html
+- **Nihai URL:** https://www.aymati.com.tr/havalandirma-tesisat-projesi
 - **Görünen yol:** www.aymati.com.tr/Havalandirma/Proje (12 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (15)**
@@ -1472,7 +1472,7 @@ Bütçe payı **%10** (ikincil). İlk sürümdeki üç grup korundu; yalnızca d
 
 ### 7.1 Topraklama Ölçümü
 
-- **Nihai URL:** https://www.aymati.com.tr/topraklama-olcumu.html
+- **Nihai URL:** https://www.aymati.com.tr/topraklama-olcumu
 - **Görünen yol:** www.aymati.com.tr/Topraklama/Olcum (10 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (17)**
@@ -1528,7 +1528,7 @@ Bütçe payı **%10** (ikincil). İlk sürümdeki üç grup korundu; yalnızca d
 
 ### 7.2 Forklift Periyodik Kontrolü
 
-- **Nihai URL:** https://www.aymati.com.tr/forklift-periyodik-kontrolu.html
+- **Nihai URL:** https://www.aymati.com.tr/forklift-periyodik-kontrolu
 - **Görünen yol:** www.aymati.com.tr/Forklift/Periyodik (8 / 9 karakter, sınır 15)
 
 **Anahtar kelimeler (15)**
@@ -1584,7 +1584,7 @@ Bütçe payı **%10** (ikincil). İlk sürümdeki üç grup korundu; yalnızca d
 
 ### 7.3 İş Hijyeni Ölçümleri
 
-- **Nihai URL:** https://www.aymati.com.tr/is-hijyeni-olcumleri.html
+- **Nihai URL:** https://www.aymati.com.tr/is-hijyeni-olcumleri
 - **Görünen yol:** www.aymati.com.tr/Is-Hijyeni/Olcum (10 / 5 karakter, sınır 15)
 
 **Anahtar kelimeler (19)**
