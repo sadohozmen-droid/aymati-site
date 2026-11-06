@@ -2,6 +2,9 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-T8L9P64K');
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href');if(h.indexOf('tel:')===0)dataLayer.push({event:'telefon_tiklama',link_url:h});else if(h.indexOf('wa.me/')>-1)dataLayer.push({event:'whatsapp_tiklama',link_url:h});else if(h.indexOf('mailto:')===0)dataLayer.push({event:'eposta_tiklama',link_url:h});},true);</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Hadımköy, Arnavutköy Raf Statik Analizi | Aymati Proje</title>
 <link rel="canonical" href="https://www.aymati.com.tr/bolge-hadimkoy-arnavutkoy.html">
@@ -426,6 +429,7 @@ header nav a[aria-current]{color:#fff;box-shadow:inset 0 -2px 0 #d3a467;border-r
 </style>
 </head>
 <body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T8L9P64K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="topbar"><div class="wrap"><span class="tb-l"><a href="tel:+905551428474">0555 142 84 74</a><span aria-hidden="true">·</span><a href="mailto:info@aymati.com.tr">info@aymati.com.tr</a></span><nav class="tb-nav" aria-label="Kurumsal"><a href="hakkimizda.html">Hakkımızda</a><a href="hizmet-bolgeleri.html" aria-current="page">Hizmet Bölgeleri</a><a href="blog.html">Blog</a><a href="sss.html">Sık Sorulanlar</a><a href="iletisim.html">İletişim</a></nav></div></div>
 <header>
   <div class="wrap">
@@ -491,7 +495,7 @@ header nav a[aria-current]{color:#fff;box-shadow:inset 0 -2px 0 #d3a467;border-r
 const FORM_ENDPOINT=''; // ör. 'https://api.web3forms.com/submit'
 const FORM_KEY='';      // Web3Forms erişim anahtarı (Formspree için boş kalır)
 const WA_TO='905551428474'; // talebin WhatsApp ile gideceği numara (ülke koduyla, başında + olmadan)
-function sendFallback(b){location.href='https://wa.me/'+WA_TO+'?text='+encodeURIComponent(b)}
+function sendFallback(b){var u='https://wa.me/'+WA_TO+'?text='+encodeURIComponent(b),done=false,go=function(){if(!done){done=true;location.href=u}};dataLayer.push({event:'teklif_gonderimi',yontem:'whatsapp',eventCallback:go,eventTimeout:800});setTimeout(go,900)}
 const $=id=>document.getElementById(id);
 const v=id=>$(id).value.trim();
 function toast(m){const t=$('toast');t.textContent=m;t.hidden=false;clearTimeout(t._t);t._t=setTimeout(()=>t.hidden=true,2600)}
@@ -575,7 +579,7 @@ Telefon: ${v('tel')} · E-posta: ${v('mail')||'-'}`;
     if(v('mail'))fd.append('replyto',v('mail'));
     fd.append('message',body);
     fetch(FORM_ENDPOINT,{method:'POST',body:fd,headers:{Accept:'application/json'}})
-      .then(r=>{if(!r.ok)throw 0;toast('Talebiniz bize ulaştı, teşekkürler');$('f').reset();syncUnite();document.querySelectorAll('input[name=msvc]').forEach(syncRow)})
+      .then(r=>{if(!r.ok)throw 0;dataLayer.push({event:'teklif_gonderimi',yontem:'form'});toast('Talebiniz bize ulaştı, teşekkürler');$('f').reset();syncUnite();document.querySelectorAll('input[name=msvc]').forEach(syncRow)})
       .catch(()=>{toast('Gönderilemedi, WhatsApp ile iletiyoruz');sendFallback(body)})
       .finally(()=>{btn.disabled=false;btn.textContent='Teklif iste'});
   } else sendFallback(body);
