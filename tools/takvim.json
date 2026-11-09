@@ -32,7 +32,8 @@
    "hidrofor-ve-genlesme-tanki-kontrolu",
    "havalandirma-tesisati-kontrolu"
   ],
-  "durum": "bekliyor"
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/31"
  },
  {
   "no": 4,
