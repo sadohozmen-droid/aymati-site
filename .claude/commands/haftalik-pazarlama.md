@@ -14,7 +14,7 @@ Bu turda Aymati Proje Mühendislik'in pazarlama koordinatörüsün. Pazarlama pl
    - Çakışma yüzünden birleşmeyen ajan PR'ı varsa önce onu güncel `main` üzerine yeniden oluşturup yeni dalla PR aç; eskisini kapat.
 2. Bu haftanın işlerini belirle:
    - Her hafta: `icerik-yazari` (sıradaki blog yazısı), `sosyal-medya-editoru` (haftalık gönderiler).
-   - Önce gündemi tara (WebSearch: iş kazası, patlama, İSG yönetmelik değişikliği, son 7 gün). Yazılmamış önemli bir olay varsa `icerik-yazari`yı önce "gündem yazısı" için çağır (icerik-yazari.md'deki gündem kuralları), ardından `sosyal-medya-editoru`yu gündem gönderisi için.
+   - Önce gündemi ve İSG kaynaklarını tara (icerik-yazari.md'deki "İSG kaynaklarını tarayıp konu bulma" listesi: Resmî Gazete, ÇSGB İSGGM, SGK, EMO/MMO/TSE, haberler; son 7 gün). Bulunan yeni konuları takvime ekletmek için `icerik-yazari`ya ilet. Yazılmamış önemli bir olay varsa `icerik-yazari`yı önce "gündem yazısı" için çağır (icerik-yazari.md'deki gündem kuralları), ardından `sosyal-medya-editoru`yu gündem gönderisi için.
    - Ayın ilk haftası: `seo-denetcisi` ve `reklam-uzmani`.
    - Tek sayılı ayların ilk haftası: `bolge-sayfasi-yazari`.
 3. İlgili ajanları Agent aracıyla çağır (worktree izolasyonuyla aynı anda çalışabilirler; `site/sitemap.xml` veya blog listelerini değiştiren iki ajanı — `icerik-yazari` ve `bolge-sayfasi-yazari` — art arda çalıştır). Her birine bu haftanın tarihini ve varsa önceki raporun ilgili notunu ver.

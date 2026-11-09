@@ -36,6 +36,116 @@
   "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/31"
  },
  {
+  "no": 13,
+  "konu": "Ağır sanayide patlama ve büyük kaza riskine karşı temel kontroller (Aliağa sonrası)",
+  "kategori": "isg",
+  "ilgili": [
+   "patlamadan-korunma-dokumani",
+   "periyodik-muayene",
+   "elektrik-ic-tesisat-periyodik-kontrolu"
+  ],
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/41"
+ },
+ {
+  "no": 14,
+  "konu": "Periyodik kontrol raporunda hafif kusur ve ağır kusur nedir? Giderilmezse ne olur?",
+  "kategori": "mevzuat",
+  "ilgili": [
+   "periyodik-muayene",
+   "elektrik-ic-tesisat-periyodik-kontrolu",
+   "forklift-periyodik-kontrolu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "https://csgb.gov.tr/isggm/duyurular/24122025/",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 15,
+  "konu": "EKİPNET nedir? Periyodik kontrol raporları sisteme nasıl kaydedilir?",
+  "kategori": "mevzuat",
+  "ilgili": [
+   "periyodik-muayene",
+   "vinc-periyodik-kontrolu",
+   "kaldirma-aparatlari-kontrolu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "https://csgb.gov.tr/isggm/duyurular/24122025/",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 16,
+  "konu": "Önemli bakım ve onarım nedir? Bakımdan sonra periyodik kontrol ne zaman tekrarlanır?",
+  "kategori": "mevzuat",
+  "ilgili": [
+   "periyodik-muayene",
+   "elektrik-ic-tesisat-periyodik-kontrolu",
+   "vinc-periyodik-kontrolu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "https://www.alomaliye.com/2025/12/23/is-ekipmanlarinin-kullaniminda-saglik-ve-guvenlik-sartlari-degisiklik-23-12-2025/",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 17,
+  "konu": "İşin durdurulması: hangi eksiklikler işyerinin kapatılmasına yol açar?",
+  "kategori": "mevzuat",
+  "ilgili": [
+   "periyodik-muayene",
+   "patlamadan-korunma-dokumani",
+   "elektrik-panosu-kontrolu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "Resmî Gazete 21 Temmuz 2026: İşyerlerinde İşin Durdurulmasına Dair Yönetmelikte Değişiklik",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 18,
+  "konu": "İşyeri tehlike sınıfınız değişti mi? Tehlike sınıfı değişince neler güncellenir?",
+  "kategori": "mevzuat",
+  "ilgili": [
+   "acil-durum-tahliye-plani-projesi",
+   "periyodik-muayene",
+   "is-hijyeni-olcumleri"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "Resmî Gazete 1 Nisan 2026 (33211): İşyeri Tehlike Sınıfları Tebliğinde Değişiklik",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 19,
+  "konu": "Patlayıcı ortamda kullanılan ekipmanların (Ex) uygunluk kontrolü neden yapılır?",
+  "kategori": "isg",
+  "ilgili": [
+   "patlamadan-korunma-dokumani",
+   "elektrik-ic-tesisat-periyodik-kontrolu",
+   "termal-kamera-ile-pano-sicaklik-olcumu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "EMO İzmir Şubesi, İş Ekipmanları Yönetmeliği 18.02.2022 değişikliği değerlendirmesi",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 20,
+  "konu": "Periyodik kontrol yaptırmamanın idari para cezası ne kadar?",
+  "kategori": "mevzuat",
+  "ilgili": [
+   "periyodik-muayene",
+   "forklift-periyodik-kontrolu",
+   "topraklama-olcumu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "6331 sayılı Kanun md. 26 ve güncel yıl için yeniden değerleme oranıyla açıklanan tutarlar (resmî kaynaktan doğrulanacak)",
+  "oncelik": "gündem"
+ },
+ {
   "no": 4,
   "konu": "Patlamadan korunma dokümanı hangi işyerlerine zorunlu? Sektör sektör liste",
   "kategori": "mevzuat",
@@ -133,17 +243,5 @@
    "gunduz-aydinlatma-olcumu"
   ],
   "durum": "bekliyor"
- },
- {
-  "no": 13,
-  "konu": "Ağır sanayide patlama ve büyük kaza riskine karşı temel kontroller (Aliağa sonrası)",
-  "kategori": "isg",
-  "ilgili": [
-   "patlamadan-korunma-dokumani",
-   "periyodik-muayene",
-   "elektrik-ic-tesisat-periyodik-kontrolu"
-  ],
-  "durum": "yayında",
-  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/41"
  }
 ]
