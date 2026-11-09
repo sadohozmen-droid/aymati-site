@@ -704,5 +704,12 @@
   "alt": "Kalorifer Kazanı Kontrolü: Isıtma Sezonu Öncesi Kontrol Listesi: konu çizimi",
   "motif": "kazan",
   "args": []
+ },
+ "blog-agir-sanayide-patlama-ve-buyuk-kaza-riskine-karsi-temel-kontroller": {
+  "title": "Ağır Sanayide Patlama ve Büyük Kaza Riskine Karşı Temel Kontroller",
+  "eyebrow": "Blog · İSG gelişmeleri",
+  "alt": "Ağır Sanayide Patlama ve Büyük Kaza Riskine Karşı Temel Kontroller: konu çizimi",
+  "motif": "atex",
+  "args": []
  }
 }

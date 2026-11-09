@@ -133,5 +133,17 @@
    "gunduz-aydinlatma-olcumu"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 13,
+  "konu": "Ağır sanayide patlama ve büyük kaza riskine karşı temel kontroller (Aliağa sonrası)",
+  "kategori": "isg",
+  "ilgili": [
+   "patlamadan-korunma-dokumani",
+   "periyodik-muayene",
+   "elektrik-ic-tesisat-periyodik-kontrolu"
+  ],
+  "durum": "yayında",
+  "pr": ""
  }
 ]
