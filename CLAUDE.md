@@ -6,7 +6,7 @@ Aymati Proje Mühendislik'in statik web sitesi. Derleme adımı yok; `site/` kla
 
 - Site Türkçedir. Metinler sade, net ve teknik olarak doğru olmalı; uydurma mevzuat maddesi, sınır değer veya rakam yazma. Emin olmadığın bilgiyi yazma ya da genel ifade et.
 - Sitede yıl vurgusu yapılmaz: görünür metinde "2026" gibi yıl yazma (Google verisindeki `datePublished` hariç).
-- Fiyat yazılmaz. Tek istisna: site sahibinin talebiyle eklenen Faraday kafesi hesaplama aracındaki (faraday-kafesi-hesaplama.html) USD ön bütçe; birim fiyatlar sayfadaki FK_FIYAT bloğundadır.
+- Fiyat yazılmaz. Tek istisna: site sahibinin talebiyle Faraday kafesi sayfasında (faraday-kafesi-hesaplama.html) yazan İstanbul içi keşif ücreti (500 €; İstanbul dışı ayrıca bildirilir). Hesap aracı yalnızca tahmini malzeme miktarı verir, fiyat vermez; fiyatlandırma keşif sonrası yapılır.
 - Elektrik grubu projeleri "EMO kayıtlı S.M.M. elektrik mühendisi", mekanik grubu projeler ve statik analizler "MMO kayıtlı makina mühendisi" tarafından imzalanır.
 - Hizmet adları baş harfleri büyük yazılır (ör. "Topraklama Ölçümü").
 - Adresler .html'siz kullanılır: site içi bağlantılar `href="topraklama-olcumu"`, canonical/og:url/sitemap/JSON-LD `https://www.aymati.com.tr/topraklama-olcumu`. Cloudflare Pages `.html` adreslerini .html'siz adrese yönlendirir; yönlenen adrese canonical verilmez. Dosya adları yine `site/<sayfa>.html`dir.
