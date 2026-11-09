@@ -1,6 +1,6 @@
 # Aymati Proje — özgün teknik çizim motifleri (640x440 tuval, blueprint stili)
 import math
-L = '#e6ecf5'; T = '#48c9c6'; G = '#d3a467'; D = '#7f95b5'; BG = '#0d2547'; F = '#48c9c61f'
+L = '#e6ecf5'; T = '#48c9c6'; G = '#d3a467'; D = '#7f95b5'; BG = '#1d1d1f'; F = '#48c9c61f'
 
 def P(d, c=L, w=3, f='none', o=1, extra=''):
     return f'<path d="{d}" stroke="{c}" stroke-width="{w}" fill="{f}" opacity="{o}" stroke-linecap="round" stroke-linejoin="round" {extra}/>'
@@ -27,7 +27,7 @@ def dimh(x1, x2, y, lab):
     return s + Tx((x1 + x2) / 2, y - 8, lab, 15, G, 'middle')
 def tag(x, y, s, c=G):
     w = 14 + 9.2 * len(s)
-    return R(x, y, w, 26, c, 1.5, '#0d2547', 4) + Tx(x + w / 2, y + 18, s, 14, c, 'middle', 600)
+    return R(x, y, w, 26, c, 1.5, '#1d1d1f', 4) + Tx(x + w / 2, y + 18, s, 14, c, 'middle', 600)
 def arrow(x1, y1, x2, y2, c=T, w=2.5):
     a = math.atan2(y2 - y1, x2 - x1); h = 11
     p1 = (x2 - h * math.cos(a - .45), y2 - h * math.sin(a - .45)); p2 = (x2 - h * math.cos(a + .45), y2 - h * math.sin(a + .45))
@@ -50,7 +50,7 @@ def lattice(x, y, w, h, n, c=L, horiz=False):
             s += Ln(x, y + i * st, x + w, y + (i + .5) * st, c, 1.6) + Ln(x + w, y + (i + .5) * st, x, y + (i + 1) * st, c, 1.6)
     return s
 def meter(x, y, disp='Ω', c=T, probes=True):
-    s = R(x, y, 120, 170, L, 3, '#0d2547', 14) + R(x + 16, y + 18, 88, 46, c, 2, F, 4) + Tx(x + 60, y + 50, disp, 22, c, 'middle', 700)
+    s = R(x, y, 120, 170, L, 3, '#1d1d1f', 14) + R(x + 16, y + 18, 88, 46, c, 2, F, 4) + Tx(x + 60, y + 50, disp, 22, c, 'middle', 700)
     s += C(x + 60, y + 112, 26, L, 2.5) + Ln(x + 60, y + 112, x + 76, y + 96, G, 2.5) + C(x + 30, y + 152, 5, D, 2) + C(x + 90, y + 152, 5, D, 2)
     if probes:
         s += P(f'M{x + 30} {y + 170} q-20 60 -70 70', T, 2.5) + P(f'M{x + 90} {y + 170} q20 60 70 70', G, 2.5)
@@ -62,7 +62,7 @@ def building(x, y, w, h, c=L):
             s += R(x + 20 + j * 70, y + 20 + (i - 1) * (h - 30) / 3, 34, (h - 30) / 3 - 22, D, 1.5)
     return s
 def panel(x, y, w=180, h=250, rows=4):
-    s = R(x, y, w, h, L, 3, '#0d2547', 6) + Ln(x + 12, y + 30, x + w - 12, y + 30, T, 3)
+    s = R(x, y, w, h, L, 3, '#1d1d1f', 6) + Ln(x + 12, y + 30, x + w - 12, y + 30, T, 3)
     for r in range(rows):
         yy = y + 50 + r * ((h - 70) / rows)
         for k in range(int((w - 30) // 26)):
@@ -180,7 +180,7 @@ def olcum(disp='Ω'):
 def termal():
     g = '<defs><radialGradient id="hot" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#ff6b3d"/><stop offset=".45" stop-color="#d3a467"/><stop offset="1" stop-color="#48c9c6" stop-opacity="0"/></radialGradient></defs>'
     s = g + panel(60, 80, 200, 290, 4) + C(150, 230, 46, 'none', 0, 'url(#hot)')
-    s += R(350, 120, 200, 150, L, 3, '#0d2547', 14) + R(372, 140, 156, 104, T, 2, '#0a1424') + C(450, 192, 34, 'none', 0, 'url(#hot)') + Tx(450, 262, '°C', 15, G, 'middle')
+    s += R(350, 120, 200, 150, L, 3, '#1d1d1f', 14) + R(372, 140, 156, 104, T, 2, '#0a1424') + C(450, 192, 34, 'none', 0, 'url(#hot)') + Tx(450, 262, '°C', 15, G, 'middle')
     s += R(420, 270, 60, 110, L, 3) + P('M270 230 L350 190', G, 1.5, extra='stroke-dasharray="6 5"')
     return s
 def trafo():
@@ -220,7 +220,7 @@ def kazan(vertical=False):
         s += R(90, 150, 420, 170, L, 3, F, 85) + P('M150 320 l-20 60 h60 l-20 -60 M410 320 l-20 60 h60 l-20 -60', D, 2)
     s += Ln(300, 150 if not vertical else 70, 300, 90 if not vertical else 30, L, 3) + C(300, 70 if not vertical else 10, 0.1)
     gx, gy = (420, 100) if not vertical else (180, 140)
-    s += C(gx, gy, 30, G, 3, '#0d2547') + Ln(gx, gy, gx + 16, gy - 16, G, 2.5) + Ln(gx, gy + 30, gx, gy + 50, L, 3) + Tx(gx, gy + 48, 'bar', 13, G, 'middle')
+    s += C(gx, gy, 30, G, 3, '#1d1d1f') + Ln(gx, gy, gx + 16, gy - 16, G, 2.5) + Ln(gx, gy + 30, gx, gy + 50, L, 3) + Tx(gx, gy + 48, 'bar', 13, G, 'middle')
     s += P('M200 150 v-40 h-24 v-20 h48 v20 h-24', T, 2.5) + Tx(200, 80, 'emniyet ventili', 13, T, 'middle')
     return s
 def yangin():
@@ -253,7 +253,7 @@ def atex():
     s += C(230, 270, 160, T, 2, o=.8, extra='stroke-dasharray="10 8"') + C(230, 270, 230, D, 2, o=.7, extra='stroke-dasharray="4 8"')
     s += Tx(230, 140 - 20, 'Bölge 1', 15, T, 'middle') + Tx(430, 90, 'Bölge 2', 15, D, 'middle')
     hx, hy, r = 500, 260, 62
-    s += P('M' + ' L'.join(f'{hx + r*math.cos(math.radians(a)):.0f} {hy + r*math.sin(math.radians(a)):.0f}' for a in range(30, 390, 60)) + 'Z', G, 4, '#d3a46733') + Tx(hx, hy + 14, 'Ex', 40, '#0d2547', 'middle', 800, False) + Tx(hx, hy + 12, 'Ex', 40, G, 'middle', 800, False)
+    s += P('M' + ' L'.join(f'{hx + r*math.cos(math.radians(a)):.0f} {hy + r*math.sin(math.radians(a)):.0f}' for a in range(30, 390, 60)) + 'Z', G, 4, '#d3a46733') + Tx(hx, hy + 14, 'Ex', 40, '#1d1d1f', 'middle', 800, False) + Tx(hx, hy + 12, 'Ex', 40, G, 'middle', 800, False)
     return s
 def gurultu():
     s = P('M150 220 a80 80 0 1 1 160 0 v40', L, 3) + R(130, 220, 40, 80, L, 3, F, 10) + R(290, 220, 40, 80, L, 3, F, 10)
@@ -263,7 +263,7 @@ def gurultu():
 def toz():
     import random; rnd = random.Random(7)
     s = ''.join(C(rnd.randint(40, 380), rnd.randint(50, 380), rnd.choice([3, 4, 6, 8]), D, 1.5, '#7f95b540') for _ in range(70))
-    s += R(430, 160, 130, 180, L, 3, '#0d2547', 14) + R(450, 180, 90, 40, T, 2, F, 4) + Tx(495, 207, 'mg/m³', 14, T, 'middle', 600)
+    s += R(430, 160, 130, 180, L, 3, '#1d1d1f', 14) + R(450, 180, 90, 40, T, 2, F, 4) + Tx(495, 207, 'mg/m³', 14, T, 'middle', 600)
     s += P('M470 160 V110 H400 V90', L, 2.5) + R(380, 60, 40, 30, G, 2.5, '#d3a46726', 6) + P('M380 75 l-40 -10 m40 10 l-40 10', D, 1.5)
     return s
 def gaz(disp='LEL'):
@@ -275,11 +275,11 @@ def voc():
     s = ''
     for cx, cy in [(150, 160), (260, 260), (130, 330)]:
         s += P('M' + ' L'.join(f'{cx + 44*math.cos(math.radians(a)):.0f} {cy + 44*math.sin(math.radians(a)):.0f}' for a in range(30, 390, 60)) + 'Z', T, 2.5) + C(cx, cy, 22, T, 1.5)
-    s += R(400, 170, 140, 170, L, 3, '#0d2547', 14) + R(420, 190, 100, 40, T, 2, F, 4) + Tx(470, 217, 'ppm', 15, T, 'middle', 600) + P('M440 170 V100 H380', L, 2.5) + R(350, 90, 30, 20, G, 2.5)
+    s += R(400, 170, 140, 170, L, 3, '#1d1d1f', 14) + R(420, 190, 100, 40, T, 2, F, 4) + Tx(470, 217, 'ppm', 15, T, 'middle', 600) + P('M440 170 V100 H380', L, 2.5) + R(350, 90, 30, 20, G, 2.5)
     return s
 def isik():
     s = Ln(320, 20, 320, 60, D, 2) + R(200, 60, 240, 26, L, 3, F, 6) + P('M210 86 L90 360 H550 L430 86', G, 1.5, '#d3a46714')
-    s += ground(30, 610, 360) + R(420, 270, 110, 80, L, 3, '#0d2547', 10) + Tx(475, 320, 'lux', 20, T, 'middle', 700) + C(475, 262, 14, L, 2.5)
+    s += ground(30, 610, 360) + R(420, 270, 110, 80, L, 3, '#1d1d1f', 10) + Tx(475, 320, 'lux', 20, T, 'middle', 700) + C(475, 262, 14, L, 2.5)
     s += R(120, 300, 200, 60, D, 2, F) + Ln(130, 300, 310, 300, D, 2)
     return s
 def titresim():
@@ -304,7 +304,7 @@ def agirmetal():
     for i, el in enumerate(['Pb', 'Cr', 'Cd', 'Ni']):
         x = 70 + (i % 2) * 140; y = 80 + (i // 2) * 140
         s += R(x, y, 120, 120, L, 3, F, 8) + Tx(x + 60, y + 76, el, 40, G, 'middle', 700, False)
-    s += R(420, 170, 130, 170, L, 3, '#0d2547', 14) + R(440, 190, 90, 40, T, 2, F, 4) + Tx(485, 217, 'µg/m³', 14, T, 'middle', 600) + P('M470 170 V110 H390', L, 2.5)
+    s += R(420, 170, 130, 170, L, 3, '#1d1d1f', 14) + R(440, 190, 90, 40, T, 2, F, 4) + Tx(485, 217, 'µg/m³', 14, T, 'middle', 600) + P('M470 170 V110 H390', L, 2.5)
     return s
 def makasli():
     s = ground(30, 620, 390) + R(170, 340, 300, 30, L, 3, F) + C(200, 378, 12, L, 2.5) + C(440, 378, 12, L, 2.5)
@@ -319,7 +319,7 @@ def jenerator():
     s += bolt(240, 200, .6) + tag(360, 320, 'kVA')
     return s
 def kompanzasyon():
-    s = R(80, 60, 260, 330, L, 3, '#0d2547', 8)
+    s = R(80, 60, 260, 330, L, 3, '#1d1d1f', 8)
     for i in range(3):
         for j in range(2): s += R(110 + i * 76, 90 + j * 140, 56, 110, L, 2.5, F, 26) + Ln(138 + i * 76, 90 + j * 140, 138 + i * 76, 80 + j * 140, G, 3)
     s += R(400, 120, 180, 120, L, 3, F, 10) + Tx(490, 175, 'cos φ', 24, T, 'middle', 700) + Tx(490, 210, 'kVAr', 15, G, 'middle') + ground(30, 610, 400)
@@ -364,7 +364,7 @@ def cizim():
     s += R(100, 80, 240, 160, T, 2) + Ln(220, 80, 220, 240, T, 1.5) + Ln(100, 160, 340, 160, T, 1.5) + dimh(100, 340, 268, 'L') + C(440, 150, 50, G, 2) + Ln(440, 100, 440, 200, G, 1) + Ln(390, 150, 490, 150, G, 1)
     return s
 def kontrol():
-    s = R(170, 50, 300, 360, L, 3, F, 12) + R(260, 34, 120, 32, L, 3, '#0d2547', 8)
+    s = R(170, 50, 300, 360, L, 3, F, 12) + R(260, 34, 120, 32, L, 3, '#1d1d1f', 8)
     for i in range(5):
         y = 110 + i * 56; s += R(200, y, 26, 26, T, 2.5, rx=4) + P(f'M206 {y + 13} l6 7 l12 -14', T, 3) + Ln(244, y + 13, 430, y + 13, D, 2)
     s += P('M490 380 q0 -60 60 -60 q60 0 60 60 z', G, 3, '#d3a46726') + R(480, 378, 140, 12, G, 2.5, rx=4)
