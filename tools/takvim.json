@@ -56,8 +56,8 @@
    "elektrik-ic-tesisat-periyodik-kontrolu",
    "forklift-periyodik-kontrolu"
   ],
-  "durum": "bekliyor",
-  "pr": "",
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/45",
   "kaynak": "https://csgb.gov.tr/isggm/duyurular/24122025/",
   "oncelik": "gündem"
  },
