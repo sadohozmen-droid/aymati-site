@@ -718,5 +718,12 @@
   "alt": "Periyodik Kontrol Raporunda Hafif Kusur ve Ağır Kusur Nedir? Giderilmezse Ne Olur?: konu çizimi",
   "motif": "kontrol",
   "args": []
+ },
+ "blog-monoray-ve-vinc-yolu-statik-hesabi-nedir": {
+  "title": "Monoray ve Vinç Yolu Statik Hesabı Nedir? Hangi Durumda İstenir?",
+  "eyebrow": "Blog · Sahadan uygunsuzluklar",
+  "alt": "Monoray ve Vinç Yolu Statik Hesabı Nedir? Hangi Durumda İstenir?: konu çizimi",
+  "motif": "monoray",
+  "args": []
  }
 }
