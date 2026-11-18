@@ -325,8 +325,9 @@
    "elektrik-panosu-kontrolu",
    "elektrik-ic-tesisat-projesi"
   ],
-  "durum": "taslak",
-  "konu_yayinlanan": "Pano Tek Hat Şeması Nedir, Zorunlu mu, Nasıl Okunur? Merak Edilen 10 Soru"
+  "durum": "yayında",
+  "konu_yayinlanan": "Pano Tek Hat Şeması Nedir, Zorunlu mu, Nasıl Okunur? Merak Edilen 10 Soru",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/50"
  },
  {
   "no": 10,
