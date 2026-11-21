@@ -97,9 +97,10 @@
    "anlik-gaz-olcumu",
    "elektrik-ic-tesisat-periyodik-kontrolu"
   ],
-  "durum": "bekliyor",
-  "pr": "",
-  "kaynak": "Çalışanların Patlayıcı Ortamların Tehlikelerinden Korunması Hakkında Yönetmelik, Resmî Gazete 30.04.2013/28633 (https://www.resmigazete.gov.tr/eskiler/2013/04/20130430-6.htm)"
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/55",
+  "kaynak": "Çalışanların Patlayıcı Ortamların Tehlikelerinden Korunması Hakkında Yönetmelik, Resmî Gazete 30.04.2013/28633 (https://www.resmigazete.gov.tr/eskiler/2013/04/20130430-6.htm)",
+  "konu_yayinlanan": "Patlamadan Korunma Dokümanı Ne Zaman Güncellenir? Revizyon Gerektiren 7 Durum"
  },
  {
   "no": 20,
