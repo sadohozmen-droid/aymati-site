@@ -350,5 +350,26 @@
    "enerji-analizi-ve-harmonik-olcumu"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 29,
+  "konu": "Paratoner (yıldırım) risk analizi nedir? TS EN 62305-2 raporunda neler bulunur?",
+  "kategori": "isg",
+  "ilgili": [
+   "yildirimdan-korunma-tesisati-projesi",
+   "faraday-kafesi-hesaplama",
+   "projelendirme"
+  ],
+  "durum": "bekliyor"
+ },
+ {
+  "no": 30,
+  "konu": "Patlamadan korunma dokümanını kim hazırlar? Hazırlayan kişide aranan nitelikler",
+  "kategori": "isg",
+  "ilgili": [
+   "patlamadan-korunma-dokumani",
+   "projelendirme"
+  ],
+  "durum": "bekliyor"
  }
 ]
