@@ -372,5 +372,16 @@
    "projelendirme"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 31,
+  "konu": "FM-200 gazlı söndürme sistemi projesi: hangi mekânlarda tercih edilir, projede neler bulunur?",
+  "kategori": "isg",
+  "ilgili": [
+   "otomatik-gazli-yangin-sondurme-fm-200-projesi",
+   "yangin-algilama-ve-ihbar-sistemleri-projesi",
+   "projelendirme"
+  ],
+  "durum": "bekliyor"
  }
 ]
