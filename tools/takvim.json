@@ -383,5 +383,16 @@
    "projelendirme"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 32,
+  "konu": "Faraday kafesi mi, paratoner mi? Yapıya göre yıldırımdan korunma yöntemi nasıl seçilir?",
+  "kategori": "isg",
+  "ilgili": [
+   "faraday-kafesi-hesaplama",
+   "yildirimdan-korunma-tesisati-projesi",
+   "projelendirme"
+  ],
+  "durum": "bekliyor"
  }
 ]
