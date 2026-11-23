@@ -25,7 +25,7 @@ def body(motif, args, uid):
 def hero_svg(motif, args, alt, uid='x'):
     a = html.escape(alt)
     return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" width="640" height="440" role="img" aria-label="{a}"><title>{a}</title>'
-            f'{GRID}<rect width="640" height="440" fill="#0d2547"/><rect width="640" height="440" fill="url(#g)"/>{body(motif, args, uid)}</svg>')
+            f'{GRID}<rect width="640" height="440" fill="#111111"/><rect width="640" height="440" fill="url(#g)"/>{body(motif, args, uid)}</svg>')
 
 def _lines(s, n=22):
     out, cur = [], ''
@@ -37,13 +37,13 @@ def _lines(s, n=22):
 def tr_upper(s): return s.replace('i', 'İ').replace('ı', 'I').upper()
 
 def og_svg(motif, args, title, eyebrow, uid='x'):
-    ls = _lines(title)
-    tx = ''.join(f'<text x="64" y="{230 + i*62}" font-size="52" font-weight="800" fill="#ffffff" font-family="Poppins,\'DejaVu Sans\',Arial,sans-serif">{html.escape(l)}</text>' for i, l in enumerate(ls))
-    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">{GRID}<rect width="1200" height="630" fill="#0d2547"/><rect width="1200" height="630" fill="url(#g)"/>'
-            f'<text x="64" y="150" font-size="22" fill="#d3a467" font-family="\'DejaVu Sans Mono\',monospace" letter-spacing=".12em">{html.escape(tr_upper(eyebrow))}</text>{tx}'
-            f'<rect x="64" y="{250 + len(ls)*62}" width="120" height="6" fill="#48c9c6"/>'
-            f'<text x="64" y="560" font-size="30" font-weight="700" fill="#ffffff" font-family="Poppins,\'DejaVu Sans\',Arial,sans-serif">AYMATİ <tspan fill="#d3a467" font-weight="400">PROJE</tspan></text>'
-            f'<text x="64" y="594" font-size="20" fill="#9aa9be" font-family="\'DejaVu Sans Mono\',monospace">www.aymati.com.tr · 0555 142 84 74</text>'
+    ls = _lines(tr_upper(title), 20)
+    tx = ''.join(f'<text x="64" y="{236 + i*66}" font-size="64" font-weight="800" fill="#ffffff" font-family="Barlow Condensed,\'DejaVu Sans\',Arial,sans-serif">{html.escape(l)}</text>' for i, l in enumerate(ls))
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">{GRID}<rect width="1200" height="630" fill="#111111"/><rect width="1200" height="630" fill="url(#g)"/>'
+            f'<rect x="0" y="0" width="1200" height="18" fill="#f2c200"/><rect x="64" y="118" width="{len(eyebrow)*15+36}" height="42" fill="#f2c200"/><text x="82" y="148" font-size="26" font-weight="800" fill="#111111" font-family="Barlow Condensed,\'DejaVu Sans\',Arial,sans-serif" letter-spacing=".06em">{html.escape(tr_upper(eyebrow))}</text>{tx}'
+            f'<rect x="64" y="{256 + len(ls)*66}" width="140" height="10" fill="#f2c200"/>'
+            f'<text x="64" y="560" font-size="30" font-weight="700" fill="#ffffff" font-family="Barlow Condensed,\'DejaVu Sans\',Arial,sans-serif">AYMATİ <tspan fill="#f2c200" font-weight="400">PROJE</tspan></text>'
+            f'<text x="64" y="594" font-size="24" fill="#cfcabd" font-family="Barlow Condensed,\'DejaVu Sans\',Arial,sans-serif">www.aymati.com.tr · 0555 142 84 74</text>'
             f'<g transform="translate(600,110) scale(0.88)">{body(motif, args, uid)}</g></svg>')
 
 JS = r"""const {chromium}=require('playwright');const fs=require('fs');(async()=>{const b=await chromium.launch();const p=await b.newPage({viewport:{width:1200,height:630}});
