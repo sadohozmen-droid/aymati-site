@@ -1,36 +1,24 @@
 # Tüm arama motorları ve yapay zekâ arama botları siteyi tarayabilir.
+# Adı yazılan botlar yalnızca niyeti belgelemek içindir; hepsi aynı kuralları
+# kullanır. (Adı yazılan bir bot ayrı grupta olursa "*" kurallarını devralmaz.)
+# Arama/alıntı: Googlebot, Bingbot, OAI-SearchBot, Claude-SearchBot, PerplexityBot, meta-webindexer
+# Kullanıcı isteğiyle getirme: ChatGPT-User, Claude-User, Perplexity-User
+# Model eğitimi (şu an izinli; kapatmak site sahibinin kararıdır):GPTBot, ClaudeBot, Google-Extended, Applebot-Extended
 User-agent: *
-Allow: /
-Disallow: /404
-
 User-agent: Googlebot
-Allow: /
-
 User-agent: Bingbot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
-User-agent: GPTBot
-Allow: /
-
 User-agent: OAI-SearchBot
-Allow: /
-
 User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
 User-agent: Claude-SearchBot
-Allow: /
-
+User-agent: Claude-User
 User-agent: PerplexityBot
-Allow: /
-
+User-agent: Perplexity-User
+User-agent: meta-webindexer
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Google-Extended
 User-agent: Applebot-Extended
 Allow: /
+Disallow: /404
 
 Sitemap: https://www.aymati.com.tr/sitemap.xml
