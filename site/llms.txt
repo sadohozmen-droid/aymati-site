@@ -1,6 +1,6 @@
 # Aymati Proje Mühendislik
 
-> İstanbul merkezli mühendislik ofisi (Gaziosmanpaşa). Fabrika, depo, atölye, şantiye ve iş yerleri için projelendirme, statik analiz, patlamadan korunma dokümanı (PKD), periyodik muayene ve iş hijyeni ölçümleri. Elektrik projeleri EMO kayıtlı S.M.M. elektrik mühendisi, mekanik projeler ve statik analizler MMO kayıtlı makina mühendisi tarafından imzalanır.
+> İstanbul merkezli mühendislik ofisi (Gaziosmanpaşa). Fabrika, depo, atölye, şantiye ve iş yerleri için statik analiz (raf, iskele, fuar standı, sahne, vinç temeli, monoray, kaldırma aparatı), patlamadan korunma dokümanı (PKD), elektrik/yangın/mekanik projelendirme ve Faraday kafesi; ayrıca periyodik muayene ve iş hijyeni ölçümleri. Elektrik projeleri EMO kayıtlı S.M.M. elektrik mühendisi, mekanik projeler ve statik analizler MMO kayıtlı makina mühendisi tarafından imzalanır.
 
 - Telefon / WhatsApp: 0555 142 84 74
 - E-posta: info@aymati.com.tr
