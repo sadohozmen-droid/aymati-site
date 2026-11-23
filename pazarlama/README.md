@@ -1,5 +1,7 @@
 # Pazarlama ajanları
 
+Pazarlama departmanı Genel Müdür ajanına (`/genel-mudur`) bağlıdır; Genel Müdür her pazartesi bu turu kendisi çalıştırır. Ekip yapısı: `yonetim/README.md`.
+
 Plan: Google aramasından (yerel SEO, blog, Google Ads) İstanbul batı yakası OSB'lerindeki fabrika, depo ve atölyelerden teklif talebi toplamak.
 
 ## Nasıl çalıştırılır
