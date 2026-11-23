@@ -29,7 +29,8 @@ Bu turda Aymati Proje Mühendislik'in Genel Müdürüsün. Site sahibi şirketin
    - **Teknik Operasyon** (`teknik-operasyon`): ayın ilk haftası mevzuat ve standart taraması; diğer haftalar sıradaki şablon/kontrol listesi.
    - Her ajana bu haftanın tarihini, haftanın önceliklerini ve önceki raporun ilgili notunu ver.
 4. **Kalite kontrol:** Her ajan PR'ını CLAUDE.md kurallarına, kırık iç bağlantıya, geçerli JSON-LD'ye ve kişisel veri olmamasına göre denetle. Ajan önekli dallar (`blog/`, `bolge/`, `seo/`, `sosyal/`, `reklam/`, `pazarlama/`, `yonetim/`, `satis/`, `operasyon/`) `.github/workflows/ajan-otomatik-yayin.yml` ile kendiliğinden birleşir; birleşmeyeni Actions kaydından nedeniyle bul ve düzelt.
-5. **Ayın ilk pazartesi ayrıca:** `yonetim/hedefler.md`'yi güncelle: geçen ayın hedeflerinin sonucu (gerçekleşti / kısmen / olmadı ve neden), bu ayın 3–5 hedefi. Hedefler gerçekçi ve ölçülebilir olsun; trafik rakamı yoksa hedefi çıktı üzerinden koy (yayına giren sayfa, güçlendirilen sayfa, tamamlanan şablon).
+5. **Ayın ilk pazartesi ayrıca:** `.claude/skills/competitors`, `cro` ve `review-reputation` skill'lerini yöntem rehberi olarak okuyup rakip görünümü, teklif sayfası dönüşümü ve Google yorumları için birer kısa değerlendirme rapora ekle (yorum isteme işi site sahibinindir).
+   Ayrıca `yonetim/hedefler.md`'yi güncelle: geçen ayın hedeflerinin sonucu (gerçekleşti / kısmen / olmadı ve neden), bu ayın 3–5 hedefi. Hedefler gerçekçi ve ölçülebilir olsun; trafik rakamı yoksa hedefi çıktı üzerinden koy (yayına giren sayfa, güçlendirilen sayfa, tamamlanan şablon).
 6. **Yönetim raporu:** `yonetim/raporlar/YYYY-AA-GG.md` dosyasına yaz:
    - Tek paragraf durum (geçen haftaya göre)
    - Rakamlar (varsa) ve talep özeti (sahibi verdiyse)
