@@ -1,0 +1,184 @@
+/* Aymati Proje — "saha etiketi" tasarımı. Tüm sayfalarda satır içi stillerden SONRA yüklenir ve onları ezer. */
+@font-face{font-family:"Barlow";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/barlow-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Barlow";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/barlow-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Barlow";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/barlow-500-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Barlow";font-weight:500;font-style:normal;font-display:swap;src:url(../fonts/barlow-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Barlow";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/barlow-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Barlow";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/barlow-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Barlow Condensed";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/barlow-condensed-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/barlow-condensed-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/barlow-condensed-700-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/barlow-condensed-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Barlow Condensed";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/barlow-condensed-800-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Barlow Condensed";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/barlow-condensed-800-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+:root,:root:not([data-theme="light"]),:root[data-theme="dark"]{
+  color-scheme:light;
+  --navy:#111111; --teal:#111111; --gold:#6e5700;
+  --y:#f2c200; --y2:#ffd633; --k:#111111;
+  --bg:#e7e3da; --paper:#fbfaf7; --ink:#111111; --muted:#47443d; --line:#b9b3a6; --soft:#efebe3;
+  --ok:#1d7a3e; --bad:#c2410c;
+  --c-el:#111; --c-yg:#111; --c-mk:#111; --c-is:#111; --c-st:#111;
+  --f-display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --f-serif:"Barlow","Helvetica Neue",Arial,sans-serif;
+  --f-mono:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-serif)}
+*,*::before,*::after{border-radius:0!important}
+a{color:var(--ink);text-decoration-color:var(--y);text-decoration-thickness:2px;text-underline-offset:3px}
+:focus-visible{outline:3px solid var(--y);outline-offset:2px;box-shadow:0 0 0 6px var(--k)}
+h1,h2,h3,h4{font-family:var(--f-display);color:var(--ink);letter-spacing:0}
+h1,h2{text-transform:uppercase;font-weight:800;line-height:.98}
+h3,h4{font-weight:700}
+p,li{font-family:var(--f-serif)}
+
+/* etiket: kara zemin, sarı yazı */
+.eyebrow{display:inline-block;font:700 .82rem/1.3 var(--f-display)!important;letter-spacing:.08em;text-transform:uppercase;background:var(--k);color:var(--y)!important;padding:3px 8px;width:auto}
+.eyebrow a{color:var(--y)!important}
+
+/* üst şerit + menü */
+.topbar{background:#000;color:#cfcabd;font:600 .9rem var(--f-display);letter-spacing:.05em;text-transform:uppercase}
+.topbar a{color:#e7e3da}.topbar a:hover,.tb-nav a[aria-current]{color:var(--y)}
+body::before{background:#000}
+header{background:var(--k);border-bottom:0;box-shadow:none}
+header::after{content:"";display:block;height:10px;background:repeating-linear-gradient(-45deg,var(--k) 0 12px,var(--y) 12px 24px)}
+header nav a{font:700 1.06rem var(--f-display)!important;text-transform:uppercase;letter-spacing:.03em;color:#f3f0e8!important}
+header nav a:hover{color:var(--y)!important;background:transparent}
+header nav a[aria-current]{color:var(--y)!important;box-shadow:inset 0 -4px 0 var(--y)}
+header nav a.cta,header nav#mainnav .cta{background:var(--y)!important;color:var(--k)!important;border:3px solid var(--y);padding:8px 16px}
+header nav a.cta:hover{background:var(--k)!important;color:var(--y)!important}
+#mainnav .ddm{background:var(--paper);border:3px solid var(--k);box-shadow:8px 8px 0 var(--k)}
+#mainnav .ddm a{color:var(--ink)!important;font:600 1rem var(--f-display)!important;text-transform:none}
+#mainnav .ddm a:hover{background:var(--y)!important;color:var(--k)!important}
+#mainnav .ddm a:first-child{color:var(--k)!important;background:var(--y);border-bottom:3px solid var(--k)}
+.menu-btn{border:2px solid var(--y);color:var(--y);font:700 1rem var(--f-display);text-transform:uppercase}
+.mpanel{background:var(--k);border-top:0}
+.mpanel h4{color:var(--k)!important;background:var(--y);display:inline-block;padding:2px 8px;font:800 .85rem var(--f-display)!important;letter-spacing:.08em}
+.mpanel a{color:#f3f0e8;font:600 1.1rem var(--f-display)}
+.mpanel a[aria-current]{color:var(--y)}
+
+/* sayfa başı */
+.hero,.dhero{background:var(--bg)!important;color:var(--ink)!important;border-bottom:4px solid var(--k)}
+.hero::before,.dhero::before{display:none!important}
+.hero h1,.dhero h1{color:var(--ink)!important;font-weight:800;text-transform:uppercase;line-height:.95;font-size:clamp(2.3rem,5.6vw,4.4rem)!important}
+.hero h1 em,.hero .hs-t em{color:var(--k)!important;background:var(--y);padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.hero .lead,.dhero .lead,.hero p,.dhero p{color:#26241f!important}
+.hero .hs-t{color:var(--ink)!important;text-transform:uppercase}
+.crumbs,.crumbs a,.dhero .eyebrow a{color:var(--y)!important}
+.dstats span{background:var(--paper)!important;border:2px solid var(--k)!important;color:var(--ink)!important;font:600 .9rem var(--f-display)!important;letter-spacing:.02em}
+.dstats span b,.dstats span em{color:var(--k)!important;background:var(--y);padding:0 3px;font-style:normal}
+.hero-fig img,.sheet,.fkvis,.pkdvis{border:4px solid var(--k)!important;box-shadow:10px 10px 0 var(--k)!important}
+.term{text-decoration-color:var(--k)}
+.hero .term:hover,.dhero .term:hover,.hero .term[aria-expanded="true"],.dhero .term[aria-expanded="true"]{color:var(--ink)!important;background:var(--y)}
+.tip{border:3px solid var(--k)!important;box-shadow:6px 6px 0 var(--k)!important}
+.hs-dot{border:2px solid var(--k)!important;color:var(--ink)!important;background:var(--paper)!important;font:700 .95rem var(--f-display)!important;text-transform:uppercase}
+.hs-dot[aria-current="true"]{background:var(--y)!important;color:var(--k)!important}
+.hs-nav button{border:2px solid var(--k)!important;background:var(--paper)!important;color:var(--k)!important}
+.tblock{border-color:var(--k)!important;background:var(--paper)!important;color:var(--ink)!important}
+.tblock div{border-color:var(--k)!important}
+.tblock span{color:var(--k)!important;font:800 .72rem var(--f-display)!important;letter-spacing:.08em}
+
+/* ana sayfa sütunları */
+.pillars{background:var(--k)!important}
+.pillars a{background:var(--k)!important;color:#d9d4c8!important;box-shadow:-1px 0 0 #333!important;border-top:0!important}
+.pillars a:hover{background:var(--y)!important;color:var(--k)!important}
+.pillars a:hover b,.pillars a:hover small{color:var(--k)!important}
+.pillars b{color:#fff;font:800 1.35rem var(--f-display);text-transform:uppercase}
+.pillars small{color:var(--y)!important;font:700 .82rem var(--f-display)!important}
+
+/* düğmeler */
+.btn,.quote,.more,.plink,.svlink{font-family:var(--f-display)!important;text-transform:uppercase;letter-spacing:.03em}
+.btn{font-weight:800!important;font-size:1.08rem!important;border:3px solid var(--k)!important;padding:12px 22px!important;box-shadow:none}
+.btn,.btn.teal,.btn.gold{background:var(--y)!important;color:var(--k)!important}
+.btn:hover,.btn.teal:hover,.btn.gold:hover{background:var(--k)!important;color:var(--y)!important}
+.btn.ghost,.btn.outline{background:var(--paper)!important;color:var(--k)!important}
+.btn.ghost:hover,.btn.outline:hover{background:var(--k)!important;color:var(--y)!important}
+.quote{border:3px solid var(--k)!important;color:var(--k)!important;background:var(--y)!important;font-weight:800!important}
+.quote:hover{background:var(--k)!important;color:var(--y)!important}
+.more{color:var(--k)!important;font-weight:800!important;text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:3px}
+
+/* kartlar */
+.pcard,.hcard,.tz,.mgroup,.dcard,.ctabox,.side,form,.remote,.member,.logo-slot,.cond,.qlist,#rehber details,details.f{background:var(--paper);border:3px solid var(--k)!important;box-shadow:none!important}
+.pcard:hover,.tz:hover{box-shadow:8px 8px 0 var(--k)!important}
+.hcard.plan{background:var(--k)!important;border-color:var(--k)!important;color:#f3f0e8}
+.hcard.plan h3,.hcard.plan b{color:var(--y)!important}
+.hcard.plan .quote{background:var(--y)!important;color:var(--k)!important;border-color:var(--y)!important}
+.dcard h2,.dcard .h3,.side h3{font:800 1.2rem var(--f-display)!important;text-transform:uppercase;border-bottom:3px solid var(--k);padding-bottom:6px}
+ul.rel a,.rel a{font:600 1.06rem var(--f-display)!important;color:var(--k)!important;text-decoration:underline;text-decoration-color:var(--y);text-decoration-thickness:3px}
+ul.rel a:hover,.rel a:hover{background:var(--y)}
+.tz .cnt,.pm-n,.meta dt,.side dt,.member .reg{color:var(--k)!important;background:var(--y);display:inline-block;padding:1px 6px;font:800 .78rem var(--f-display)!important;letter-spacing:.08em;width:max-content}
+.tz h3,.tz h3 a{font:800 1.5rem var(--f-display)!important;text-transform:uppercase;color:var(--k)!important}
+.tz h4{font:800 .85rem var(--f-display)!important;letter-spacing:.08em;color:var(--muted)}
+.tz li a,.chips label,.tag{border:2px solid var(--k)!important;background:var(--paper)!important;color:var(--k)!important;font:600 .98rem var(--f-display)!important}
+.tz li a:hover,.chips label:hover{background:var(--y)!important}
+.chips label:has(input:checked),.qrow:has(input:checked){background:var(--y)!important}
+.post{border-top:6px solid var(--k)!important}
+.post h3 a{color:var(--k)!important;font:800 1.3rem var(--f-display);text-transform:uppercase}
+.post time{color:var(--k)!important;background:var(--y);padding:1px 6px;font:700 .82rem var(--f-display)!important;width:max-content}
+.post h3 a:hover,.tz h3 a:hover{background:var(--y)}
+
+/* bölüm başlıkları, numaralar */
+.grp-h .gno{color:var(--k)!important;background:var(--y);border:3px solid var(--k);font:800 1.2rem var(--f-display)!important;padding:2px 8px;line-height:1.2;height:max-content}
+.grp-h h2{font-size:clamp(1.5rem,2.6vw,2.1rem)!important}
+.steps li::before{color:var(--k)!important;background:var(--y);display:inline-block;padding:0 8px;border:3px solid var(--k);font:800 1.6rem var(--f-display)!important}
+.rafpoints li::before{background:var(--y)!important;border:2px solid var(--k)}
+.facts div,.mlist li,.glist li{border-color:var(--k)!important}
+table th{background:var(--k);color:var(--y);font:800 .9rem var(--f-display);text-transform:uppercase;letter-spacing:.05em}
+table td,table th{border-color:var(--k)!important}
+
+/* SSS */
+details summary{font-family:var(--f-display);font-weight:800;font-size:1.12rem}
+.faq details{border-bottom:2px solid var(--k)!important}
+.faq details[open] summary{background:var(--y)}
+
+/* ana sayfa bantları */
+.rafband,.pkdband,.alt{background:var(--bg)!important}
+.refs{background:var(--paper)!important;border-bottom:4px solid var(--k)!important}
+.logo-slot{border-style:solid!important}
+.raflabel{background:var(--y)!important;border:4px solid var(--k)!important;box-shadow:10px 10px 0 var(--k)!important}
+
+/* formlar */
+input,select,textarea{border:2px solid var(--k)!important;background:#fff!important;color:var(--k)!important;font-family:var(--f-serif)}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--y);outline-offset:0}
+.tabs button,.seg button{border:3px solid var(--k)!important;background:var(--paper)!important;color:var(--k)!important;font-family:var(--f-display)!important;text-transform:uppercase;font-weight:800!important}
+.tabs button[aria-pressed="true"],.seg button[aria-selected="true"]{background:var(--y)!important;color:var(--k)!important;box-shadow:none!important}
+.seg button[aria-selected="true"] small{color:var(--k)!important}
+.toast{background:var(--k)!important;color:var(--y)!important;border:3px solid var(--y)}
+
+/* teklif bandı */
+.page-cta{background:var(--y)!important;color:var(--k)!important;border-top:4px solid var(--k);border-bottom:4px solid var(--k)}
+.page-cta h2,.page-cta p{color:var(--k)!important}
+.page-cta .btn,.page-cta .btn.gold,.page-cta .btn.teal{background:var(--k)!important;color:var(--y)!important}
+.page-cta .btn.ghost,.page-cta .btn.outline{background:var(--paper)!important;color:var(--k)!important}
+
+/* alt bilgi */
+footer{background:var(--k)!important;color:#cfcabd!important;border-top:10px solid var(--y)}
+footer h4{color:var(--y)!important;font:800 1rem var(--f-display)!important;letter-spacing:.08em;text-transform:uppercase}
+footer a{color:#f3f0e8!important}footer a:hover{color:var(--y)!important}
+
+/* mobil alt çubuk */
+.mcta{background:var(--k)!important;border-top:4px solid var(--y)!important;box-shadow:none!important}
+.mcta a{font:800 1.05rem var(--f-display)!important;text-transform:uppercase;letter-spacing:.03em;border:2px solid #f3f0e8!important;color:#f3f0e8!important}
+.mcta a.wa{background:#1d7a3e!important;border-color:#1d7a3e!important}
+.mcta a.tk{background:var(--y)!important;border-color:var(--y)!important;color:var(--k)!important}
+
+/* düzeltmeler */
+.eyebrow{width:max-content!important;max-width:100%;white-space:normal}
+.hero .eyebrow,.dhero .eyebrow,.hero .hs-slide .eyebrow{color:var(--y)!important;background:var(--k)!important}
+.sheet{background:#111!important;border-color:var(--k)!important;color:#cfcabd!important}
+.hb-t{background:#2a2a2a!important;border-color:#555!important}
+.hb-t em{background:var(--y)!important}
+.pmr-h{color:var(--y)!important;border-color:#555!important}.pmr li,.hb-l{color:#cfcabd!important;border-color:#333!important}
+.hs-dot{border-radius:0!important}
+.refs{display:none!important}
+.fk-price,.fk-kesif{background:var(--k)!important;color:#f3f0e8!important;border:4px solid var(--k)}
+.fk-price p,.fk-kesif p,.fk-kesif .fee span,.fk-kesif .kvkk{color:#d9d4c8!important}
+.fk-kesif .fee b,.fk-loc,.fk-kesif .kvkk a{color:var(--y)!important}
+html body .fk-kesif input:not([type=checkbox]){background:#fff!important;border:2px solid var(--y)!important;color:var(--k)!important}
+@media(max-width:899px){
+  header nav a.cta,header nav#mainnav .cta{font-size:.95rem!important;padding:6px 10px!important;white-space:nowrap;border-width:2px}
+  .hero h1,.dhero h1{font-size:clamp(2rem,9vw,2.8rem)!important}
+}
+.ameta span{color:var(--k)!important;background:var(--paper)!important;border:2px solid var(--k)!important;font:700 .9rem var(--f-display)!important;text-transform:uppercase}
+.gal figcaption{background:linear-gradient(transparent,#111e)!important}
+.gal figcaption small{color:var(--y)!important}
