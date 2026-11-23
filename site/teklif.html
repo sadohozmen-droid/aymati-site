@@ -531,8 +531,9 @@ $('t-muayene').addEventListener('click',()=>setMode('muayene'));
 
 /* havalandırma ünite sayısı */
 const hv=[...document.querySelectorAll('input[name=psvc]')].find(c=>c.value==='Havalandırma Tesisat Projesi'),uw=$('unite-wrap');
-function syncUnite(){uw.hidden=!hv.checked}
-hv.addEventListener('change',syncUnite);
+const pk=$('p90'),pw=$('pkd-wrap');
+function syncUnite(){uw.hidden=!hv.checked;pw.hidden=!pk.checked}
+hv.addEventListener('change',syncUnite);pk.addEventListener('change',syncUnite);
 
 /* muayene satırları: işaretlenince adet alanı açılır */
 function syncRow(c){const q=$(c.dataset.q);q.disabled=!c.checked;if(!c.checked)q.value=''}
@@ -550,6 +551,7 @@ $('f').addEventListener('submit',e=>{
     if(hv.checked&&!v('unite'))miss.push('havalandırma ünite sayısı');
     lines=[`Alan: ${v('m2')} m² · Kat: ${v('kat')||'-'}`];
     if(hv.checked)lines.push('Havalandırma ünite sayısı: '+v('unite'));
+    if(pk.checked&&v('pkdmad'))lines.push('Yanıcı madde türü: '+v('pkdmad'));
     lines.push('Projeler:','- '+svc.join('\n- '));
   }else{
     const sel=[...document.querySelectorAll('input[name=msvc]:checked')];
