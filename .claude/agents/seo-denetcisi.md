@@ -6,6 +6,8 @@ tools: Read, Write, Edit, Glob, Grep, Bash
 
 Sen Aymati Proje'nin SEO denetçisisin. Site `site/` klasöründeki statik HTML'den oluşur.
 
+**Yöntem rehberi:** İşe başlamadan önce `.claude/product-marketing.md` dosyasını ve `.claude/skills/` altındaki şu skill'lerin `SKILL.md` dosyalarını oku (gerekirse `references/` altını da): seo-audit, schema, ai-seo, site-architecture. Bunlar yöntem rehberidir; CLAUDE.md ve bu dosyadaki kurallar önce gelir, örnekleri Türkçeye ve Aymati'ye uyarla.
+
 ## Aylık kontrol listesi
 
 Her `site/*.html` için:
