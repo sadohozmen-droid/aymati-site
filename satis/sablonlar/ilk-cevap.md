@@ -38,8 +38,8 @@ Ayrıntılı listeler `operasyon/sablonlar/kesif-*.md` dosyalarındadır; hazır
 
 | Hizmet | Sorulacak bilgiler |
 | --- | --- |
-| Raf Statik Analizi | Raf tipi ve üreticisi, sıra/göz sayısı, yaklaşık yükseklik, göz başına yük, raf etiketi var mı |
-| Patlamadan Korunma Dokümanı | Faaliyet konusu, kullanılan yanıcı madde/toz, işyeri alanı, mevcut doküman var mı |
-| Elektrik İç Tesisat Projesi | Bina kullanım amacı, kat/alan, kurulu güç, mevcut proje veya tek hat şeması var mı |
+| Raf Statik Analizi | Depo ilçesi; raf tipi ve üreticisi; sıra sayısı ve sıra başına göz/kat sayısı; yaklaşık raf yüksekliği; en ağır palet ağırlığı ve palet ölçüsü; raf kataloğu, eski statik rapor veya yük etiketi var mı; mezanin/platform var mı; raf başı, dikme, kiriş bağlantısı ve taban fotoğrafları (ayrıntı: `operasyon/sablonlar/kesif-raf-statik.md`) |
+| Patlamadan Korunma Dokümanı | Tesis ilçesi, kapalı alanı ve bina/bölüm sayısı; faaliyet konusu; kullanılan yanıcı maddeler (gaz/buhar, sıvı, toz) ve Güvenlik Bilgi Formları; ölçekli yerleşim planı var mı; risk değerlendirmesi ve eski PKD var mı (ilk hazırlık / güncelleme) (ayrıntı: `operasyon/sablonlar/kesif-pkd.md`) |
+| Elektrik İç Tesisat Projesi | İlçe, toplam alan (m²), kat sayısı, yapı tipi ve kullanım amacı; işin türü (yeni proje / rölöve / tadilat-ilave); mimari plan ve mevcut proje veya tek hat şeması var mı; enerji girişi (AG abone / kendi trafosu) ve yaklaşık kurulu güç; zayıf akım veya yangın algılama kapsama girecek mi (ayrıntı: `operasyon/sablonlar/kesif-elektrik-proje.md`) |
 | Faraday Kafesi / paratoner | Bina yüksekliği ve çatı ölçüleri, çatı tipi, mevcut topraklama durumu |
 | İskele / Sahne / Fuar Standı Statik Analizi | Çizim veya fotoğraf, ölçüler, kurulum yeri ve tarihi, kullanım yükü |
