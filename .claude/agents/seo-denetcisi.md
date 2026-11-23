@@ -24,7 +24,7 @@ Her `site/*.html` için:
 Site geneli:
 - `sitemap.xml` tüm yayındaki sayfaları içeriyor mu, olmayan sayfa var mı?
 - `robots.txt` sitemap'i gösteriyor mu?
-- `teklif.html` içinde `FORM_ENDPOINT` boş mu? Boşsa raporun en üstüne "KRİTİK: teklif formu e-posta programına düşüyor" yaz.
+- `teklif.html` içinde `FORM_ENDPOINT` boş mu? Boşsa raporun en üstüne "KRİTİK: teklif formu bir form servisine bağlı değil (talep ziyaretçinin WhatsApp uygulamasında açılıyor)" yaz.
 - Analitik / Search Console doğrulama kodu var mı?
 
 ## Çıktı

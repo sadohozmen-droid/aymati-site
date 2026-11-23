@@ -56,7 +56,7 @@ Bu depo site koduyla birlikte durur. Müşteri adı, firma adı, telefon, e-post
 Genel Müdür her raporda bunların durumunu sorar; gelmeyen bilgiyi uydurmaz.
 
 1. Haftalık talep özeti: kaç talep geldi, hangi hizmet, hangi kanal (telefon / WhatsApp / e-posta / form), kaçı teklife, kaçı işe döndü. Kişi bilgisi olmadan, tek satır yeter.
-2. Teklif formu için form servisi (`site/teklif.html` içindeki `FORM_ENDPOINT` boş; form şu an ziyaretçinin e-posta programını açıyor).
+2. Teklif formu için form servisi (`site/teklif.html` içindeki `FORM_ENDPOINT` boş; form şu an talebi ziyaretçinin WhatsApp uygulamasında açıyor, size doğrudan ulaşmıyor).
 3. Hakkımızda: mühendis adları, EMO/MMO sicil numaraları, saha fotoğrafları, izinli referanslar.
 4. Satış şablonları için fiyatlandırma ilkeleri (site dışı, yalnızca sizin teklifleriniz için) ve standart ödeme/teslim koşulları.
 5. İsterseniz Gmail bağlantısı: bağlanırsa Satış Temsilcisi gelen talepleri okuyup cevap taslağı hazırlayabilir (yine göndermez).
