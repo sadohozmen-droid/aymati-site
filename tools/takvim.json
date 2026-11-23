@@ -84,7 +84,7 @@
    "elektrik-panosu-kontrolu"
   ],
   "durum": "taslak",
-  "pr": "",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/59",
   "kaynak": "6331 sayılı Kanun md. 25 (https://csgb.gov.tr/Media/fldk2co0/6331_isgkanunu_tr.pdf); İşyerlerinde İşin Durdurulmasına Dair Yönetmelik, Resmî Gazete 30.03.2013/28603; değişiklik Resmî Gazete 21.07.2026/33316",
   "oncelik": "gündem",
   "konu_yayinlanan": "İşin Durdurulması Nedir? Hangi Eksiklikler İşyerinin Kapatılmasına Yol Açar?"
