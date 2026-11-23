@@ -83,10 +83,11 @@
    "patlamadan-korunma-dokumani",
    "elektrik-panosu-kontrolu"
   ],
-  "durum": "bekliyor",
+  "durum": "taslak",
   "pr": "",
-  "kaynak": "Resmî Gazete 21 Temmuz 2026: İşyerlerinde İşin Durdurulmasına Dair Yönetmelikte Değişiklik",
-  "oncelik": "gündem"
+  "kaynak": "6331 sayılı Kanun md. 25 (https://csgb.gov.tr/Media/fldk2co0/6331_isgkanunu_tr.pdf); İşyerlerinde İşin Durdurulmasına Dair Yönetmelik, Resmî Gazete 30.03.2013/28603; değişiklik Resmî Gazete 21.07.2026/33316",
+  "oncelik": "gündem",
+  "konu_yayinlanan": "İşin Durdurulması Nedir? Hangi Eksiklikler İşyerinin Kapatılmasına Yol Açar?"
  },
  {
   "no": 25,
@@ -101,6 +102,34 @@
   "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/55",
   "kaynak": "Çalışanların Patlayıcı Ortamların Tehlikelerinden Korunması Hakkında Yönetmelik, Resmî Gazete 30.04.2013/28633 (https://www.resmigazete.gov.tr/eskiler/2013/04/20130430-6.htm)",
   "konu_yayinlanan": "Patlamadan Korunma Dokümanı Ne Zaman Güncellenir? Revizyon Gerektiren 7 Durum"
+ },
+ {
+  "no": 33,
+  "konu": "Kule vinç kurulumunda temel ve ankraj statik hesabı gerekir mi?",
+  "kategori": "saha",
+  "ilgili": [
+   "vinc-statik-analizi",
+   "statik-analiz",
+   "vinc-periyodik-kontrolu"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği, Resmî Gazete 25.04.2013/28628; gündem: İstanbul'da şantiyede vinç devrilmesi haberi (NTV, 11 Kasım: https://www.ntv.com.tr/gundem/umraniyede-vinc-devrildi-yol-trafige-kapatildi-1750387)",
+  "oncelik": "gündem"
+ },
+ {
+  "no": 34,
+  "konu": "Çatı ve platform çalışmalarında yaşam hattı ve ankraj noktası için statik hesap gerekir mi?",
+  "kategori": "saha",
+  "ilgili": [
+   "platform-statik-analizi",
+   "statik-analiz",
+   "iskele-statik-analizi"
+  ],
+  "durum": "bekliyor",
+  "pr": "",
+  "kaynak": "Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği, Resmî Gazete 05.10.2013/28786; gündem: çatıdan düşme iş kazası haberi (NTV, 8 Kasım: https://www.ntv.com.tr/gundem/mersinde-fabrika-catisindan-dusen-2-isci-yasamini-yitirdi-1750002); standart atıfları TSE kaynağından doğrulanacak",
+  "oncelik": "gündem"
  },
  {
   "no": 20,
