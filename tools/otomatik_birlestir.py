@@ -3,9 +3,9 @@
 
 GitHub Actions içinde çalışır (.github/workflows/ajan-otomatik-yayin.yml).
 Bir PR yalnız şu koşulların hepsi sağlanırsa birleştirilir:
-- Dal adı ajan önekleriyle başlar (blog/, bolge/, seo/, sosyal/, reklam/, pazarlama/)
+- Dal adı ajan önekleriyle başlar (blog/, bolge/, seo/, sosyal/, reklam/, pazarlama/, yonetim/, satis/, operasyon/)
 - PR aynı depodan açılmıştır (fork değil) ve açan kişi depo sahibidir
-- Değişen dosyalar yalnız site/, pazarlama/ veya tools/yazilar/, tools/takvim.json, tools/gorsel/sayfalar.json altındadır
+- Değişen dosyalar yalnız site/, pazarlama/, yonetim/, satis/, operasyon/ veya tools/yazilar/, tools/takvim.json, tools/gorsel/sayfalar.json altındadır
 - Değişen HTML sayfalarındaki JSON-LD blokları geçerli JSON'dur
 - site/sitemap.xml değiştiyse geçerli XML'dir
 - PR'da birleştirme çakışması yoktur
@@ -14,8 +14,8 @@ import json, os, re, subprocess, sys, xml.dom.minidom
 
 REPO = os.environ["GITHUB_REPOSITORY"]
 OWNER = REPO.split("/")[0]
-PREFIXES = ("blog/", "bolge/", "seo/", "sosyal/", "reklam/", "pazarlama/")
-ALLOWED_PATHS = ("site/", "pazarlama/", "tools/yazilar/")
+PREFIXES = ("blog/", "bolge/", "seo/", "sosyal/", "reklam/", "pazarlama/", "yonetim/", "satis/", "operasyon/")
+ALLOWED_PATHS = ("site/", "pazarlama/", "yonetim/", "satis/", "operasyon/", "tools/yazilar/")
 ALLOWED_FILES = ("tools/takvim.json", "tools/gorsel/sayfalar.json")
 
 
