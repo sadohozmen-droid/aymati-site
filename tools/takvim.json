@@ -423,5 +423,16 @@
    "projelendirme"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 35,
+  "konu": "Raf statik raporu almak için hangi bilgi ve belgeler hazırlanmalı? Keşif öncesi kontrol listesi",
+  "kategori": "isg",
+  "ilgili": [
+   "raf-statik-analizi",
+   "statik-analiz",
+   "bolge-hadimkoy-arnavutkoy"
+  ],
+  "durum": "bekliyor"
  }
 ]
