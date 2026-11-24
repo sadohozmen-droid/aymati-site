@@ -112,8 +112,8 @@
    "statik-analiz",
    "vinc-periyodik-kontrolu"
   ],
-  "durum": "taslak",
-  "pr": "",
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/72",
   "kaynak": "İş Ekipmanlarının Kullanımında Sağlık ve Güvenlik Şartları Yönetmeliği, Resmî Gazete 25.04.2013/28628; gündem: İstanbul'da şantiyede vinç devrilmesi haberi (NTV, 11 Kasım: https://www.ntv.com.tr/gundem/umraniyede-vinc-devrildi-yol-trafige-kapatildi-1750387)",
   "oncelik": "gündem",
   "konu_yayinlanan": "Kule Vinç Kurulumunda Temel ve Ankraj Statik Hesabı Gerekir mi?"
