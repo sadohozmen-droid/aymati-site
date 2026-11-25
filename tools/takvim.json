@@ -435,5 +435,16 @@
    "bolge-hadimkoy-arnavutkoy"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 36,
+  "konu": "Depoya çelik asma kat (mezanin) eklenecek: statik hesap gerekir mi, taşıma kapasitesi nasıl belgelenir?",
+  "kategori": "isg",
+  "ilgili": [
+   "platform-statik-analizi",
+   "statik-analiz",
+   "raf-statik-analizi"
+  ],
+  "durum": "bekliyor"
  }
 ]
