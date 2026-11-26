@@ -127,10 +127,11 @@
    "statik-analiz",
    "iskele-statik-analizi"
   ],
-  "durum": "bekliyor",
-  "pr": "",
+  "durum": "yayında",
+  "pr": "https://github.com/sadohozmen-droid/aymati-site/pull/75",
   "kaynak": "Yapı İşlerinde İş Sağlığı ve Güvenliği Yönetmeliği, Resmî Gazete 05.10.2013/28786; gündem: çatıdan düşme iş kazası haberi (NTV, 8 Kasım: https://www.ntv.com.tr/gundem/mersinde-fabrika-catisindan-dusen-2-isci-yasamini-yitirdi-1750002); standart atıfları TSE kaynağından doğrulanacak",
-  "oncelik": "gündem"
+  "oncelik": "gündem",
+  "slug": "cati-yasam-hatti-ve-ankraj-noktasi-statik-hesabi"
  },
  {
   "no": 20,

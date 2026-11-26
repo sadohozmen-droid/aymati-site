@@ -753,5 +753,12 @@
   "alt": "Kule Vinç Kurulumunda Temel ve Ankraj Statik Hesabı Gerekir mi?: konu çizimi",
   "motif": "kulevinc",
   "args": []
+ },
+ "blog-cati-yasam-hatti-ve-ankraj-noktasi-statik-hesabi": {
+  "title": "Çatı ve Platform Çalışmalarında Yaşam Hattı ve Ankraj Noktası İçin Statik Hesap Gerekir mi?",
+  "eyebrow": "Blog · Sahadan uygunsuzluklar",
+  "alt": "Çatı ve Platform Çalışmalarında Yaşam Hattı ve Ankraj Noktası İçin Statik Hesap Gerekir mi?: konu çizimi",
+  "motif": "platform",
+  "args": []
  }
 }
