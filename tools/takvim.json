@@ -446,5 +446,16 @@
    "raf-statik-analizi"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 37,
+  "konu": "Boya kabini ve boyahane için patlamadan korunma: tehlikeli bölge, havalandırma ve Ex ekipman",
+  "kategori": "isg",
+  "ilgili": [
+   "patlamadan-korunma-dokumani",
+   "havalandirma-tesisat-projesi",
+   "blog-patlamadan-korunma-dokumani-ne-zaman-guncellenir"
+  ],
+  "durum": "bekliyor"
  }
 ]
