@@ -469,5 +469,16 @@
    "projelendirme"
   ],
   "durum": "bekliyor"
+ },
+ {
+  "no": 39,
+  "konu": "Paratoner koruma alanı nasıl hesaplanır? Yuvarlanan küre, koruma açısı ve ağ (göz) yöntemi",
+  "kategori": "saha",
+  "ilgili": [
+   "yildirimdan-korunma-tesisati-projesi",
+   "faraday-kafesi-hesaplama",
+   "projelendirme"
+  ],
+  "durum": "bekliyor"
  }
 ]
